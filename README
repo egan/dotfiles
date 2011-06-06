@@ -1,4 +1,88 @@
+Dotfiles
+===============
 These files are almost identical to the ones I use on my Arch Linux installations.
 Some further editing may be required on systems whose configurations are drastically different therefrom.
 
-In the case of bashrc, my configration may be a little bit more spartan than the defaults on many distros, so merge features accordingly.
+bash_aliases
+---------------
+Contains a variety of aliases to make the command line more user friendly.
+	-The commands ls, dir, vdir, grep, egrep, fgrep, and egrep are made to output with color.
+	-The commands ls, dir, vdir, df, and du are made to output in human friendly units.
+	-The aliases dus and dut are added for more intuitive du output; summary and list with total respectively.
+	-The aliases la, le, ll, lm, lr, lt, lx, and lz are added to enhance command line file management.
+		-list all
+		-list all long
+		-list long
+		-list into less
+		-list recursively
+		-list by time
+		-list by extension
+		-list by size
+	-The aliases dfind and ffind are added as frontends to find, finding directories and files by name, respectively.
+	-The aliases llp and tlp are added as frontends to lp, printing double-sided, and pretty plain text, respectively.
+	-The command mkdir is made to behave more friendly by allowing path creation.
+	-The alias pong is added to do a quick ping test.
+Contains a few aliases to make applications behave better.
+	-The commands apropos and dict are made to pipe to less. Requires pless.
+	-The command aspell is made to be quicker to use and backup-free.
+	-The command newsbeuter is made quicker to type and silent as news.
+Contains several specialized aliases for annoying to type, useful command lines.
+	-cclean: Removes plugin related crap from the home directory.
+	-cls: Completely clears a terminal.
+	-extip: Returns external IP address.
+	-forecast: Frontend to gweather, returning weather forecast.
+	-iwscan: Returns nicely formatted list of wireless networks. Requires piwlist.py.
+	-lclean: Removes LaTeX related crap from working directory.
+	-mclean: Repairs file permissions.
+	-myip: Returns IP address.
+	-netopen: Returns list of open ports.
+	-nettest: Basic diagnostic of a connection based on ping.
+	-ntpsync: Syncs ntp time.
+	-scrsave: Blanks the screen.
+	-sprunge: Uploads stdin to sprunge.us.
+	-sflush: Clears swap.
+	-weather: Frontend to gweather, returning weather conditions.
+	-wotd: Returns the word of the day from dictionary.com.
+Contains a few function aliases as frontends to upstr.sh and downstr.sh that make filesystem naviagation easier.
+	-up: Goes up N directories, or to REGEX.
+	-umv: Moves a file up.
+	-ucp: Copies a file up.
+	-down: Goes down to a directoy found with REGEX.
+	-dmv: Moves a file down.
+	-dcp: Copies a file down.
+
+bash_profile
+---------------
+Sets some useful environment variables and loads bashrc.
+
+bashrc
+---------------
+Spartan bash configuration, enabling some extended features and disabling history.
+
+dircolors
+---------------
+Color definitions for ls. May require $TERM to be added to header.
+
+inputrc
+---------------
+Enables vi readline mode, and improves tab completion.
+
+pentadactylrc
+---------------
+Basic pentadactyl configuration, as well as some useful mappings.
+
+vimrc
+---------------
+Fully featured vim config enabling all the useful features.
+
+xmobarrc
+---------------
+Basic xmobar config to act as a status bar.
+
+xmodmaprc
+---------------
+Maps Caps Lock to Escape, and enables Compose on Right Alt.
+
+xmonad.hs
+---------------
+Fully functional xmonad config.

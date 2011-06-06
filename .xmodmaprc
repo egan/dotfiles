@@ -1,0 +1,5 @@
+! map caps lock to escape
+clear lock
+keycode 0x42 = Escape
+! map right meta to compose
+keycode 0x6C = Multi_key

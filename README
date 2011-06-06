@@ -1,0 +1,4 @@
+These files are almost identical to the ones I use on my Arch Linux installations.
+Some further editing may be required on systems whose configurations are drastically different therefrom.
+
+In the case of bashrc, my configration may be a little bit more spartan than the defaults on many distros, so merge features accordingly.

@@ -1,0 +1,13 @@
+set cpt=lSf
+set ds=g
+set go=bCcrs
+set hi=10
+set nextpattern=^>$,[Nn]ext,[Mm]ore,^(>>|»)$,^(>|»),(>|»)$
+set newtab=all
+set previouspattern=^<$,([Pp]rev|[Pp]revious),^(<<|«)$,^(<|«),(<|«)$
+set si=formdata,history,macros,sessions
+set suggestengines=
+
+map J gt
+map K gT
+map zt :js window.content.document.toggleImageSize();<CR>

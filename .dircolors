@@ -1,0 +1,190 @@
+TERM rxvt-unicode
+TERM rxvt-unicode-256color
+TERM xterm
+
+# Attribute codes:
+# 00=none 01=bold 04=underscore 05=blink 07=reverse 08=concealed
+# 
+# Text color codes:
+# 30=black 31=red 32=green 33=yellow 34=blue 35=magenta 36=cyan 37=white
+# 
+# Background color codes:
+# 40=black 41=red 42=green 43=yellow 44=blue 45=magenta 46=cyan 47=white
+
+NORMAL 00 			# global default, although everything should be something.
+FILE 00 			# normal file
+DIR 01;34 			# directory
+LINK 01;36 			# symbolic link
+FIFO 00;33 			# pipe
+SOCK 01;35 			# socket
+DOOR 01;35 			# door
+BLK 01;33;40			# block device driver
+CHR 01;33;40			# character device driver
+ORPHAN 01;30;41 		# symlink to nonexistent file, or non-stat'able file
+EXEC 01;32 			# executable
+SETUID 01;32			# setuid
+SETGID 01;32			# setgid
+STICKY 01;34			# sticky directory
+STICKY_OTHER_WRITABLE 01;34	# sticky o+w directory
+OTHER_WRITABLE 01;34		# o+w directory
+
+# archives
+.7z 00;31
+.ace 00;31
+.ar 00;31
+.arc 00;31
+.arj 00;31
+.bz 00;31
+.bz2 00;31
+.cab 00;31
+.cpio 00;31
+.deb 00;31
+.dz 00;31
+.gz 00;31
+.iso 00;31
+.jar 00;31
+.lbr 00;31
+.lz 00;31
+.lzh 00;31
+.lzma 00;31
+.lzop 00;31
+.rar 00;31
+.rpm 00;31
+.rz 00;31
+.shar 00;31
+.svgz 00;31
+.tar 00;31
+.taz 00;31
+.tbz2 00;31
+.tgz 00;31
+.tz 00;31
+.xz 00;31
+.z 00;31
+.Z 00;31
+.zip 00;31
+.zoo 00;31
+.zz 00;31
+
+# code
+.a 00;32
+.as 00;32
+.asm 00;32
+.awk 00;32
+.c 00;32
+.cpp 00;32
+.cxx 00;32
+.csh 00;32
+.diff 00;32
+.h 00;32
+.hpp 00;32
+.hxx 00;32
+.hs 00;32
+.js 00;32
+.ksh 00;32
+.ld 00;32
+.lsp 00;32
+.lua 00;32
+.o 00;32
+.p 00;32
+.patch 00;32
+.php 00;32
+.pl 00;32
+.py 00;32
+.pyc 00;32
+.rb 00;32
+.s 00;32
+.sed 00;32
+.sh 00;32
+.vim 00;32
+.zsh 00;32
+
+# document
+.abw 00;33
+.doc 00;33
+.docx 00;33
+.dvi 00;33
+.htm 00;33
+.html 00;33
+.log 00;33
+.log 00;33
+.odp 00;33
+.ods 00;33
+.odt 00;33
+.pdf 00;33
+.pps 00;33
+.ppt 00;33
+.pptx 00;33
+.ps 00;33
+.rtf 00;33
+.tex 00;33
+.txt 00;33
+.xml 00;33
+.xslt 00;33
+
+# image
+.ai 00;35
+.blend 00;35
+.bmp 00;35
+.dl 00;35
+.gif 00;35
+.jpeg 00;35
+.jpg 00;35
+.pbm 00;35
+.pcx 00;35
+.pgm 00;35
+.png 00;35
+.ppm 00;35
+.psd 00;35
+.svg 00;35
+.tga 00;35
+.tif 00;35
+.tiff 00;35
+.xbm 00;35
+.xcf 00;35
+.xpm 00;35
+.xwd 00;35
+.yuv 00;35
+
+# multimedia
+.aac 00;36
+.aif 00;36
+.aiff 00;36
+.ape 00;36
+.asf 00;36
+.avi 00;36
+.au 00;36
+.divx 00;36
+.flac 00;36
+.flc 00;36
+.fli 00;36
+.flv 00;36
+.gl 00;36
+.m2v 00;36
+.m4a 00;36
+.m4p 00;36
+.m4v 00;36
+.mid 00;36
+.midi 00;36
+.mka 00;36
+.mkv 00;36
+.mng 00;36
+.mov 00;36
+.mp3 00;36
+.mp4 00;36
+.mp4v 00;36
+.mpc 00;36
+.mpeg 00;36
+.mpg 00;36
+.nuv 00;36
+.ogg 00;36
+.ogm 00;36
+.ogv 00;36
+.qt 00;36
+.ra 00;36
+.ram 00;36
+.rm 00;36
+.rmvb 00;36
+.swf 00;36
+.vob 00;36
+.wav 00;36
+.wmv 00;36

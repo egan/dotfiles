@@ -1,3 +1,4 @@
+TERM linux
 TERM rxvt-unicode
 TERM rxvt-unicode-256color
 TERM xterm

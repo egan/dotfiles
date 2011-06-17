@@ -16,13 +16,12 @@ Plugin:			flashplugin-prerelease icedtea-web openjdk6
 Publishing:		aspell aspell-en aspell-es diction ghostscript texlive-lang texlive-most
 Server:			netcat openssh python-xynehttpserver quickserve
 Shell:			bash-completion tmux vifm
-Sound:			alsa-utils alsa-plugins
+Sound:			alsa-oss alsa-plugins alsa-utils
 Terminal:		dina-font montecarlo-font picky-font rxvt-unicode terminus-font xterm
 Utilities:		acpi cpio detox inotify-tools jshon lsof mlocate moreutils pv unrar unzip xclip xdotool zip
 Widget:			gtk-chtheme gtk-engine-murrine murrine-themes-collection
 Windowing:		xmobar xmonad xmonad-contrib
 
 ##
-Foreign:		localtunnel
-Temporary:		mercurial taglib
+Foreign:		keyboard-select localtunnel url-select
 cups: hp laserjet 1320 pcl 5

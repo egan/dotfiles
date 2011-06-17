@@ -8,6 +8,7 @@ set hls
 set is
 set ai
 set pt=<F2>
+set ru
 
 "" Resource Locations
 set dict=.vim/spell/words

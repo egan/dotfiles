@@ -41,6 +41,7 @@ Contains several specialized aliases for annoying to type, useful command lines.
 	-scrsave: Blanks the screen.
 	-sprunge: Uploads stdin to sprunge.us.
 	-sflush: Clears swap.
+	-usbmount: Mount an external drive with user write access.
 	-weather: Frontend to gweather, returning weather conditions.
 	-wotd: Returns the word of the day from dictionary.com.
 Contains a few function aliases as frontends to upstr.sh and downstr.sh that make filesystem naviagation easier.

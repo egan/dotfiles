@@ -81,9 +81,10 @@ main = do
 		, ("<XF86AudioPlay>",		mPlay "pause")
 		, ("<XF86AudioPrev>",		mPlay "seek -10")
 		, ("<XF86AudioNext>",		mPlay "seek 10")
-		, ("<XF86TouchpadToggle>",	spawn "$HOME/bin/touchpad.sh")
+		, ("<XF86TouchpadToggle>",	touch)
 		, ("<XF86MonBrightnessDown>",	spawn "sleep 1 && xset s activate")
 		]
 		`removeKeysP` [ "M-w", "M-S-w", "M-e", "M-S-e", "M-r", "M-S-r", "M-p", "M-S-p" ]
 		where
 			mPlay s = spawn $ "echo " ++ s ++ " > $HOME/.mplayer/pipe"
+			touch	= spawn $ "$(synclient -l | grep -q 'Off *= 0') && synclient TouchpadOff=1 || synclient TouchpadOff=0"

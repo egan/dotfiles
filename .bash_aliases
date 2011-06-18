@@ -31,11 +31,13 @@ alias llp='lp -o sides=two-sided-long-edge'
 alias pong='ping -c 4'
 alias tlp='lp -o page-bottom=36 -o page-left=36 -o page-right=36 -o page-top=36'
 alias mkdir='mkdir -p'
+alias usbmount='sudo mount -o rw,noauto,async,user,umask=1000'
 
 # Application aliases.
 alias apropos='pless apropos'
 alias aspell='aspell -c -x'
 alias dict='pless dict'
+alias exev='xev | grep -A2 --line-buffered "^KeyRelease" | sed -n "/keycode /s/^.*keycode \([0-9]*\).* (.*, \(.*\)).*$/\1 \2/p"'
 alias news='newsbeuter -q'
 
 # Specialized aliases.
@@ -53,7 +55,6 @@ alias ntpsync='sudo ntpdate 0.us.pool.ntp.org'
 alias scrsave='sleep 1 && xset s activate'
 alias sprunge='curl -sF "sprunge=<-" http://sprunge.us | tclip'
 alias sflush='sudo swapoff -a && sudo swapon -a'
-alias usbmount='sudo mount -o rw,noauto,async,user,umask=1000'
 alias weather='gweather -c'
 alias wotd='curl -s http://feeds.reference.com/DictionarycomWordOfTheDay | sed "/description.*:.*</!d; s/.*>\(.*\)<.*/\1/"'
 

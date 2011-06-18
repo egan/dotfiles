@@ -25,6 +25,7 @@ Contains a variety of aliases to make the command line more user friendly.
 Contains a few aliases to make applications behave better.
 	-The commands apropos and dict are made to pipe to less. Requires pless.
 	-The command aspell is made to be quicker to use and backup-free.
+	-The command exev is added to make obtaining scancode easier.
 	-The command newsbeuter is made quicker to type and silent as news.
 Contains several specialized aliases for annoying to type, useful command lines.
 	-cclean: Removes plugin related crap from the home directory.

@@ -75,6 +75,7 @@ main = do
 		, ("M-S-<D>",			withFocused (keysResizeWindow (0,20)(0,0)))
 		, ("M-S-<L>",			withFocused (keysResizeWindow (-20,0)(0,0)))
 		, ("M-S-<R>",			withFocused (keysResizeWindow (20,0)(0,0)))
+		, ("M-<F1>",			spawn "xclip -o | $HOME/bin/turl &> /dev/null")
 		, ("<XF86AudioMute>",		spawn "amixer -q set Master toggle")
 		, ("<XF86AudioLowerVolume>",	spawn "amixer -q set Master 3%-")
 		, ("<XF86AudioRaiseVolume>",	spawn "amixer -q set Master 3%+")

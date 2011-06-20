@@ -21,12 +21,13 @@ import qualified XMonad.StackSet as W
 myTerminal = "urxvtc"
 
 myManageHook = composeAll
-		[ className			=? "Gimp"	--> doFloat
-		, className			=? "MPlayer"	--> doFloat
-		, className			=? "sxiv"	--> doFloat
-		, className			=? "Xmessage"	--> doCenterFloat
-		, className			=? "Zathura"	--> viewShift "8"
-		, (isFullscreen					--> doFullFloat)
+		[ className			=? "Animate"			--> doCenterFloat
+		, className			=? "Gimp"			--> doFloat
+		, className			=? "MPlayer"			--> doFloat
+		, className			=? "Xmessage"			--> doCenterFloat
+		, title				=? "Firefox Preferences"	--> doFloat
+		, className			=? "Zathura"			--> viewShift "8"
+		, (isFullscreen							--> doFullFloat)
 		]
 		where viewShift = doF . liftM2 (.) W.greedyView W.shift
 

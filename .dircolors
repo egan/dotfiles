@@ -131,6 +131,7 @@ OTHER_WRITABLE 01;34		# o+w directory
 .gif 00;35
 .jpeg 00;35
 .jpg 00;35
+.mng 00;35
 .pbm 00;35
 .pcx 00;35
 .pgm 00;35
@@ -169,7 +170,6 @@ OTHER_WRITABLE 01;34		# o+w directory
 .midi 00;36
 .mka 00;36
 .mkv 00;36
-.mng 00;36
 .mov 00;36
 .mp3 00;36
 .mp4 00;36

@@ -1,9 +1,9 @@
-Administration:		at abs htop iftop iotop procinfo-ng rsync sdparm sudo
-Dependencies:		fftw gnupg gpgme mime-types slang
+Administration:		at abs htop iftop iotop powertop procinfo-ng rsync sdparm sudo
+Dependencies:		fftw fftw2 gnupg gpgme mime-types slang
 Development:		bochs ctags diffstat git nasm scons strace subversion yasm
 Display:		xorg-server xorg-xinit xorg-utils xorg-server-utils
 Document:		antiword catdvi hd2u odt2txt unrtf zathura
-Editor:			ed gvim
+Editor:			ed gvim hexedit
 Games:			espeak myman tint-tetris xmahjongg
 Graphics:		blender fswebcam gimp imagemagick mypaint qiv recordmydesktop scrot tiv
 Hardware:		cdrkit libdvdread libdvdcss libdvdnav ntfs-3g rfkill xf86-input-evdev xf86-input-synaptics xf86-video-intel
@@ -24,4 +24,4 @@ Windowing:		xmobar xmonad xmonad-contrib
 
 ##
 Foreign:		keyboard-select localtunnel url-select
-cups: hp laserjet 1320 pcl 5
+cups:			hp laserjet 1320 pcl 5

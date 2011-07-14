@@ -76,7 +76,9 @@ main = do
 		, ("M-S-<D>",			withFocused (keysResizeWindow (0,20)(0,0)))
 		, ("M-S-<L>",			withFocused (keysResizeWindow (-20,0)(0,0)))
 		, ("M-S-<R>",			withFocused (keysResizeWindow (20,0)(0,0)))
-		, ("M-<F1>",			spawn "xclip -o | $HOME/bin/turl &> /dev/null")
+		, ("M-<F1>",			spawn "sleep 1 && xset s activate")
+		, ("M-S-<F1>",			spawn "$HOME/bin/dpmstoggle.sh")
+		, ("M-<F2>",			spawn "xclip -o | $HOME/bin/turl &> /dev/null")
 		, ("<XF86AudioMute>",		spawn "amixer -q set Master toggle")
 		, ("<XF86AudioLowerVolume>",	spawn "amixer -q set Master 3%-")
 		, ("<XF86AudioRaiseVolume>",	spawn "amixer -q set Master 3%+")
@@ -84,7 +86,6 @@ main = do
 		, ("<XF86AudioPrev>",		mPlay "seek -10")
 		, ("<XF86AudioNext>",		mPlay "seek 10")
 		, ("<XF86TouchpadToggle>",	touch)
-		, ("<XF86MonBrightnessDown>",	spawn "sleep 1 && xset s activate")
 		]
 		`removeKeysP` [ "M-w", "M-S-w", "M-e", "M-S-e", "M-r", "M-S-r", "M-p", "M-S-p" ]
 		where

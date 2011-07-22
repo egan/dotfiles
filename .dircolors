@@ -93,6 +93,7 @@ OTHER_WRITABLE 01;34		# o+w directory
 .pl 00;32
 .py 00;32
 .pyc 00;32
+.R 00;32
 .rb 00;32
 .s 00;32
 .sed 00;32

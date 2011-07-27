@@ -8,7 +8,7 @@ Games:			espeak myman tint-tetris xmahjongg
 Graphics:		blender fswebcam gimp imagemagick mypaint qiv recordmydesktop scrot tiv
 Hardware:		cdrkit libdvdread libdvdcss libdvdnav ntfs-3g rfkill xf86-input-evdev xf86-input-synaptics xf86-video-intel
 Installation:		base base-devel wireless_tools
-Internet:		clive curl dictd elinks firefox mktorrent uber-mutt newsbeuter pkgstats rtorrent weechat
+Internet:		clive curl dictd elinks firefox inetutils mktorrent uber-mutt newsbeuter pkgstats rtorrent weechat
 Mathematics:		bc calc gnuplot maxima r units
 Media:			audacity ffmpeg mediainfo mplayer timidity-freepats timidity++ vkeybd vorbis-tools waon
 Network:		dnsutils ettercap hping iptraf-ng netcfg net-tools ntp nmap tcpdump whois wput

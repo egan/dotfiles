@@ -11,7 +11,7 @@ Installation:		base base-devel wireless_tools
 Internet:		clive curl dictd elinks firefox inetutils mktorrent uber-mutt newsbeuter pkgstats rtorrent weechat
 Mathematics:		bc calc gnuplot maxima r units
 Media:			audacity ffmpeg mediainfo mplayer timidity-freepats timidity++ vkeybd vorbis-tools waon
-Network:		dnsutils ettercap hping iptraf-ng netcfg net-tools ntp nmap tcpdump whois wput
+Network:		dnsutils ettercap hping iptraf-ng netcfg net-tools ntp nmap tcpdump tightvnc whois wput
 Plugin:			flashplugin-prerelease icedtea-web openjdk6
 Publishing:		aspell aspell-en aspell-es diction ghostscript texlive-lang texlive-most
 Server:			netcat openssh python-xynehttpserver quickserve

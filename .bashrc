@@ -32,6 +32,9 @@ shopt -s checkwinsize
 # Command prompts.
 PS1='\u@\h:\w\$ '
 
+# Check for clobber.
+set -o noclobber
+
 # Includes.
 [ -f $HOME/.bash_aliases ] && . $HOME/.bash_aliases
 [ -f $HOME/.dircolors ] && eval $(/bin/dircolors -b $HOME/.dircolors)

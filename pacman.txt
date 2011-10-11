@@ -4,6 +4,7 @@ Development:		bochs ctags diffstat git nasm scons strace subversion yasm
 Display:		xorg-server xorg-xinit xorg-utils xorg-server-utils
 Document:		antiword catdvi hd2u odt2txt unrtf zathura
 Editor:			ed gvim hexedit
+Font:			ttf-freebanglafont ttf-indic-otf ttf-khmer ttf-lklug ttf-mph-2b-damase ttf-tibetan-machine
 Games:			espeak myman tint-tetris xmahjongg
 Graphics:		blender fswebcam gimp imagemagick mypaint qiv recordmydesktop scrot tiv
 Hardware:		cdrkit libdvdread libdvdcss libdvdnav ntfs-3g rfkill xf86-input-evdev xf86-input-synaptics xf86-video-intel
@@ -11,13 +12,13 @@ Installation:		base base-devel wireless_tools
 Internet:		clive curl dictd elinks firefox inetutils mktorrent uber-mutt newsbeuter pkgstats rtorrent weechat
 Mathematics:		bc calc gnuplot maxima r units
 Media:			audacity ffmpeg mediainfo mplayer timidity-freepats timidity++ vkeybd vorbis-tools waon
-Network:		dnsutils ettercap hping iptraf-ng netcfg net-tools ntp nmap tcpdump tightvnc whois wput
+Network:		dnsutils ettercap hping iptraf-ng netcfg ntp nmap tcpdump tightvnc whois wput
 Plugin:			flashplugin-prerelease icedtea-web openjdk6
 Publishing:		aspell aspell-en aspell-es diction ghostscript texlive-lang texlive-most
 Server:			netcat openssh python-xynehttpserver quickserve
 Shell:			bash-completion tmux vifm
 Sound:			alsa-oss alsa-plugins alsa-utils
-Terminal:		dina-font montecarlo-font picky-font rxvt-unicode terminus-font xterm
+Terminal:		dina-font montecarlo-font rxvt-unicode terminus-font xterm
 Utilities:		acpi cpio detox inotify-tools jshon lsof mlocate moreutils pv unrar unzip xclip xdotool zip
 Widget:			gtk-chtheme gtk-engine-murrine murrine-themes-collection
 Windowing:		xmobar xmonad xmonad-contrib

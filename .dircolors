@@ -103,6 +103,7 @@ OTHER_WRITABLE 01;34		# o+w directory
 
 # document
 .abw 00;33
+.djvu 00;33
 .doc 00;33
 .docx 00;33
 .dvi 00;33
@@ -190,4 +191,5 @@ OTHER_WRITABLE 01;34		# o+w directory
 .swf 00;36
 .vob 00;36
 .wav 00;36
+.webm 00;36
 .wmv 00;36

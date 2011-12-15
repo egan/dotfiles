@@ -30,6 +30,8 @@ set foldmethod=marker
 set foldmarker={{{,}}}
 
 "" Mappings
+nmap <F9> :SCCompile<CR>
+nmap <F10> :SCCompileRun<CR>
 map <CR> o<Esc>
 nnoremap <silent><Leader>/ :noh<CR>
 nnoremap <Tab> %

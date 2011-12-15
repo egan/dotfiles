@@ -33,7 +33,7 @@ shopt -s checkwinsize
 PS1='\u@\h:\w\$ '
 
 # Check for clobber.
-set -o noclobber
+#set -o noclobber
 
 # Includes.
 [ -f $HOME/.bash_aliases ] && . $HOME/.bash_aliases

@@ -10,7 +10,7 @@ Graphics:		blender fswebcam gimp imagemagick mypaint qiv recordmydesktop scrot t
 Hardware:		cdrkit libdvdread libdvdcss libdvdnav ntfs-3g rfkill xf86-input-evdev xf86-input-synaptics xf86-video-intel
 Installation:		base base-devel wireless_tools
 Internet:		clive curl dictd elinks firefox inetutils mktorrent uber-mutt newsbeuter pkgstats rtorrent weechat
-Mathematics:		bc calc gnuplot maxima r units
+Mathematics:		bc calc gnuplot maxima octave r units
 Media:			audacity ffmpeg mediainfo mplayer timidity-freepats timidity++ vkeybd vorbis-tools waon
 Network:		dnsutils ettercap hping iptraf-ng netcfg ntp nmap tcpdump tightvnc whois wput
 Plugin:			flashplugin-prerelease icedtea-web openjdk6
@@ -25,4 +25,4 @@ Windowing:		xmobar xmonad xmonad-contrib
 
 ##
 Foreign:		keyboard-select localtunnel url-select
-cups:			hp laserjet 1320 pcl 5
+CUPS:			hp laserjet 1320 pcl 5

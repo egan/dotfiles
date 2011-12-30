@@ -5,7 +5,7 @@ set hi=10
 set nextpattern=^>$,[Nn]ext,[Mm]ore,^(>>|»)$,^(>|»),(>|»)$
 set newtab=all
 set previouspattern=^<$,([Pp]rev|[Pp]revious),^(<<|«)$,^(<|«),(<|«)$
-set si=formdata,history,macros,sessions
+set si=formdata,history,downloads
 set suggestengines=
 
 map J gt

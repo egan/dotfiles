@@ -7,6 +7,7 @@
 import XMonad
 
 import XMonad.Actions.FloatKeys
+import XMonad.Actions.UpdateFocus
 import XMonad.Actions.UpdatePointer
 import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.ManageHelpers
@@ -51,7 +52,9 @@ myXPConfig = defaultXPConfig
 
 main = do
 	xmonad $ defaultConfig
-		{ manageHook			= manageDocks <+> myManageHook
+		{ startupHook			= adjustEventInput
+		, handleEventHook		= focusOnMouseMove
+		, manageHook			= manageDocks <+> myManageHook
 		, layoutHook			= avoidStruts $ smartBorders $ myLayoutHook
 		, logHook			= updatePointer Nearest
 		, borderWidth			= 1

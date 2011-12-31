@@ -40,7 +40,7 @@ alias cdparanoia='cdparanoia -d /dev/sr0'
 alias dict='pless dict'
 alias exev='xev | grep -A2 --line-buffered "^KeyRelease" | sed -n "/keycode /s/^.*keycode \([0-9]*\).* (.*, \(.*\)).*$/\1 \2/p"'
 alias fswebcam='fswebcam --no-banner -r 640x480'
-alias mutt='tmux -f $HOME/.mutt/tmux.conf attach'
+alias mutt='exec tmux -f $HOME/.mutt/tmux.conf attach'
 alias news='newsbeuter -q'
 alias weechat='exec weechat-curses'
 

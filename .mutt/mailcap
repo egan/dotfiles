@@ -1,0 +1,6 @@
+text/html; elinks -dump -dump-charset iso-8859-15 -default-mime-type text/html '%s'; needsterminal; copiousoutput;
+image/*; qiv '%s'; test=test -n "$DISPLAY"
+application/pdf; zathura '%s'; test=test -n "$DISPLAY"
+application/msword; antiword '%s'; needsterminal; copiousoutput;
+application/rtf; antiword '%s'; needsterminal; copiousoutput;
+application/application/vnd.oasis.opendocument.text; odt2txt '%s'; needsterminal; copiousoutput;

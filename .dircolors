@@ -86,6 +86,7 @@ OTHER_WRITABLE 01;34		# o+w directory
 .ld 00;32
 .lsp 00;32
 .lua 00;32
+.m 00;32
 .o 00;32
 .p 00;32
 .patch 00;32

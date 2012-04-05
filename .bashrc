@@ -37,4 +37,4 @@ PS1='\u@\h:\w\$ '
 
 # Includes.
 [ -f $HOME/.bash_aliases ] && . $HOME/.bash_aliases
-[ -f $HOME/.dircolors ] && eval $(/bin/dircolors -b $HOME/.dircolors)
+[ -f $HOME/.dircolors ] && eval $(dircolors -b $HOME/.dircolors)

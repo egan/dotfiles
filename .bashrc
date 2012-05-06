@@ -30,7 +30,7 @@ shopt -s extglob globstar
 shopt -s checkwinsize
 
 # Command prompts.
-PS1='\u@\h:\w\$ '
+PS1='\[\033[G\]\u@\h:\w\$ '
 
 # Check for clobber.
 #set -o noclobber

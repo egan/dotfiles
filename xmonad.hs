@@ -22,7 +22,6 @@ myTerminal = "urxvtc"
 
 myManageHook = composeAll
 		[ className			=? "Animate"			--> doCenterFloat
-		, className			=? "Gimp"			--> doFloat
 		, className			=? "MPlayer"			--> doFloat
 		, className			=? "Xmessage"			--> doCenterFloat
 		, title				=? "Firefox Preferences"	--> doFloat

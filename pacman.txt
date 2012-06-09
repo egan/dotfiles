@@ -1,27 +1,27 @@
-Administration:		at abs htop iftop iotop powertop procinfo-ng rsync sdparm sudo
-Dependencies:		fftw fftw2 gnupg gpgme linux-headers mime-types slang
-Development:		bochs ctags diffstat git nasm scons strace subversion yasm
-Display:		xorg-server xorg-xinit xorg-utils xorg-server-utils
-Document:		antiword catdvi hd2u odt2txt unrtf zathura
-Editor:			ed gvim hexedit
-Font:			ttf-freebanglafont ttf-indic-otf ttf-khmer ttf-lklug ttf-mph-2b-damase ttf-tibetan-machine
-Games:			espeak myman tint-tetris xmahjongg
-Graphics:		blender fswebcam gimp imagemagick mypaint qiv recordmydesktop scrot tiv
-Hardware:		cdrkit libdvdread libdvdcss libdvdnav ntfs-3g rfkill xf86-input-evdev xf86-input-synaptics xf86-video-intel
-Installation:		base base-devel wireless_tools
-Internet:		clive curl dictd elinks firefox inetutils mktorrent uber-mutt newsbeuter pkgstats rtorrent weechat wget
-Mathematics:		bc calc gnuplot maxima octave r units
-Media:			audacity cuetools ffmpeg mediainfo mac mplayer shntool timidity-freepats timidity++ vkeybd vorbis-tools waon
-Network:		dnsutils ettercap hping iptraf-ng netcfg ntp nmap tcpdump tightvnc whois wput
-Plugin:			flashplugin-prerelease icedtea-web openjdk6
-Publishing:		aspell aspell-en aspell-es diction ghostscript texlive-lang texlive-most
-Server:			netcat openssh python-xynehttpserver quickserve
-Shell:			bash-completion tmux vifm
-Sound:			alsa-oss alsa-plugins alsa-utils
-Terminal:		dina-font montecarlo-font profont rxvt-unicode terminus-font xterm
-Utilities:		acpi cpio detox inotify-tools jshon kexec-tools lsof mlocate moreutils pv unrar unzip xclip xdotool zip
-Widget:			gtk-chtheme gtk-engine-murrine murrine-themes-collection
-Windowing:		xmobar xmonad xmonad-contrib
+Administration:	at abs htop iftop iotop powertop procinfo-ng rsync sdparm sudo
+Dependencies:	fftw fftw2 gnupg gpgme linux-headers mime-types slang
+Development:	bochs ctags diffstat git nasm scons strace subversion yasm
+Display:	xorg-server xorg-xinit xorg-utils xorg-server-utils
+Document:	antiword catdvi hd2u odt2txt unrtf zathura, zathura-plugins-djvu, zathura-plugins-pdf-poppler, zathura-plugins-ps
+Editor:		ed gvim hexedit
+Font:		ttf-freebanglafont ttf-indic-otf ttf-khmer ttf-lklug ttf-mph-2b-damase ttf-tibetan-machine
+Games:		espeak myman tint-tetris xmahjongg
+Graphics:	blender fswebcam gimp imagemagick mypaint qiv recordmydesktop scrot tiv
+Hardware:	cdrkit libdvdread libdvdcss libdvdnav ntfs-3g rfkill xf86-input-evdev xf86-input-synaptics xf86-video-intel
+Installation:	base base-devel wireless_tools
+Internet:	clive curl dictd elinks firefox inetutils mktorrent uber-mutt newsbeuter pkgstats rtorrent weechat wget
+Mathematics:	bc calc gnuplot maxima octave r units
+Media:		audacity cuetools ffmpeg mediainfo mac mplayer shntool timidity-freepats timidity++ vkeybd vorbis-tools waon
+Network:	dnsutils ettercap hping iptraf-ng netcfg ntp nmap tcpdump tightvnc whois wput
+Plugin:		flashplugin-prerelease icedtea-web openjdk6
+Publishing:	aspell aspell-en aspell-es diction ghostscript texlive-lang texlive-most
+Server:		netcat openssh python-xynehttpserver quickserve
+Shell:		bash-completion tmux vifm
+Sound:		alsa-oss alsa-plugins alsa-utils
+Terminal:	dina-font montecarlo-font profont rxvt-unicode terminus-font xterm
+Utilities:	acpi cpio detox inotify-tools jshon kexec-tools lsof mlocate moreutils pv unrar unzip xclip xdotool zip
+Widget:		gtk-chtheme gtk-engine-murrine murrine-themes-collection
+Windowing:	xmobar xmonad xmonad-contrib
 
 ##
 Foreign:		keyboard-select localtunnel url-select

@@ -23,16 +23,16 @@ Config	{ font		= "-*-profont-*-*-*-*-10-*-*-*-*-*-iso8859-*"
 			, Run Memory
 			["-t","Mem: <used>MB,<usedratio>% <fc=#ff0000>|</fc> Cache: <cache>MB <fc=#ff0000>|</fc> Buffer: <buffer>MB","-p","3","-m","3","-c"," "] 10
 			, Run Swap ["-t","Swap: <used>MB, <usedratio>%","-p","2","-c"," "] 10
-			, Run Network "wlan0"
+			, Run Network "eth0"
 			["-t","Dn: <rx>kb/s <fc=#ff0000>|</fc> Up: <tx>kb/s","-L","0","-H","1000","-n","#00ff00","-h","#ff0000","-m","6","-c"," "] 10
 			, Run CommandReader "/home/egan/bin/volumed.sh" "volume"
-			, Run BatteryP ["BAT0"] ["-t","Batt: <left>%","-m","3","--","-c","energy_full"] 10
-			, Run Weather "KNUQ"
-			["-t","Moffett Field: <tempC>°C - <rh>%","-L","15","-H","25","-n","#00ff00","-h","#ff0000","-l","#729fcf"] 9000
+			, Run BatteryP ["BAT0"] ["-t","Batt: <left>%","-m","3"] 10
+			, Run Weather "KSMF"
+			["-t","Sacramento: <tempC>°C - <rh>%","-L","15","-H","25","-n","#00ff00","-h","#ff0000","-l","#729fcf"] 9000
 			, Run Date "%a, %D %T" "date" 10
 			]
 	, sepChar	= "%"
 	, alignSep	= "}{"
-	, template	= "%multicpu% <fc=#ff0000>|</fc> %thermal0% <fc=#ff0000>|</fc> %memory% <fc=#ff0000>|</fc> %swap% <fc=#ff0000>|</fc> %wlan0% <fc=#ff0000>|</fc> }{ <fc=#ff0000>|</fc> %volume% <fc=#ff0000>|</fc> %battery% <fc=#ff0000>|</fc> %KNUQ% <fc=#ff0000>|</fc> <fc=#ffcd00>%date%</fc>"
+	, template	= "%multicpu% <fc=#ff0000>|</fc> %thermal0% <fc=#ff0000>|</fc> %memory% <fc=#ff0000>|</fc> %swap% <fc=#ff0000>|</fc> %eth0% <fc=#ff0000>|</fc> }{ <fc=#ff0000>|</fc> %volume% <fc=#ff0000>|</fc> %battery% <fc=#ff0000>|</fc> %KSMF% <fc=#ff0000>|</fc> <fc=#ffcd00>%date%</fc>"
 	}
 

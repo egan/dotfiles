@@ -10,7 +10,7 @@ My mutt configuration for Gmail via IMAPS and SMTP .
 .bash_aliases
 ------------------
 Contains a variety of aliases to make the command line more user friendly.
-A few require scripts from my Scripts repository.
+A few require scripts from my scripts repository.
 Many are idiosyncratic and won't be much use to others.
 
 .bash_profile
@@ -39,11 +39,14 @@ Basic pentadactyl configuration, as well as some useful mappings.
 
 .vimrc
 ------------------
-Fully featured vim configuration enabling all the useful features.
+Fully featured vim configuration enabling all the useful features, with minimal
+mappings added.
 
 .xmobarrc
 ------------------
 Basic xmobar configuration to act as a status bar.
+Includes CPU use, CPU temperature, memory use, network use, speaker volume,
+battery percentage, current weather, and the time.
 
 .xmodmaprc
 ------------------
@@ -59,7 +62,7 @@ Uses urxvtc as terminal emulator, profont for text display.
 Floats Animate, Gimp, Mplayer, XMessage, and Firefox Preferences.
 Sends PDF reader Zathura to desktop 8.
 
-Requires dpmstoggle.sh, turl, and xmobar-nettoggle.sh, available in Scripts repository.
+Requires dpmstoggle.sh, turl, and xmobar-nettoggle.sh, available in scripts repository.
 
 Mappings:
 M-z		Run command.
@@ -75,6 +78,6 @@ M-S-<U,D,L,R>	Resize floating window up, down, left, right.
 M-<F1>		Blank screen.
 M-S-<F1>	Disable screen blanking.
 M-<F2>		Toggle active network interface in xmobar {eth0,wlan0}.
-M-<Insert>	Shorten URL in clipboard with tinyurl.
+M-<Insert>	Shorten URL in clipboard with tinyurl. Requires turl from scripts.
 
 Media keys work via amixer and mplayer.

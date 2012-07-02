@@ -3,9 +3,18 @@ Dotfiles
 These configuration files are used on all my Arch Linux installations.
 Some further editing may be required on foreign systems.
 
+.config
+------------------
+Configuration for graphical programs. For now it contains only a zathura
+configuration file to map <F1> and <F2> to one- and two-page modes, resp.
+
 .mutt/
 ------------------
 My mutt configuration for Gmail via IMAPS and SMTP .
+
+.urxvt/
+------------------
+URxvt plugins (keyboard-select and url-select) for convenience.
 
 .bash_aliases
 ------------------
@@ -25,11 +34,6 @@ Spartan bash configuration, enabling some extended features and disabling histor
 May require slightly different paths to work on other operating systems.
 Merging this file with your local copy deliberately would be best.
 
-.config
-------------------
-Configuration for graphical programs. For now it contains only a zathura
-configuration file to map <F1> and <F2> to one- and two-page modes, resp.
-
 .dircolors
 ------------------
 Color definitions for ls. May require your $TERM to be added to header.
@@ -46,6 +50,11 @@ Basic pentadactyl configuration, as well as some useful mappings.
 ------------------
 Fully featured vim configuration enabling all the useful features, with minimal
 mappings added.
+
+.Xdefaults
+-----------------
+Enables URxvt plugins and specifies profont size 10. Uses firefox as web browser.
+NOTE: Change "USER" to reflect you, or the plugins will not work.
 
 .xmobarrc
 ------------------

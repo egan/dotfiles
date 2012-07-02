@@ -1,0 +1,17 @@
+!URxvt.font:				-*-fixed-medium-r-*-*-11-*-*-*-*-*-iso8859-*
+!URxvt.boldFont:			-*-fixed-medium-r-*-*-11-*-*-*-*-*-iso8859-*
+URxvt.font:				-*-profont-*-*-*-*-10-*-*-*-*-*-iso8859-*
+URxvt.boldFont:				-*-profont-*-*-*-*-10-*-*-*-*-*-iso8859-*
+URxvt.background:			#000000
+URxvt.foreground:			#ffffff
+URxvt.scrollstyle:			xterm
+URxvt.scrollBar_right:			true
+URxvt.scrollBar:			false
+URxvt.urlLauncher:			firefox
+!URxvt.underlineURLs:			true
+URxvt.perl-lib:				/home/USER/.urxvt/
+
+URxvt.perl-ext-common:			keyboard-select,url-select
+URxvt.keysym.M-y:			perl:keyboard-select:activate
+URxvt.keysym.M-s:			perl:keyboard-select:search
+URxvt.keysym.M-u:			perl:url-select:select_next

@@ -25,6 +25,11 @@ Spartan bash configuration, enabling some extended features and disabling histor
 May require slightly different paths to work on other operating systems.
 Merging this file with your local copy deliberately would be best.
 
+.config
+------------------
+Configuration for graphical programs. For now it contains only a zathura
+configuration file to map <F1> and <F2> to one- and two-page modes, resp.
+
 .dircolors
 ------------------
 Color definitions for ls. May require your $TERM to be added to header.

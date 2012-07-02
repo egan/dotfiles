@@ -65,7 +65,7 @@ alias scrsave='sleep 1 && xset s activate'
 alias sprunge='curl -sF "sprunge=<-" http://sprunge.us | tclip'
 alias sflush='sudo swapoff -a && sudo swapon -a'
 alias weather='gweather -c'
-alias wotd='curl -s http://feeds.reference.com/DictionarycomWordOfTheDay | sed "/description.*:.*</!d; s/.*>\(.*\)<.*/\1/"'
+alias wotd='curl -s http://feeds.reference.com/DictionarycomWordOfTheDay | sed "/description.*:.*</!d; s/.*>\(.*\)<.*/\1/" | recode html..utf-8 | recode html..utf-8'
 
 # Function aliases.
 function up() { d=$(upstr.sh $1) && cd $d; }

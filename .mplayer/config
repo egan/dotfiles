@@ -1,0 +1,7 @@
+input=file=/home/USER/.mplayer/pipe
+msglevel=all=0:cplayer=5:statusline=5
+nolirc=yes
+ao=alsa
+vo=xv
+dvd-device=/dev/sr0
+cdrom-device=/dev/sr0

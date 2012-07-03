@@ -12,6 +12,7 @@ export EDITOR="vim"
 export ERR_NARGS=3
 export ERR_VARGS=5
 export GREP_COLOR="1;31"
+export GTK_IM_MODULE="xim"
 export PAGER="less"
 export PATH=$HOME/bin:$HOME/bin/.launch:$PATH
 export VISUAL=$EDITOR

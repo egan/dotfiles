@@ -78,7 +78,7 @@ main = do
 		, ("M-S-<R>",			withFocused (keysResizeWindow (20,0)(0,0)))
 		, ("M-<F1>",			spawn "sleep 1 && xset s activate")
 		, ("M-S-<F1>",			spawn "$HOME/bin/dpmstoggle.sh")
-		, ("M-<F2>",			spawn "$HOME/bin/xmobar-nettoggle.sh")
+		, ("M-<F2>",			spawn "$HOME/bin/xmotoggle.sh")
 		, ("M-<Insert>",		spawn "xclip -o | $HOME/bin/turl &> /dev/null")
 		, ("<XF86AudioMute>",		spawn "amixer -q set Master toggle")
 		, ("<XF86AudioLowerVolume>",	spawn "amixer -q set Master 3%-")

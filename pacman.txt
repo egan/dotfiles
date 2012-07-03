@@ -24,7 +24,7 @@ Widget:		gtk-chtheme gtk-engine-murrine murrine-themes-collection
 Windowing:	xmobar xmonad xmonad-contrib
 
 ##
-Foreign:		keyboard-select localtunnel url-select
+Foreign:		localtunnel
 CUPS:			hp laserjet 1320 pcl 5
 
 ##

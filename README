@@ -6,11 +6,12 @@ Some further editing may be required on foreign systems.
 .config
 ------------------
 Configuration for graphical programs. For now it contains only a zathura
-configuration file to map <F1> and <F2> to one- and two-page modes, resp.
+configuration file to map <F1> and <F2> to one- and two-page modes,
+resp.
 
 .mutt/
 ------------------
-My mutt configuration for Gmail via IMAPS and SMTP .
+My mutt configuration for Gmail via IMAPS and SMTP.
 
 .urxvt/
 ------------------
@@ -18,21 +19,22 @@ URxvt plugins (keyboard-select and url-select) for convenience.
 
 .bash_aliases
 ------------------
-Contains a variety of aliases to make the command line more user friendly.
-A few require scripts from my scripts repository.
-Many are idiosyncratic and won't be much use to others.
+Contains a variety of aliases to make the command line more user
+friendly. A few require scripts from my scripts repository. Many are
+idiosyncratic and won't be much use to others.
 
 .bash_profile
 ------------------
-Sets some useful environment variables and loads ~/.bashrc.
-It might not be warranted to replace your local copy herewith.
-However, my other files assume this file is in use.
+Sets some useful environment variables and loads ~/.bashrc. It might not
+be warranted to replace your local copy herewith. However, my other
+files assume this file is in use.
 
 .bashrc
 ------------------
-Spartan bash configuration, enabling some extended features and disabling history.
-May require slightly different paths to work on other operating systems.
-Merging this file with your local copy deliberately would be best.
+Spartan bash configuration, enabling some extended features and
+disabling history. May require slightly different paths to work on other
+operating systems. Merging this file with your local copy deliberately
+would be best.
 
 .dircolors
 ------------------
@@ -53,14 +55,15 @@ mappings added.
 
 .Xdefaults
 -----------------
-Enables URxvt plugins and specifies profont size 10. Uses firefox as web browser.
-NOTE: Change "USER" to reflect you, or the plugins will not work.
+Enables URxvt plugins and specifies profont size 10. Uses firefox as web
+browser. NOTE: Change "USER" to reflect you, or the plugins will not
+work.
 
 .xmobarrc
 ------------------
-Basic xmobar configuration to act as a status bar.
-Includes CPU use, CPU temperature, memory use, network use, speaker volume,
-battery percentage, current weather, and the time.
+Basic xmobar configuration to act as a status bar. Includes CPU use, CPU
+temperature, memory use, network use, speaker volume, battery
+percentage, current weather, and the time.
 
 .xmodmaprc
 ------------------
@@ -68,15 +71,17 @@ Maps Caps Lock to Escape, and enables Compose on Right Alt.
 
 xmonad.hs
 ------------------
-Fully functional xmonad configuration with focus-follows-mouse and mouse-follows-focus.
-Includes status bar (xmobar), run dialog, and workspace working directories.
-Also includes control for mplayer via named pipe.
+Fully functional xmonad configuration with focus-follows-mouse and
+mouse-follows-focus. Includes status bar (xmobar), run dialog, and
+workspace working directories. Also includes control for mplayer via
+named pipe.
 
-Uses urxvtc as terminal emulator, profont for text display.
-Floats Animate, Gimp, Mplayer, XMessage, and Firefox Preferences.
+Uses urxvtc as terminal emulator, profont for text display. Floats
+Animate, Gimp, Mplayer, XMessage, and Firefox Preferences.
 Sends PDF reader Zathura to desktop 8.
 
-Requires dpmstoggle.sh, turl, and xmobar-nettoggle.sh, available in scripts repository.
+Requires dpmstoggle.sh, turl, and xmobar-nettoggle.sh, available in
+scripts repository.
 
 Mappings:
 M-z		Run command.

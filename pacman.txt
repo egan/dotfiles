@@ -1,13 +1,14 @@
 Administration:	at abs htop iftop iotop powertop procinfo-ng rsync sdparm sudo
 Dependencies:	fftw fftw2 gnupg gpgme linux-headers mime-types slang
 Development:	bochs ctags diffstat git nasm scons strace subversion yasm
-Display:	xorg-server xorg-xinit xorg-utils xorg-server-utils, xorg-xfontsel
-Document:	antiword catdvi hd2u odt2txt, unrtf, zathura, zathura-djvu, zathura-pdf-poppler, zathura-ps
+Drivers:	xf86-video-input-evdev xf86-input-synaptics xf86-video-intel-sna
+Display:	xorg-server xorg-xinit xorg-utils xorg-server-utils xorg-xfontsel
+Document:	antiword catdvi hd2u odt2txt unrtf zathura zathura-djvu zathura-pdf-poppler zathura-ps
 Editor:		ed gvim hexedit
 Font:		ttf-freebanglafont ttf-indic-otf ttf-khmer ttf-lklug ttf-mph-2b-damase ttf-tibetan-machine
 Games:		espeak myman tint-tetris xmahjongg
 Graphics:	blender fswebcam gimp imagemagick mypaint qiv recordmydesktop scrot tiv
-Hardware:	cdrkit libdvdread libdvdcss libdvdnav ntfs-3g rfkill xf86-input-evdev xf86-input-synaptics xf86-video-intel
+Hardware:	dosfstools cdrkit libdvdread libdvdcss libdvdnav ntfs-3g ntfs-progs rfkill
 Installation:	base base-devel wireless_tools
 Internet:	clive curl dictd elinks firefox inetutils mktorrent uber-mutt newsbeuter pkgstats rtorrent weechat
 Mathematics:	bc calc gnuplot maxima octave r units

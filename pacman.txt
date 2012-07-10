@@ -29,4 +29,4 @@ Foreign:		localtunnel
 CUPS:			hp laserjet 1320 pcl 5
 
 ##
-Temp:			dwb hplip libwebkit
+Temp:			dwb hplip libwebkit swig

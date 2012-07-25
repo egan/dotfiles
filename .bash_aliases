@@ -71,9 +71,9 @@ alias weather='gweather -c'
 alias wotd='curl -s http://feeds.reference.com/DictionarycomWordOfTheDay | sed "/description.*:.*</!d; s/.*>\(.*\)<.*/\1/" | recode html..utf-8 | recode html..utf-8'
 
 # Function aliases.
-function up() { d=$(upstr.sh $1) && cd $d; }
-function umv() { d=$(upstr.sh $2) && mv $1 $d; }
-function ucp() { d=$(upstr.sh $2) && cp -R $1 $d; }
-function down() { d=$(downstr.sh $1) && cd $d; }
-function dmv() { downstr.sh $2 && read -sn 1 && mv -i $1 $(downstr.sh $2); }
-function dcp() { downstr.sh $2 && read -sn 1 && cp -Ri $1 $(downstr.sh $2); }
+function up() { d=$(upstr.sh "$1") && cd "$d"; }
+function umv() { d=$(upstr.sh "$2") && mv "$1" "$d"; }
+function ucp() { d=$(upstr.sh "$2") && cp -R "$1" "$d"; }
+function down() { d=$(downstr.sh "$1") && cd "$d"; }
+function dmv() { downstr.sh "$2" && read -sn 1 && mv -i "$1" $(downstr.sh "$2"); }
+function dcp() { downstr.sh "$2" && read -sn 1 && cp -Ri "$1" $(downstr.sh "$2"); }

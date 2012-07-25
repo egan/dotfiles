@@ -66,7 +66,7 @@ main = do
 		, ("M-x",			spawn $ myTerminal ++ " &> /dev/null")
 		, ("M-S-x",			spawn $ myTerminal ++ " -e tmux &> /dev/null")
 		, ("M-v",			spawn $ myTerminal ++ " -e vi &> /dev/null")
-		, ("M-i",			spawn "exec firefox &> /dev/null")
+		, ("M-i",			spawn "exec dwb &> /dev/null")
 		, ("M-p",			spawn "exec zathura &> /dev/null")
 		, ("M-<U>",			withFocused (keysMoveWindow (0,-10)))
 		, ("M-<D>",			withFocused (keysMoveWindow (0,10)))

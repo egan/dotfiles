@@ -8,7 +8,7 @@ Editor:		ed gvim hexedit
 Font:		ttf-freebanglafont ttf-indic-otf ttf-khmer ttf-lklug ttf-mph-2b-damase ttf-tibetan-machine
 Games:		espeak myman tint-tetris xmahjongg
 Graphics:	blender fswebcam gimp imagemagick mypaint qiv recordmydesktop scrot tiv
-Hardware:	dosfstools cdrkit libdvdread libdvdcss libdvdnav ntfs-3g ntfs-progs rfkill
+Hardware:	dosfstools cdrkit libdvdread libdvdcss libdvdnav ntfs-3g ntfs-progs rfkill smartmontools
 Installation:	base base-devel wireless_tools
 Internet:	clive curl dictd elinks firefox inetutils mktorrent uber-mutt newsbeuter pkgstats rtorrent weechat
 Mathematics:	bc calc gnuplot maxima octave r units

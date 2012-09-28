@@ -20,7 +20,7 @@ Server:		netcat openssh python-xynehttpserver quickserve
 Shell:		bash-completion tmux vifm
 Sound:		alsa-oss alsa-plugins alsa-utils
 Terminal:	dina-font montecarlo-font profont rxvt-unicode terminus-font xterm
-Utilities:	acpi cpio detox inotify-tools jshon kexec-tools lsof mlocate moreutils pv unrar unzip xclip xdotool zip
+Utilities:	acpi cpio detox inotify-tools jshon kexec-tools lsof mlocate moreutils p7zip pv unrar unzip xclip xdotool zip
 Widget:		gtk-chtheme gtk-engine-murrine murrine-themes-collection
 Windowing:	xmobar xmonad xmonad-contrib
 

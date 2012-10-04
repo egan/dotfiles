@@ -44,12 +44,11 @@ alias news='newsbeuter -q'
 alias weechat='exec weechat-curses'
 
 # Specialized aliases.
-alias blog='cd $HOME/src/blender/blender && svnnew && cd - > /dev/null'
+alias blog='cd $HOME/src/blender/blender && svnnew; cd - > /dev/null'
 alias cclean='rm -rf ~/.adobe/* ~/.macromedia/* ~/.icedteaplugin/*'
 alias cls='tput reset'
 alias cnews='newsbeuter -X'
 alias extip='curl -s ifconfig.me'
-alias forecast='gweather -f'
 alias getlogs='rsync -avz --delete -e ssh paijanne:$HOME/.weechat/logs/ $HOME/.weechat/logs/'
 alias ghost='sudo mount -o rw,noauto,async,user,umask=1000 /dev/disk/by-uuid/3469-33AC /media/Ghostbear'
 alias hastings='exec tmux source-file $HOME/.tmux/hastings.conf \; attach'
@@ -71,7 +70,6 @@ alias scrsave='sleep 1 && xset s activate'
 alias sprunge='curl -sF "sprunge=<-" http://sprunge.us | tclip'
 alias sflush='sudo swapoff -a && sudo swapon -a'
 alias ten='ssh ten.ucdavis.edu'
-alias weather='gweather -c'
 alias wotd='curl -s http://feeds.reference.com/DictionarycomWordOfTheDay | sed "/description.*:.*</!d; s/.*>\(.*\)<.*/\1/" | recode html..utf-8 | recode html..utf-8'
 
 # Function aliases.

@@ -1,2 +1,6 @@
 set editing-mode vi
 "\t": menu-complete
+
+$if Python
+"\t": "    "
+$endif

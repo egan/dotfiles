@@ -49,6 +49,7 @@ myXPConfig = defaultXPConfig
 		}
 
 main = do
+	spawn "$HOME/bin/xmobar.sh"
 	xmonad $ defaultConfig
 		{ manageHook			= manageDocks <+> myManageHook
 		, layoutHook			= avoidStruts $ smartBorders $ myLayoutHook

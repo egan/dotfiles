@@ -15,7 +15,7 @@ Mathematics:	bc calc gnuplot maxima octave r units
 Media:		audacity cuetools ffmpeg mediainfo mac mplayer shntool timidity-freepats timidity++ vkeybd vorbis-tools waon
 Network:	dnsutils ettercap hping iptraf-ng netcfg ntp nmap tcpdump tightvnc whois wput
 Plugin:		flashplugin-beta icedtea-web openjdk6
-Publishing:	aspell aspell-en aspell-es diction ghostscript texlive-lang texlive-most
+Publishing:	aspell aspell-en aspell-es diction ghostscript markdown texlive-lang texlive-most
 Server:		netcat openssh python-xynehttpserver quickserve
 Shell:		bash-completion tmux vifm
 Sound:		alsa-oss alsa-plugins alsa-utils

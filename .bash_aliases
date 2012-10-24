@@ -39,6 +39,7 @@ alias cdparanoia='cdparanoia -d /dev/sr0'
 alias dict='pless dict'
 alias exev='xev | grep -A2 --line-buffered "^KeyRelease" | sed -n "/keycode /s/^.*keycode \([0-9]*\).* (.*, \(.*\)).*$/\1 \2/p"'
 alias fswebcam='fswebcam --no-banner -r 640x480'
+alias iptraf='sudo iptraf-ng'
 alias mutt='exec tmux source-file $HOME/.tmux/mutt.conf \; attach'
 alias news='newsbeuter -q'
 alias weechat='exec weechat-curses'
@@ -52,7 +53,7 @@ alias extip='curl -s ifconfig.me'
 alias getlogs='rsync -avz --delete -e ssh paijanne:$HOME/.weechat/logs/ $HOME/.weechat/logs/'
 alias ghost='sudo mount -o rw,noauto,async,user,umask=1000 /dev/disk/by-uuid/3469-33AC /media/Ghostbear'
 alias hastings='exec tmux source-file $HOME/.tmux/hastings.conf \; attach'
-alias hibernate='systemctl hibernate'
+alias hibernate='sudo systemctl hibernate'
 alias iwscan='sudo iwlist wlan0 scan | piwlist.py'
 alias lclean='rm -f *.aux *.bbl *.dvi *.fff *.idx *.ilg *.ind *.lof *.log *.lot *.nav *.out *.snm *.toc *.ttt'
 alias mercury='sudo mount -o rw,noauto,async,user,umask=1000 /dev/disk/by-uuid/805D-07BD /media/Mercury'
@@ -63,7 +64,7 @@ alias ntpsync='sudo ntpd -qg'
 alias pangolin='sudo mount /dev/disk/by-uuid/5CB2739EB2737AFA /media/Pangolin'
 alias pekkl='sudo mount -o rw,noauto,async,user,umask=1000 /dev/disk/by-uuid/0128-FED0 /media/Pekkl'
 alias putlogs='rsync -avz --delete -e ssh $HOME/.weechat/logs/ paijanne:$HOME/.weechat/logs/'
-alias suspend='systemctl suspend'
+alias suspend='sudo systemctl suspend'
 alias ughost='sudo umount /media/Ghostbear'
 alias umercury='sudo umount /media/Mercury'
 alias upangolin='sudo umount /media/Pangolin'
@@ -77,8 +78,4 @@ alias wotd='curl -s http://feeds.reference.com/DictionarycomWordOfTheDay | sed "
 
 # Function aliases.
 function up() { d=$(upstr.sh "$1") && cd "$d"; }
-function umv() { d=$(upstr.sh "$2") && mv "$1" "$d"; }
-function ucp() { d=$(upstr.sh "$2") && cp -R "$1" "$d"; }
-function down() { d=$(downstr.sh "$1") && cd "$d"; }
-function dmv() { downstr.sh "$2" && read -sn 1 && mv -i "$1" $(downstr.sh "$2"); }
-function dcp() { downstr.sh "$2" && read -sn 1 && cp -Ri "$1" $(downstr.sh "$2"); }
+function down() { d=$(downstr.sh "$@") && cd "$d"; }

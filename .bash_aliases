@@ -73,7 +73,7 @@ alias scrsave='sleep 1 && xset s activate'
 alias sprunge='curl -sF "sprunge=<-" http://sprunge.us | tclip'
 alias sflush='sudo swapoff -a && sudo swapon -a'
 alias ten='ssh ten.ucdavis.edu'
-alias usbmount='mount -o rw,noauto,async,user,umask=1000'
+alias usbmount='sudo mount -o rw,noauto,async,user,umask=1000'
 alias wotd='curl -s http://feeds.reference.com/DictionarycomWordOfTheDay | sed "/description.*:.*</!d; s/.*>\(.*\)<.*/\1/" | recode html..utf-8 | recode html..utf-8'
 
 # Function aliases.

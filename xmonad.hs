@@ -25,10 +25,10 @@ myManageHook = composeAll
 		, className			=? "MPlayer"			--> doFloat
 		, className			=? "Xmessage"			--> doCenterFloat
 		, title				=? "Firefox Preferences"	--> doFloat
-		, className			=? "Zathura"			--> viewShift "8"
+--		, className			=? "Zathura"			--> viewShift "8"
 		, (isFullscreen							--> doFullFloat)
 		]
-		where viewShift = doF . liftM2 (.) W.greedyView W.shift
+--		where viewShift = doF . liftM2 (.) W.greedyView W.shift
 
 myLayoutHook = workspaceDir "~" tiled ||| Mirror tiled ||| Full
 	where

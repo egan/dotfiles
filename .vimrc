@@ -9,6 +9,7 @@ set is
 set ai
 set pt=<F2>
 set ru
+set shm+=I
 
 "" General Modes
 filetype plugin indent on

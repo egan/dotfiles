@@ -1,22 +1,22 @@
-Administration:	at abs htop iftop iotop powertop procinfo-ng rsync sdparm sudo
+Administration:	at abs htop iftop iotop powertop procinfo-ng rsync sdparm sudo wavemon
 Dependencies:	fftw fftw2 gnupg gpgme linux-headers mime-types slang
-Development:	bochs ctags diffstat git nasm scons strace subversion yasm
-Drivers:	xf86-video-input-evdev xf86-input-synaptics xf86-video-intel-sna
+Development:	bochs ctags diffstat git nasm python-matplotlib python-numpy python-pip python-scipy python-sympy scons strace subversion yasm
+Drivers:	xf86-input-evdev xf86-input-synaptics xf86-video-intel-sna
 Display:	xorg-server xorg-xinit xorg-utils xorg-server-utils xorg-xfontsel
-Document:	antiword catdvi hd2u odt2txt unrtf zathura zathura-djvu zathura-pdf-poppler zathura-ps
+Document:	antiword catdvi dos2unix html2text odt2txt unrtf zathura zathura-djvu zathura-pdf-poppler zathura-ps
 Editor:		ed gvim hexedit
 Font:		ttf-freebanglafont ttf-indic-otf ttf-khmer ttf-lklug ttf-mph-2b-damase ttf-tibetan-machine
 Games:		espeak myman tint-tetris xmahjongg
 Graphics:	blender fswebcam gimp imagemagick mypaint qiv recordmydesktop scrot tiv
-Hardware:	dosfstools cdrkit libdvdread libdvdcss libdvdnav ntfs-3g ntfs-progs rfkill smartmontools
+Hardware:	dosfstools cdrkit libdvdread libdvdcss libdvdnav ntfs-3g rfkill smartmontools
 Installation:	base base-devel wireless_tools
-Internet:	clive curl dictd elinks firefox inetutils mktorrent uber-mutt newsbeuter pkgstats rtorrent weechat
+Internet:	clive curl dictd dwb elinks firefox inetutils mktorrent uber-mutt newsbeuter pkgstats rtorrent weechat
 Mathematics:	bc calc gnuplot maxima octave r units
 Media:		audacity cuetools ffmpeg mediainfo mac mplayer shntool timidity-freepats timidity++ vkeybd vorbis-tools waon
 Network:	dnsutils ettercap hping iptraf-ng netcfg ntp nmap tcpdump tightvnc whois wpa_actiond wput
-Plugin:		flashplugin-beta icedtea-web openjdk6
+Plugin:		flashplugin icedtea-web openjdk6
 Publishing:	aspell aspell-en aspell-es diction ghostscript markdown texlive-lang texlive-most
-Server:		netcat openssh python-xynehttpserver quickserve
+Server:		autossh mosh netcat openssh python-xynehttpserver quickserve
 Shell:		bash-completion tmux vifm
 Sound:		alsa-oss alsa-plugins alsa-utils
 Terminal:	dina-font montecarlo-font profont rxvt-unicode terminus-font xterm
@@ -25,8 +25,4 @@ Widget:		gtk-chtheme gtk-engine-murrine murrine-themes-collection
 Windowing:	xmobar xmonad xmonad-contrib
 
 ##
-Foreign:		localtunnel
-CUPS:			hp laserjet 1320 pcl 5
-
-##
-Temp:			dwb hplip libwebkit swig
+Temp:			cups dwb hplip swig

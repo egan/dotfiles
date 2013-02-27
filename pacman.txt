@@ -19,7 +19,7 @@ Publishing:	aspell aspell-en aspell-es diction ghostscript markdown texlive-lang
 Server:		autossh mosh netcat openssh
 Shell:		bash-completion tmux vifm
 Sound:		alsa-oss alsa-plugins alsa-utils
-Terminal:	dina-font profont rxvt-unicode terminus-font xterm
+Terminal:	dina-font profont rlwrap rxvt-unicode terminus-font xterm
 Utilities:	acpi cpio detox inotify-tools jshon kexec-tools lsof mlocate moreutils p7zip pv unrar unzip xclip xdotool zip
 Widget:		gtk-chtheme gtk-engine-murrine
 Windowing:	xmobar xmonad xmonad-contrib

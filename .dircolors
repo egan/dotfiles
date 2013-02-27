@@ -145,6 +145,7 @@ OTHER_WRITABLE 01;34		# o+w directory
 .tga 00;35
 .tif 00;35
 .tiff 00;35
+.tikz 00;35
 .xbm 00;35
 .xcf 00;35
 .xpm 00;35

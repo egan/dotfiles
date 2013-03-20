@@ -1,26 +1,26 @@
 ## INSTALL
-Administration:	at abs htop iftop iotop pkgstats powertop procinfo-ng rsync sdparm sudo
+Administration:	at abs htop iftop iotop nethogs pkgstats powertop procinfo-ng rsync sdparm sudo
 Development:	bochs ctags diffstat git nasm python-pip scons strace subversion yasm
-Drivers:	xf86-input-evdev xf86-input-synaptics xf86-video-intel-sna
-Display:	xorg-server xorg-xinit xorg-utils xorg-server-utils xorg-xfontsel
+Drivers:	xf86-input-evdev xf86-input-synaptics xf86-video-intel
+Display:	unclutter xorg-server xorg-xinit xorg-utils xorg-server-utils xorg-xfontsel
 Document:	antiword catdvi dos2unix html2text odt2txt unrtf zathura zathura-djvu zathura-pdf-poppler zathura-ps
 Editor:		ed gvim hexedit
 Fonts:		ttf-freebanglafont ttf-indic-otf ttf-khmer ttf-mph-2b-damase ttf-tibetan-machine
-Games:		espeak myman tint-tetris xmahjongg
+Games:		espeak xmahjongg
 Graphics:	blender fswebcam gimp imagemagick mypaint qiv recordmydesktop scrot
 Hardware:	dosfstools cdrkit exfat-utils fuse-exfat libdvdread libdvdcss libdvdnav ntfs-3g rfkill smartmontools wireless_tools
 Internet:	clive curl dictd dwb elinks firefox inetutils mktorrent newsbeuter rtorrent weechat
-Mathematics:	bc calc gnuplot maxima python-matplotlib python-numpy python-scipy python-sympy octave r units
+Mathematics:	bc calc gnuplot maxima python-matplotlib python-numpy python-scipy python-sympy octave pari r units wxmaxima
 Media:		audacity cuetools ffmpeg mediainfo mac mplayer shntool timidity-freepats timidity++ vorbis-tools
 Network:	dnsutils ettercap hping iptraf-ng netcfg ntp nmap tcpdump tightvnc whois wpa_actiond wput
-Plugin:		flashplugin icedtea-web openjdk6
+Plugin:		flashplugin icedtea-web-java7 jdk7-openjdk
 Printing:	cups hplip
-Publishing:	aspell aspell-en aspell-es diction ghostscript markdown texlive-lang texlive-most
-Server:		autossh mosh netcat openssh
+Publishing:	aspell aspell-en aspell-es ghostscript markdown texlive-lang texlive-most
+Server:		autossh mosh gnu-netcat openssh
 Shell:		bash-completion tmux vifm
 Sound:		alsa-oss alsa-plugins alsa-utils
 Terminal:	dina-font profont rlwrap rxvt-unicode terminus-font xterm
-Utilities:	acpi cpio detox inotify-tools jshon kexec-tools lsof mlocate moreutils p7zip pv unrar unzip xclip xdotool zip
+Utilities:	acpi cpio inotify-tools jshon kexec-tools lsof mlocate moreutils p7zip pv unrar unzip xclip xdotool zip
 Widget:		gtk-chtheme gtk-engine-murrine
 Windowing:	xmobar xmonad xmonad-contrib
 
@@ -31,10 +31,13 @@ Dependencies:	boost cmake cppunit fftw gnupg gpgme linux-headers mime-types slan
 Administration	wavemon
 Document:	pdfgrep-git
 Dependencies:	fftw2
-Fonts:		ttf-lklug
+Fonts:		ttf-lklug 
+Games:		myman tint-tetris
 Graphics:	tiv
 Internet:	grive uber-mutt
 Media:		vkeybd
+Publishing:	diction
 Server:		python-xynehttpserver quickserve
 Terminal:	montecarlo-font
+Utilities:	detox
 Widget:		murrine-themes-collection

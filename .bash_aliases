@@ -31,6 +31,7 @@ alias llp='lp -o sides=two-sided-long-edge'
 alias pong='ping -c 4'
 alias tlp='lp -o page-bottom=36 -o page-left=36 -o page-right=36 -o page-top=36'
 alias mkdir='mkdir -p'
+alias sudo='sudo '
 
 # Application aliases.
 alias apropos='pless apropos'

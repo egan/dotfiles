@@ -3,7 +3,7 @@ Administration:	at abs htop iftop iotop nethogs pkgstats powertop procinfo-ng rs
 Development:	bochs ctags diffstat git nasm python-pip scons strace subversion yasm
 Drivers:	xf86-input-evdev xf86-input-synaptics xf86-video-intel
 Display:	unclutter xorg-server xorg-xinit xorg-utils xorg-server-utils xorg-xfontsel
-Document:	antiword catdvi dos2unix html2text odt2txt unrtf zathura zathura-djvu zathura-pdf-poppler zathura-ps
+Document:	antiword catdvi dos2unix html2text odt2txt unrtf zathura zathura-djvu zathura-pdf-mupdf zathura-ps
 Editor:		ed gvim hexedit
 Fonts:		ttf-freebanglafont ttf-indic-otf ttf-khmer ttf-mph-2b-damase ttf-tibetan-machine
 Games:		espeak xmahjongg
@@ -11,7 +11,7 @@ Graphics:	blender fswebcam gimp imagemagick mypaint qiv recordmydesktop scrot
 Hardware:	dosfstools cdrkit exfat-utils fuse-exfat libdvdread libdvdcss libdvdnav ntfs-3g rfkill smartmontools wireless_tools
 Internet:	clive curl dictd dwb elinks firefox inetutils mktorrent newsbeuter rtorrent weechat
 Mathematics:	bc calc gnuplot maxima python-matplotlib python-numpy python-scipy python-sympy octave pari r units wxmaxima
-Media:		audacity cuetools ffmpeg mediainfo mac mplayer shntool timidity-freepats timidity++ vorbis-tools
+Media:		audacity cuetools ffmpeg mediainfo mac mp3splt mplayer shntool timidity-freepats timidity++ vorbis-tools
 Network:	dnsutils ettercap hping iptraf-ng netcfg ntp nmap tcpdump tightvnc whois wpa_actiond wput
 Plugin:		flashplugin icedtea-web-java7 jdk7-openjdk
 Printing:	cups hplip
@@ -37,7 +37,7 @@ Graphics:	tiv
 Internet:	grive uber-mutt
 Media:		vkeybd
 Publishing:	diction
-Server:		python-xynehttpserver quickserve
+Server:		python3-threaded_servers quickserve
 Terminal:	montecarlo-font
 Utilities:	detox
 Widget:		murrine-themes-collection

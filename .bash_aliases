@@ -78,6 +78,7 @@ alias umercury='sudo umount /media/Mercury'
 alias upangolin='sudo umount /media/Pangolin'
 alias upekkl='sudo umount /media/Pekkl'
 alias usbmount='sudo mount -o rw,noauto,async,user,umask=1000'
+alias wcurrent='wpa_cli -i wlan0 status | sed -n "s/^id_str=//p"'
 alias wotd='curl -s http://feeds.reference.com/DictionarycomWordOfTheDay | sed "/description.*:.*</!d; s/.*>\(.*\)<.*/\1/" | recode html..utf-8 | recode html..utf-8'
 
 # Function aliases.

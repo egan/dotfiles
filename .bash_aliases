@@ -39,11 +39,13 @@ alias aspell='aspell -x'
 alias cdparanoia='cdparanoia -d /dev/sr0'
 alias dict='pless dict'
 alias exev='xev | grep -A2 --line-buffered "^KeyRelease" | sed -n "/keycode /s/^.*keycode \([0-9]*\).* (.*, \(.*\)).*$/\1 \2/p"'
+alias forecast='weatherman -x "Davis, CA"'
 alias fswebcam='fswebcam --no-banner -r 640x480'
 alias iptraf='sudo iptraf-ng'
 alias maxima='rlwrap maxima'
 alias mutt='exec tmux source-file $HOME/.tmux/mutt.conf \; attach'
 alias news='newsbeuter -q'
+alias weather='weatherman "Davis, CA"'
 alias weechat='exec weechat-curses'
 
 # Specialized aliases.

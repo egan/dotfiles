@@ -39,5 +39,5 @@ Media:		vkeybd
 Publishing:	diction
 Server:		python3-threaded_servers quickserve
 Terminal:	montecarlo-font
-Utilities:	detox
+Utilities:	detox weatherman
 Widget:		murrine-themes-collection

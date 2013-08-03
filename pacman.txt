@@ -1,5 +1,6 @@
 ## INSTALL
 Administration:	at abs htop iftop iotop nethogs pkgstats powertop procinfo-ng rsync sdparm sudo
+Codecs:		gstreamer0.10-plugins
 Development:	bochs ctags diffstat git nasm python-pip scons strace subversion yasm
 Drivers:	xf86-input-evdev xf86-input-synaptics xf86-video-intel
 Display:	unclutter xorg-server xorg-xinit xorg-utils xorg-server-utils xorg-xfontsel
@@ -20,7 +21,7 @@ Server:		autossh mosh gnu-netcat openssh
 Shell:		bash-completion tmux vifm
 Sound:		alsa-oss alsa-plugins alsa-utils
 Terminal:	dina-font profont rlwrap rxvt-unicode terminus-font xterm
-Utilities:	acpi cpio inotify-tools jshon kexec-tools lsof mlocate moreutils p7zip pv unrar unzip xclip xdotool zip
+Utilities:	acpi cpio inotify-tools jshon kexec-tools lsof mlocate moreutils p7zip pv sharutils unrar unzip xclip xdotool zip
 Widget:		gtk-chtheme gtk-engine-murrine
 Windowing:	xmobar xmonad xmonad-contrib
 

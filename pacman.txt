@@ -1,7 +1,7 @@
 ## INSTALL
 Administration:	at abs htop iftop iotop nethogs pkgstats powertop procinfo-ng rsync sdparm sudo
 Codecs:		gstreamer0.10-plugins
-Development:	bochs ctags diffstat git nasm python-pip scons strace subversion yasm
+Development:	bochs ctags diffstat git ipython nasm python-pip scons strace subversion yasm
 Drivers:	xf86-input-evdev xf86-input-synaptics xf86-video-intel
 Display:	unclutter xorg-server xorg-xinit xorg-utils xorg-server-utils xorg-xfontsel
 Document:	antiword catdvi dos2unix html2text odt2txt unrtf zathura zathura-djvu zathura-pdf-mupdf zathura-ps
@@ -11,7 +11,7 @@ Games:		espeak xmahjongg
 Graphics:	blender fswebcam gimp imagemagick mypaint qiv recordmydesktop scrot
 Hardware:	dosfstools cdrkit exfat-utils fuse-exfat libdvdread libdvdcss libdvdnav ntfs-3g rfkill smartmontools wireless_tools
 Internet:	clive curl dictd dwb elinks firefox inetutils mktorrent newsbeuter rtorrent weechat
-Mathematics:	bc calc gnuplot maxima python-matplotlib python-numpy python-scipy python-sympy octave pari r units wxmaxima
+Mathematics:	bc calc gnuplot maxima python-matplotlib python-numpy python-scipy python-sympy octave pari r sage-mathematics units wxmaxima
 Media:		audacity cuetools ffmpeg mediainfo mac mp3splt mplayer shntool timidity-freepats timidity++ vorbis-tools
 Network:	dnsutils ettercap hping iptraf-ng netcfg ntp nmap tcpdump tightvnc whois wpa_actiond wput
 Plugin:		flashplugin icedtea-web-java7 jdk7-openjdk
@@ -26,7 +26,7 @@ Widget:		gtk-chtheme gtk-engine-murrine
 Windowing:	xmobar xmonad xmonad-contrib
 
 ## DEPENDENCIES
-Dependencies:	boost cmake cppunit fftw gnupg gpgme linux-headers mime-types slang
+Dependencies:	boost cmake cppunit fftw gnupg gpgme linux-headers mime-types python-jinja python-pyzmq python-tornado slang
 
 ## AUR
 Administration	wavemon

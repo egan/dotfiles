@@ -69,6 +69,7 @@ main = do
 		, ("M-i",			spawn "exec dwb &> /dev/null")
 		, ("M-S-i",			spawn "exec firefox &> /dev/null")
 		, ("M-p",			spawn "exec zathura &> /dev/null")
+		, ("M-S-p",			spawn "exec zathura $(ls -A1t $HOME/var/*.pdf | head -n 1) &> /dev/null")
 		, ("M-<U>",			withFocused (keysMoveWindow (0,-10)))
 		, ("M-<D>",			withFocused (keysMoveWindow (0,10)))
 		, ("M-<L>",			withFocused (keysMoveWindow (-10,0)))
@@ -89,7 +90,7 @@ main = do
 		, ("<XF86AudioNext>",		mPlay "seek 10")
 		, ("<XF86TouchpadToggle>",	touch)
 		]
-		`removeKeysP` [ "M-w", "M-S-w", "M-e", "M-S-e", "M-r", "M-S-r", "M-S-p" ]
+		`removeKeysP` [ "M-w", "M-S-w", "M-e", "M-S-e", "M-r", "M-S-r" ]
 		where
 			mPlay s = spawn $ "echo " ++ s ++ " > $HOME/.mplayer/pipe"
 			touch	= spawn $ "$(synclient -l | grep -q 'Off *= 0') && synclient TouchpadOff=1 || synclient TouchpadOff=0"

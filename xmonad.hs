@@ -69,7 +69,7 @@ main = do
 		, ("M-i",			spawn "exec dwb &> /dev/null")
 		, ("M-S-i",			spawn "exec firefox &> /dev/null")
 		, ("M-p",			spawn "exec zathura &> /dev/null")
-		, ("M-S-p",			spawn "exec zathura $(ls -A1t $HOME/var/*.pdf | head -n 1) &> /dev/null")
+		, ("M-S-p",			ozath)
 		, ("M-<U>",			withFocused (keysMoveWindow (0,-10)))
 		, ("M-<D>",			withFocused (keysMoveWindow (0,10)))
 		, ("M-<L>",			withFocused (keysMoveWindow (-10,0)))
@@ -92,5 +92,6 @@ main = do
 		]
 		`removeKeysP` [ "M-w", "M-S-w", "M-e", "M-S-e", "M-r", "M-S-r" ]
 		where
+			ozath	= spawn $ "exec zathura $(ls -A1t --quoting-style=escape $HOME/var/*.pdf | head -n 1) &> /dev/null"
 			mPlay s = spawn $ "echo " ++ s ++ " > $HOME/.mplayer/pipe"
 			touch	= spawn $ "$(synclient -l | grep -q 'Off *= 0') && synclient TouchpadOff=1 || synclient TouchpadOff=0"

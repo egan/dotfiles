@@ -1,11 +1,11 @@
 ## INSTALL
 Administration:	at abs htop iftop iotop nethogs pkgstats powertop procinfo-ng rsync sdparm sudo
 Codecs:		gstreamer0.10-plugins
-Development:	bochs ctags diffstat git ipython nasm python-pip scons strace subversion yasm
+Development:	bochs ctags cython diffstat git ipython nasm python-pip scons strace subversion yasm
 Drivers:	xf86-input-evdev xf86-input-synaptics xf86-video-intel
 Display:	unclutter xorg-server xorg-xinit xorg-utils xorg-server-utils xorg-xfontsel
 Document:	antiword catdvi dos2unix html2text odt2txt unrtf zathura zathura-djvu zathura-pdf-mupdf zathura-ps
-Editor:		ed gvim hexedit
+Editor:		ed gvim hexedit sc
 Fonts:		ttf-freebanglafont ttf-indic-otf ttf-khmer ttf-mph-2b-damase ttf-tibetan-machine
 Games:		espeak xmahjongg
 Graphics:	blender fswebcam gimp imagemagick mypaint qiv recordmydesktop scrot
@@ -26,7 +26,7 @@ Widget:		gtk-chtheme gtk-engine-murrine
 Windowing:	xmobar xmonad xmonad-contrib
 
 ## DEPENDENCIES
-Dependencies:	boost cmake cppunit fftw gnupg gpgme linux-headers mime-types python-jinja python-pyzmq python-tornado slang
+Dependencies:	boost cmake cppunit fftw gnupg gpgme linux-headers mime-types opencv python-jinja python-pyzmq python-tornado slang
 
 ## AUR
 Administration	wavemon

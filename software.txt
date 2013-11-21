@@ -1,0 +1,13 @@
+# Packages installed locally.
+dwb:
+	adblock_subscriptions
+	simplyread
+firefox:
+	Adblock Plus
+	Pentadactyl
+python:
+	CoolProp
+	uncertainties
+vim:
+	SingleCompile
+	vtreeexplorer

@@ -23,6 +23,7 @@
 .texlive/*
 .thumbnails/*
 .viminfo
+.vim/bundle/*
 .Xauthority
 code/share/*
 src/*

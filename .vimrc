@@ -33,12 +33,15 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'xuhdev/SingleCompile'
 Bundle 'godlygeek/tabular'
-Bundle 'spf13/vim-autoclose'
+"Bundle 'spf13/vim-autoclose'
+Bundle 'Lokaltog/vim-distinguished'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tpope/vim-fugitive'
 Bundle 'terryma/vim-multiple-cursors'
+Bundle 'tpope/vim-repeat'
 Bundle 'goldfeld/vim-seek'
 Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-vividchalk'
 
 "" General Modes
 filetype plugin indent on

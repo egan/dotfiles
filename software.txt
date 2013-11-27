@@ -9,5 +9,4 @@ python:
 	CoolProp
 	uncertainties
 vim:
-	SingleCompile
-	vtreeexplorer
+	Vundle

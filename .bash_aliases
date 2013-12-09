@@ -46,6 +46,7 @@ alias iptraf='sudo iptraf-ng'
 alias maxima='rlwrap maxima'
 alias mutt='exec tmux source-file $HOME/.tmux/mutt.conf \; attach'
 alias news='newsbeuter -q'
+alias quickdrop='quickserve --upload=.'
 alias weather='weatherman "Davis, CA"'
 alias weechat='exec weechat-curses'
 

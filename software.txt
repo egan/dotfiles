@@ -7,6 +7,8 @@ firefox:
 	Pentadactyl
 python:
 	CoolProp
+	pandas
+	statsmodels
 	uncertainties
 vim:
 	Vundle

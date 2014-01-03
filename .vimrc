@@ -39,6 +39,7 @@ Bundle 'godlygeek/tabular'
 "Bundle 'spf13/vim-autoclose'
 Bundle 'Lokaltog/vim-distinguished'
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'mbbill/undotree'
 Bundle 'tpope/vim-fugitive'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'tpope/vim-repeat'
@@ -127,3 +128,7 @@ nmap <Leader>a,, :Tabularize /,\zs<CR>
 vmap <Leader>a,, :Tabularize /,\zs<CR>
 nmap <Leader>a<Bar> :Tabularize /<Bar><CR>
 vmap <Leader>a<Bar> :Tabularize /<Bar><CR>
+
+"" UndoTree Config
+nnoremap <Leader>u :UndotreeToggle<CR>
+let g:undotree_SetFocusWhenToggle=1

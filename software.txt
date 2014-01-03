@@ -8,6 +8,7 @@ firefox:
 python:
 	CoolProp
 	pandas
+	patsy
 	statsmodels
 	uncertainties
 vim:

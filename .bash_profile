@@ -6,6 +6,7 @@
 
 # Includes.
 . $HOME/.bashrc
+. $HOME/bin/bashmarks.sh
 
 # Variables.
 export EDITOR="vim"

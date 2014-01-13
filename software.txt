@@ -9,6 +9,7 @@ python:
 	CoolProp
 	pandas
 	patsy
+	seaborn
 	statsmodels
 	uncertainties
 vim:

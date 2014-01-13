@@ -22,9 +22,10 @@ myTerminal = "urxvtc"
 
 myManageHook = composeAll
 		[ className			=? "Animate"			--> doCenterFloat
-		, className			=? "MPlayer"			--> doFloat
+		, className			=? "MPlayer"			--> doCenterFloat
 		, className			=? "Xmessage"			--> doCenterFloat
-		, title				=? "Firefox Preferences"	--> doFloat
+		, title				=? "qiv"			--> doCenterFloat
+		, title				=? "Firefox Preferences"	--> doCenterFloat
 --		, className			=? "Zathura"			--> viewShift "8"
 		, (isFullscreen							--> doFullFloat)
 		]

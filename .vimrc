@@ -1,31 +1,32 @@
 "" General Settings
-set nocompatible		" Enable vim-specific features.
-set shortmess+=I		" Disable startup message.
-set nobackup			" Don't backup saved files.
-set ruler			" Show the ruler.
-set showcmd			" Show partial commands in statusline.
-set mouse=a			" Enable mouse usage.
-set mousefocus			" Focus windows with mouse in GVim
-set showmatch			" Show matching parenthetical delimitters.
-set hlsearch			" Highlight search terms.
-set incsearch			" Find as you type search.
-set ignorecase			" Case insensitive search.
-set smartcase			" Case sensitive when uppercase present.
-set linebreak			" Perform linebreaks at appropriate characters.
-set autoindent			" Indent at same level as previous line.
-set foldenable			" Automatically fold code.
-set nojoinspaces		" Do not doublespace on join (J).
-set pastetoggle=<F2>		" Enable unformatted paste.
-set splitright			" Open new vsplit window to the right.
-set splitbelow			" Open new split window to the bottom.
+set nocompatible                         " Enable vim-specific features.
+set shortmess+=I                         " Disable startup message.
+set nobackup                             " Don't backup saved files.
+set ruler                                " Show the ruler.
+set showcmd                              " Show partial commands in statusline.
+set mouse=a                              " Enable mouse usage.
+set mousefocus                           " Focus windows with mouse in GVim
+set showmatch                            " Show matching parenthetical delimitters.
+set hlsearch                             " Highlight search terms.
+set incsearch                            " Find as you type search.
+set ignorecase                           " Case insensitive search.
+set smartcase                            " Case sensitive when uppercase present.
+set linebreak                            " Perform linebreaks at appropriate characters.
+set autoindent                           " Indent at same level as previous line.
+set tabstop=4                            " Use four columns for tabstop.
+set foldenable                           " Automatically fold code.
+set nojoinspaces                         " Do not doublespace on join (J).
+set pastetoggle=<F2>                     " Enable unformatted paste.
+set splitright                           " Open new vsplit window to the right.
+set splitbelow                           " Open new split window to the bottom.
 
 "" Vundle Config
-set rtp+=~/.vim/bundle/vundle	" Include vundle in runtime path.
-call vundle#rc()		" Run vundle.
+set rtp+=~/.vim/bundle/vundle            " Include vundle in runtime path.
+call vundle#rc()                         " Run vundle.
 
 "" Folding
-set foldmethod=marker		" Use markers for folding.
-set foldmarker={{{,}}}		" Markers for folding.
+set foldmethod=marker                    " Use markers for folding.
+set foldmarker={{{,}}}                   " Markers for folding.
 
 "" Bundles
 Bundle 'gmarik/vundle'
@@ -36,28 +37,28 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'xuhdev/SingleCompile'
 Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'godlygeek/tabular'
-"Bundle 'spf13/vim-autoclose'
+" Bundle 'spf13/vim-autoclose'
 Bundle 'Lokaltog/vim-distinguished'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'mbbill/undotree'
 Bundle 'tpope/vim-fugitive'
-Bundle 'terryma/vim-multiple-cursors'
+" Bundle 'terryma/vim-multiple-cursors'
 Bundle 'tpope/vim-repeat'
 Bundle 'goldfeld/vim-seek'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-vividchalk'
 
 "" General Modes
-filetype plugin indent on	" Enable filetype plugins and indentation.
-syntax on			" Enable syntax highlighting.
+filetype plugin indent on                " Enable filetype plugins and indentation.
+syntax on                                " Enable syntax highlighting.
 
 "" Overrides
-let mapleader=","		" Use comma for leader key rather than backspace.
-let g:tex_flavor="latex"	" Assume *.tex are LaTeX files rather than TeX.
-let g:is_posix=1		" Assume POSIX shell files.
-let g:is_bash=1			" Assume *.sh are bash files rather than sh.
-let g:netrw_altv=1		" Split netrw to the right.
-let g:netrw_alto=1		" Split netrw to the bottom.
+let mapleader=","                        " Use comma for leader key rather than backspace.
+let g:tex_flavor="latex"                 " Assume *.tex are LaTeX files rather than TeX.
+let g:is_posix=1                         " Assume POSIX shell files.
+let g:is_bash=1                          " Assume *.sh are bash files rather than sh.
+let g:netrw_altv=1                       " Split netrw to the right.
+let g:netrw_alto=1                       " Split netrw to the bottom.
 
 "" Mappings
 nnoremap Y y$

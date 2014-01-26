@@ -1,46 +1,47 @@
 ## INSTALL
-Administration          : at abs htop iftop iotop nethogs pkgstats powertop procinfo-ng rsync sdparm sudo
-Codecs                  : gstreamer0.10-plugins
-Development             : base-devel bochs ctags cython diffstat git ipython nasm python-pip scons strace subversion yasm
-Drivers                 : xf86-input-evdev xf86-input-synaptics xf86-video-intel
-Display                 : unclutter xorg-server xorg-xinit xorg-utils xorg-server-utils xorg-xfontsel
-Document                : antiword catdvi dos2unix html2text odt2txt unrtf zathura zathura-djvu zathura-pdf-mupdf zathura-ps
-Editor                  : ed gvim hexedit
-Fonts                   : bdf-unifont ttf-freebanglafont ttf-indic-otf ttf-khmer ttf-mph-2b-damase ttf-tibetan-machine
-Games                   : espeak xmahjongg
-Graphics                : asymptote blender fswebcam gimp imagemagick mypaint qiv recordmydesktop scrot
-Hardware                : dosfstools cdrkit exfat-utils fuse-exfat libdvdread libdvdcss libdvdnav ntfs-3g rfkill smartmontools wireless_tools
-Internet                : clive curl dictd dwb elinks firefox inetutils mktorrent newsbeuter rtorrent weechat
-Mathematics             : bc calc gnuplot maxima octave pari r sage-mathematics units wxmaxima
-Math Libraries          : python-matplotlib python-numpy python-scipy python-sympy
-Media                   : audacity cuetools ffmpeg mediainfo mac mp3splt mplayer shntool timidity-freepats timidity++ vorbis-tools
-Network                 : dnsutils ettercap hping iptraf-ng ntp nmap tcpdump tigervnc whois wpa_actiond wput
-Plugin                  : flashplugin icedtea-web-java7 jdk7-openjdk
-Printing                : cups hplip
-Publishing              : aspell aspell-en aspell-es ghostscript markdown texlive-lang texlive-most
-Server                  : autossh mosh gnu-netcat openssh
-Shell                   : bash-completion tmux vifm
-Sound                   : alsa-oss alsa-plugins alsa-utils
-Terminal                : dina-font profont rlwrap rxvt-unicode terminus-font xterm
-Utilities               : acpi cpio inotify-tools jshon kexec-tools lsof mlocate moreutils p7zip pv sharutils unrar unzip xclip xdotool zip
-Widget                  : gtk-chtheme gtk-engine-murrine
-Windowing               : xmobar xmonad xmonad-contrib
+Administration : at abs htop iftop iotop nethogs pkgstats powertop procinfo-ng rsync sdparm sudo
+Codecs         : gstreamer0.10-plugins
+Development    : base-devel bochs ctags cython diffstat git ipython nasm python-pip scons strace subversion yasm
+Drivers        : xf86-input-evdev xf86-input-synaptics xf86-video-intel
+Display        : unclutter xorg-server xorg-xinit xorg-utils xorg-server-utils xorg-xfontsel
+Document       : antiword catdvi dos2unix html2text odt2txt unrtf zathura zathura-djvu zathura-pdf-mupdf zathura-ps
+Editor         : ed gvim hexedit
+Fonts          : bdf-unifont ttf-freebanglafont ttf-indic-otf ttf-khmer ttf-mph-2b-damase ttf-tibetan-machine
+Games          : espeak xmahjongg
+Graphics       : asymptote blender fswebcam gimp imagemagick mypaint qiv recordmydesktop scrot
+Hardware       : dosfstools cdrkit exfat-utils fuse-exfat libdvdread libdvdcss libdvdnav ntfs-3g rfkill smartmontools wireless_tools
+Internet       : cclive curl dictd dwb elinks firefox inetutils mktorrent newsbeuter rtorrent weechat
+Mathematics    : bc calc gnuplot maxima octave pari r sage-mathematics units wxmaxima
+Math Libraries : python-matplotlib python-numpy python-pillow python-scikit-learn python-scipy python-sympy
+Media          : audacity cuetools ffmpeg mediainfo mac mp3splt mplayer shntool timidity-freepats timidity++ vorbis-tools
+Network        : dnsutils ettercap hping iptraf-ng ntp nmap tcpdump tigervnc whois wpa_actiond wput
+Plugin         : flashplugin icedtea-web-java7 jdk7-openjdk
+Printing       : cups hplip
+Publishing     : aspell aspell-en aspell-es ghostscript markdown texlive-lang texlive-most
+Server         : autossh mosh gnu-netcat openssh
+Shell          : bash-completion tmux vifm
+Sound          : alsa-oss alsa-plugins alsa-utils
+Terminal       : dina-font profont rlwrap rxvt-unicode terminus-font xterm
+Utilities      : acpi cpio inotify-tools jshon kexec-tools lsof mlocate moreutils p7zip pv sharutils unrar unzip xclip xdotool zip
+Widget         : gtk-chtheme gtk-engine-murrine
+Windowing      : xmobar xmonad xmonad-contrib
 
 ## DEPENDENCIES
-Dependencies            : boost cmake cppunit fftw gnupg gpgme linux-headers mime-types opencv python-imaging python-jinja python-pygments python-pyzmq python-tornado slang
+Buildtime      : boost cmake cppunit fftw linux-headers slang
+General        : gnupg gpgme mime-types opencv python-imaging python-jinja python-pygments python-pyzmq python-tornado yajl
 
 ## AUR
-Administration	wavemon
-Document                : pdfgrep-git
-Dependencies            : fftw2
-Editor                  : sc
-Fonts                   : ttf-lklug
-Games                   : myman tint-tetris
-Graphics                : tiv
-Internet                : grive uber-mutt
-Media                   : vkeybd
-Publishing              : diction
-Server                  : python3-threaded_servers quickserve
-Terminal                : montecarlo-font
-Utilities               : detox weatherman
-Widget                  : gtk-theme-murrine-collection
+Administration : wavemon
+Document       : pdfgrep-git
+Dependencies   : fftw2
+Editor         : sc
+Fonts          : ttf-lklug
+Games          : myman tint-tetris
+Graphics       : tiv
+Internet       : grive uber-mutt
+Media          : vkeybd
+Publishing     : diction
+Server         : python3-threaded_servers quickserve
+Terminal       : montecarlo-font
+Utilities      : detox weatherman
+Widget         : gtk-theme-murrine-collection

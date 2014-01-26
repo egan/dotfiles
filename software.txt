@@ -7,9 +7,12 @@ firefox:
 	Pentadactyl
 python:
 	CoolProp
+	mahotas
 	pandas
 	patsy
 	seaborn
+	scikit-image
+	scikit-learn
 	statsmodels
 	uncertainties
 vim:

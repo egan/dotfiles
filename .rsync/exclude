@@ -1,6 +1,7 @@
 .adobe/*
 .audacity-data/*
 .cache/*
+.config/matplotlib/*cache*
 .dbus/*
 .dvdcss/*
 .fontconfig/*

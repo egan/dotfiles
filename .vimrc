@@ -91,6 +91,11 @@ let NERDTreeShowHidden=1
 nmap <silent><F9> :SCCompile<CR>
 nmap <silent><F10> :SCCompileRun<CR>
 
+"" Surround Config
+let g:surround_{char2nr('q')}="``\r''"
+let g:surround_{char2nr('Q')}="`\r'"
+let g:surround_{char2nr('c')}="\\\1command\1{\r}"
+
 "" Tabularize Config
 nmap <Leader>a& :Tabularize /&<CR>
 vmap <Leader>a& :Tabularize /&<CR>

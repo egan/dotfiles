@@ -14,6 +14,7 @@ set smartcase                            " Case sensitive when uppercase present
 set linebreak                            " Perform linebreaks at appropriate characters.
 set autoindent                           " Indent at same level as previous line.
 set tabstop=4                            " Use four columns for tabstop.
+set shiftwidth=4                         " Indent by four columns.
 set foldenable                           " Automatically fold code.
 set nojoinspaces                         " Do not doublespace on join (J).
 set pastetoggle=<F2>                     " Enable unformatted paste.
@@ -31,7 +32,6 @@ set foldmarker={{{,}}}                   " Markers for folding.
 "" Bundles
 Bundle 'gmarik/vundle'
 Bundle 'bling/vim-airline'
-Bundle 'Shougo/neocomplcache'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'xuhdev/SingleCompile'
@@ -63,43 +63,20 @@ let g:netrw_alto=1                       " Split netrw to the bottom.
 "" Mappings
 nnoremap Y y$
 nnoremap <CR> o<Esc>
-nnoremap <Tab> %
-vnoremap <Tab> %
 nmap <silent><Leader>/ :noh<CR>
 nmap <silent><Leader>W :%s/\s\+$//<CR>:let @/=''<CR>
-nmap <Leader>ff [I:let nr = input("Which one: ")<Bar>exe "normal " . nr ."[\t"<CR>
+nmap <Leader>ff [I:let nr = input("Which one: ")<BAR>exe "normal " . nr ."[\t"<CR>
 "cmap cwd lcd %:p:h
 "cmap w!! w !sudo tee % >/dev/null
 nmap <silent><F3> :w!<CR>:silent !aspell -c -x %<CR>:e! %<CR>:redraw!<CR>
 nmap <silent><F4> :silent !dict <cword> \| less<CR>:redraw!<CR>
+nmap <silent><F5> :set number!<CR>
+nmap <silent><F6> :set relativenumber!<CR>
+nmap <silent><F6> :let &virtualedit=&virtualedit=="" ? "all" : ""<CR>
 
 "" Airline Config
 set laststatus=2
 let g:airline_theme = 'simple'
-"let g:airline#extensions#tabline#enabled = 1
-
-"" Neocomplcache Config
-nmap <silent><F5> :NeoComplCacheToggle<CR>
-let g:neocomplcache_enable_smart_case = 1
-let g:neocomplcache_enable_auto_delimiter = 1
-let g:neocomplcache_max_list = 15
-"inoremap <expr><C-g> neocomplcache#undo_completion()
-"inoremap <expr><C-l> neocomplcache#complete_common_string()
-"inoremap <expr><CR> neocomplcache#complete_common_string()
-"inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
-"inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<TAB>"
-"inoremap <expr><s-CR> pumvisible() ? neocomplcache#close_popup()"\<CR>" : "\<CR>"
-"inoremap <expr><CR> pumvisible() ? neocomplcache#close_popup() : "\<CR>"
-"inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
-"inoremap <expr><C-y> neocomplcache#close_popup()
-" Enable Omnicompletion
-autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
-autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
 
 "" NERDTree Config
 map <leader>e :NERDTreeFind<CR>

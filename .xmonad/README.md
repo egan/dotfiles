@@ -15,6 +15,7 @@ and xmobar-nettoggle.sh, available in scripts repository.
 	M-X		Spawn terminal multiplexer (tmux).
 	M-v		Spawn editor (vim).
 	M-V		Spawn graphical editor (gvim).
+	M-`		Toggle between two workspaces.
 	M-i		Spawn web browser (dwb).
 	M-I		Spawn secondary web browser (firefox).
 	M-p		Spawn pdf reader (zathura).

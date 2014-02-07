@@ -1,16 +1,16 @@
 ## INSTALL
-Administration : at abs htop iftop iotop nethogs pkgstats powertop procinfo-ng rsync sdparm sudo
+Administration : at abs bwm-ng htop iftop iotop nethogs pkgstats powertop procinfo-ng rsync sdparm sudo
 Codecs         : gstreamer0.10-plugins
 Development    : base-devel bochs ctags cython diffstat git ipython nasm python-pip scons strace subversion yasm
-Drivers        : xf86-input-evdev xf86-input-synaptics xf86-video-intel
-Display        : unclutter xorg-server xorg-xinit xorg-utils xorg-server-utils xorg-xfontsel
+Drivers        : xf86-input-evdev xf86-input-synaptics xf86-video-dummy xf86-video-intel
+Display        : unclutter xorg-server xorg-server-utils xorg-server-xvfb xorg-xinit xorg-utils xorg-xfontsel
 Document       : antiword catdvi dos2unix html2text odt2txt unrtf zathura zathura-djvu zathura-pdf-mupdf zathura-ps
 Editor         : ed gvim hexedit
 Fonts          : bdf-unifont ttf-freebanglafont ttf-indic-otf ttf-khmer ttf-mph-2b-damase ttf-tibetan-machine
 Games          : espeak xmahjongg
 Graphics       : asymptote blender fswebcam gimp imagemagick mypaint qiv recordmydesktop scrot
 Hardware       : dosfstools cdrkit exfat-utils fuse-exfat libdvdread libdvdcss libdvdnav ntfs-3g rfkill smartmontools wireless_tools
-Internet       : cclive curl dictd dwb elinks firefox inetutils mktorrent newsbeuter rtorrent weechat
+Internet       : cclive curl dictd dwb elinks firefox inetutils mktorrent newsbeuter rdesktop rtorrent weechat
 Mathematics    : bc calc gnuplot maxima octave pari r sage-mathematics units wxmaxima
 Math Libraries : python-matplotlib python-numpy python-pillow python-scikit-learn python-scipy python-sympy
 Media          : audacity cuetools ffmpeg mediainfo mac mp3splt mplayer shntool timidity-freepats timidity++ vorbis-tools
@@ -27,11 +27,12 @@ Widget         : gtk-chtheme gtk-engine-murrine
 Windowing      : xmobar xmonad xmonad-contrib
 
 ## DEPENDENCIES
-Buildtime      : boost cmake cppunit fftw linux-headers slang
+Buildtime      : boost cmake cppunit cython2 fftw linux-headers python2-distribute slang
 General        : gnupg gpgme mime-types opencv python-imaging python-jinja python-pygments python-pyzmq python-tornado yajl
 
 ## AUR
 Administration : wavemon
+Display        : xpra-winswitch-svn
 Document       : pdfgrep-git
 Dependencies   : fftw2
 Editor         : sc

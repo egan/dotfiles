@@ -11,6 +11,8 @@ import XMonad.Actions.FloatKeys
 import XMonad.Actions.UpdatePointer
 import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.ManageHelpers
+import XMonad.Layout.BoringWindows
+import XMonad.Layout.Minimize
 import XMonad.Layout.NoBorders
 import XMonad.Layout.WorkspaceDir
 import XMonad.Prompt
@@ -22,22 +24,24 @@ import qualified XMonad.StackSet as W
 myTerminal = "urxvtc"
 
 myManageHook = composeAll
-		[ className = ? "Animate"             --> doCenterFloat
-		, className = ? "MPlayer"             --> doCenterFloat
-		, className = ? "Xmessage"            --> doCenterFloat
-		, title     = ? "qiv"                 --> doCenterFloat
-		, title     = ? "Firefox Preferences" --> doCenterFloat
---		, className = ? "Zathura"             --> viewShift "8"
+		[ className =? "Animate"             --> doCenterFloat
+		, className =? "MPlayer"             --> doCenterFloat
+		, className =? "Xmessage"            --> doCenterFloat
+		, title     =? "qiv"                 --> doCenterFloat
+		, title     =? "Firefox Preferences" --> doCenterFloat
+--		, className =? "Zathura"             --> viewShift "8"
 		, (isFullscreen                       --> doFullFloat)
 		]
 --		where viewShift = doF . liftM2 (.) W.greedyView W.shift
 
-myLayoutHook = workspaceDir "~" tiled ||| Mirror tiled ||| Full
+myLayout = boringWindows $ minimize tiled ||| Mirror tiled ||| Full
 	where
 		tiled                = Tall nmaster delta ratio
 		nmaster              = 1
 		ratio                = 1/2
 		delta                = 3/100
+
+myLayoutHook = workspaceDir "~" myLayout
 
 myXPConfig = defaultXPConfig
 		{ font               = "-*-profont-*-*-*-*-10-*-*-*-*-*-iso8859-*"
@@ -65,10 +69,16 @@ main = do
 		[ ("M-z",                     shellPrompt myXPConfig)
 		, ("M-S-z",                   changeDir myXPConfig)
 		, ("M-b",                     sendMessage ToggleStruts)
+		, ("M-j",                     focusDown)
+		, ("M-k",                     focusUp)
+		, ("M-m",                     focusMaster)
+		, ("M-`",                     toggleWS)
+		, ("M-c",                     withFocused minimizeWindow)
+		, ("M-S-c",                   sendMessage RestoreNextMinimizedWin)
+		, ("M-M1-c",                  kill)
 		, ("M-x",                     spawn $ myTerminal ++ " &> /dev/null")
 		, ("M-S-x",                   spawn $ myTerminal ++ " -e tmux &> /dev/null")
 		, ("M-v",                     spawn $ myTerminal ++ " -e vi &> /dev/null")
-		, ("M-`",                     toggleWS)
 		, ("M-S-v",                   spawn "exec gvim &> /dev/null")
 		, ("M-i",                     spawn "exec dwb &> /dev/null")
 		, ("M-S-i",                   spawn "exec firefox &> /dev/null")

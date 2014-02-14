@@ -11,6 +11,7 @@ Games          : espeak xmahjongg
 Graphics       : asymptote blender fswebcam gimp imagemagick mypaint qiv recordmydesktop scrot
 Hardware       : dosfstools cdrkit exfat-utils fuse-exfat libdvdread libdvdcss libdvdnav ntfs-3g rfkill smartmontools wireless_tools
 Internet       : cclive curl dictd dwb elinks firefox inetutils mktorrent newsbeuter rdesktop rtorrent weechat
+Linguistics    : python2-nltk nltk-data
 Mathematics    : bc calc gnuplot maxima octave pari r sage-mathematics units wxmaxima
 Math Libraries : python-matplotlib python-numpy python-pillow python-scikit-learn python-scipy python-sympy
 Media          : audacity cuetools ffmpeg mediainfo mac mp3splt mplayer shntool timidity-freepats timidity++ vorbis-tools
@@ -28,18 +29,19 @@ Windowing      : xmobar xmonad xmonad-contrib
 
 ## DEPENDENCIES
 Buildtime      : boost cmake cppunit cython2 fftw linux-headers python2-distribute slang
-General        : gnupg gpgme mime-types opencv python-imaging python-jinja python-pygments python-pyzmq python-tornado yajl
+General        : gnupg gpgme mime-types opencv python-imaging python-jinja python-pygments python-pyzmq python-tornado python-yaml yajl
 
 ## AUR
 Administration : wavemon
 Display        : xpra-winswitch-svn
-Document       : pdfgrep-git
+Document       : pdfgrep-git uni2ascii
 Dependencies   : fftw2
 Editor         : sc
 Fonts          : ttf-lklug
 Games          : myman tint-tetris
 Graphics       : tiv
 Internet       : grive uber-mutt
+Linguistics    : python-nltk-git
 Media          : vkeybd
 Publishing     : diction
 Server         : python3-threaded_servers quickserve

@@ -93,6 +93,7 @@ OTHER_WRITABLE 01;34		# o+w directory
 .php 00;32
 .pl 00;32
 .py 00;32
+.py2 00;32
 .pyc 00;32
 .R 00;32
 .rb 00;32

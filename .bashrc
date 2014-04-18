@@ -38,3 +38,4 @@ PS1='\[\033[G\]\u@\h:\w\$ '
 # Includes.
 [ -f $HOME/.bash_aliases ] && . $HOME/.bash_aliases
 [ -f $HOME/.dircolors ] && eval $(dircolors -b $HOME/.dircolors)
+[ -f $HOME/bin/bashmarks.sh ] && . $HOME/bin/bashmarks.sh

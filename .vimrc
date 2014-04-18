@@ -30,6 +30,7 @@ set foldmethod=marker                    " Use markers for folding.
 set foldmarker={{{,}}}                   " Markers for folding.
 
 "" Bundles
+Bundle 'chrisbra/csv.vim'
 Bundle 'gmarik/vundle'
 Bundle 'bling/vim-airline'
 Bundle 'scrooloose/nerdcommenter'

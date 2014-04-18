@@ -1,7 +1,7 @@
 ## INSTALL
 Administration : at abs bwm-ng htop iftop iotop nethogs pkgstats powertop procinfo-ng rsync sdparm sudo
 Codecs         : gstreamer0.10-plugins
-Development    : base-devel bochs ctags cython diffstat git ipython nasm python-pip scons strace subversion yasm
+Development    : base-devel bochs ctags cython diffstat gdb git ipython nasm python-pip scons strace subversion yasm
 Drivers        : xf86-input-evdev xf86-input-synaptics xf86-video-dummy xf86-video-intel
 Display        : unclutter xorg-server xorg-server-utils xorg-server-xvfb xorg-xinit xorg-utils xorg-xfontsel
 Document       : antiword catdvi dos2unix html2text odt2txt unrtf zathura zathura-djvu zathura-pdf-mupdf zathura-ps

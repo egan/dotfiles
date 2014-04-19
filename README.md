@@ -27,10 +27,6 @@ My mutt configuration for Gmail via IMAPS and SMTP.
 ------------------
 File lists for rsync backups.
 
-.urxvt/
-------------------
-Very nice urxvt plugins from <https://github.com/muennich/urxvt-perls>.
-
 .weechat/
 ------------------
 Basic weechat configuration.

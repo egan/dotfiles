@@ -1,7 +1,9 @@
 .adobe/*
 .audacity-data/*
 .cache/*
+.compose_cache/*
 .config/matplotlib/*cache*
+.config/Popcorn-Time/Cache/*
 .dbus/*
 .dvdcss/*
 .fontconfig/*
@@ -18,9 +20,11 @@
 .mutt/certificates/*
 .mutt/temp/*
 .mypaint/*
+.npm/*
 .pki/*
 .pulse/*
 .rxvt-unicode-spheniscidae
+.sage/cache/*
 .texlive/*
 .thumbnails/*
 .viminfo

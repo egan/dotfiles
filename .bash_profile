@@ -14,5 +14,7 @@ export ERR_VARGS=5
 export GREP_COLOR="1;31"
 export GTK_IM_MODULE="xim"
 export PAGER="less"
+export PASSWORD_STORE_X_SELECTION="primary"
+export PASSWORD_STORE_CLIP_TIME="15"
 export PATH=$HOME/bin:$HOME/bin/.launch:$PATH
 export VISUAL=$EDITOR

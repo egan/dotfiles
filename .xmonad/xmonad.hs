@@ -106,5 +106,5 @@ main = do
 		]
 		`removeKeysP` [ "M-w", "M-S-w", "M-e", "M-S-e", "M-r", "M-S-r" ]
 		where
-			ozath   = spawn $ "exec zathura $(ls -A1t --quoting-style=escape $HOME/var/*.pdf | head -n 1) &> /dev/null"
+			ozath   = spawn $ "exec $HOME/bin/openrecentpdf.sh"
 			mPlay s = spawn $ "echo " ++ s ++ " > $HOME/.mplayer/pipe"

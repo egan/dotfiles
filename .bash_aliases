@@ -5,9 +5,9 @@
 #
 
 # Enable color and human friendly output.
-alias ls='ls -h --color=auto'
-alias dir='dir -h --color=auto'
-alias vdir='vdir -h --color=auto'
+alias ls='ls -vh --color=auto'
+alias dir='dir -vh --color=auto'
+alias vdir='vdir -vh --color=auto'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'

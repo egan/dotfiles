@@ -96,6 +96,7 @@ main = do
 		, ("M-S-<F1>",                spawn "$HOME/bin/dpmstoggle.sh")
 		, ("M-<Insert>",              spawn "xclip -o | $HOME/bin/turl &> /dev/null")
 		, ("M-S-<Insert>",            spawn "xclip -o | $HOME/bin/gurl &> /dev/null")
+		, ("<Print>",                 spawn "scrot &> /dev/null")
 		, ("<XF86AudioMute>",         spawn "amixer -q set Master toggle")
 		, ("<XF86AudioLowerVolume>",  spawn "amixer -q set Master 3%-")
 		, ("<XF86AudioRaiseVolume>",  spawn "amixer -q set Master 3%+")

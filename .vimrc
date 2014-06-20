@@ -31,6 +31,7 @@ set foldmarker={{{,}}}                   " Markers for folding.
 
 "" Bundles
 Bundle 'gmarik/vundle'
+Bundle 'mileszs/ack.vim'
 Bundle 'chrisbra/csv.vim'
 Bundle 'bling/vim-airline'
 Bundle 'scrooloose/nerdcommenter'
@@ -47,7 +48,10 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-repeat'
 Bundle 'goldfeld/vim-seek'
 Bundle 'tpope/vim-surround'
+Bundle 'bronson/vim-trailing-whitespace'
+Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-vividchalk'
+Bundle 'vim-scripts/ZoomWin'
 
 "" General Modes
 filetype plugin indent on                " Enable filetype plugins and indentation.

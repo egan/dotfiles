@@ -29,8 +29,22 @@ shopt -s extglob globstar
 # Check window size after command.
 shopt -s checkwinsize
 
+_dir_chomp () {
+	local p=${1/#$HOME/\~} b s
+	s=${#p}
+	while [[ $p != "${p//\/}" ]]&&(($s>$2))
+	do
+		p=${p#/}
+		[[ $p =~ \.?. ]]
+		b=$b/${BASH_REMATCH[0]}
+		p=${p#*/}
+		((s=${#b}+${#p}))
+	done
+	echo ${b/\/~/\~}${b+/}$p
+}
+
 # Command prompts.
-PS1='\[\033[G\]\u@\h:\w\$ '
+PS1='\[\033[G\]\u@\h:$(_dir_chomp "$(pwd)" 20)\$ '
 
 # Check for clobber.
 #set -o noclobber

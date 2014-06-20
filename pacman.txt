@@ -13,7 +13,7 @@ Hardware       : dosfstools cdrkit exfat-utils fuse-exfat libdvdread libdvdcss l
 Internet       : cclive curl dictd dwb elinks firefox inetutils mktorrent newsbeuter rdesktop rtorrent weechat
 Linguistics    : python2-nltk nltk-data
 Mathematics    : bc calc gnuplot maxima octave pari r sage-mathematics units wxmaxima
-Math Libraries : python-matplotlib python-numpy python-pillow python-scikit-learn python-scipy python-sympy
+Math Libraries : python-bottleneck python-matplotlib python-numpy python-pillow python-scikit-learn python-scipy python-sympy
 Media          : audacity cuetools ffmpeg mediainfo mac mp3splt mplayer shntool timidity-freepats timidity++ vorbis-tools
 Network        : dnsutils ettercap hping iptraf-ng ntp nmap tcpdump tigervnc whois wpa_actiond wput
 Plugin         : flashplugin icedtea-web-java7 jdk7-openjdk
@@ -23,9 +23,9 @@ Server         : autossh mosh gnu-netcat openssh
 Shell          : bash-completion tmux vifm
 Sound          : alsa-oss alsa-plugins alsa-utils
 Terminal       : dina-font profont rlwrap rxvt-unicode terminus-font urxvt-perls xterm
-Utilities      : acpi cpio inotify-tools jshon kexec-tools lsof mlocate moreutils p7zip pass pv sharutils unrar unzip xclip xdotool zip
+Utilities      : ack acpi cpio inotify-tools jshon kexec-tools lsof mlocate moreutils p7zip pass pv sharutils unrar unzip zip
 Widget         : gtk-chtheme gtk-engine-murrine
-Windowing      : xmobar xmonad xmonad-contrib
+Windowing      : xclip xdotool xmobar xmonad xmonad-contrib
 
 ## DEPENDENCIES
 Buildtime      : boost cmake cppunit cython2 fftw linux-headers python2-distribute slang

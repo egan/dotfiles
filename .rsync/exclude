@@ -2,9 +2,11 @@
 .audacity-data/*
 .cache/*
 .compose_cache/*
+.config/configstore/*
 .config/matplotlib/*cache*
-.config/Popcorn-Time/Cache/*
+.config/Popcorn-Time/*
 .dbus/*
+.distlib/*
 .dvdcss/*
 .fontconfig/*
 .gem/*
@@ -12,6 +14,7 @@
 .gnuplot_history
 .gnuplot_wxt
 .icedtea/*
+.java/*
 .lesshst
 .local/share/*
 .macromedia/*
@@ -24,7 +27,7 @@
 .pki/*
 .pulse/*
 .rxvt-unicode-spheniscidae
-.sage/cache/*
+.sage/*
 .texlive/*
 .thumbnails/*
 .viminfo

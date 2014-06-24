@@ -1,5 +1,7 @@
 set editing-mode vi
 "\t": menu-complete
+"\e[Z": menu-complete-backward
+"\C-x\C-r": re-read-init-file
 
 $if Python
 "\t": "    "

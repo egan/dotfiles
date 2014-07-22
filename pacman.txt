@@ -1,16 +1,16 @@
 ## INSTALL
-Administration : at abs bwm-ng htop iftop iotop nethogs pkgstats powertop procinfo-ng rsync sdparm sudo
+Administration : at abs bwm-ng htop iftop iotop nethogs pkgstats powertop procinfo-ng rsync sdparm
 Codecs         : gstreamer0.10-plugins
-Development    : base-devel bochs ctags cython diffstat gdb git ipython nasm python-pip scons sdcc strace subversion yasm
+Development    : base-devel bochs ctags cython diffstat gcc-fortran gdb git ipython nasm python-pip scons sdcc strace subversion yasm
 Drivers        : xf86-input-evdev xf86-input-synaptics xf86-video-dummy xf86-video-intel
-Display        : unclutter xorg-server xorg-server-utils xorg-server-xvfb xorg-xinit xorg-utils xorg-xfontsel
+Display        : unclutter xorg-server xorg-server-utils xorg-server-xvfb xorg-twm xorg-xinit xorg-utils xorg-xfontsel
 Document       : antiword catdvi dos2unix html2text odt2txt unrtf zathura zathura-djvu zathura-pdf-mupdf zathura-ps
 Editor         : ed gvim hexedit
 Fonts          : bdf-unifont ttf-freebanglafont ttf-indic-otf ttf-khmer ttf-liberation ttf-mph-2b-damase ttf-tibetan-machine
 Games          : espeak xmahjongg
 Graphics       : asymptote blender fswebcam gimp imagemagick mypaint qiv recordmydesktop scrot
 Hardware       : dosfstools cdrkit exfat-utils fuse-exfat libdvdread libdvdcss libdvdnav ntfs-3g rfkill smartmontools wireless_tools
-Internet       : cclive curl dictd dwb elinks firefox inetutils mktorrent newsbeuter rdesktop rtorrent weechat
+Internet       : cclive curl dictd dwb elinks firefox inetutils mktorrent newsbeuter rdesktop rtorrent weechat wget
 Linguistics    : python2-nltk nltk-data
 Mathematics    : bc calc gnuplot maxima octave pari r sage-mathematics units wxmaxima
 Math Libraries : python-bottleneck python-matplotlib python-numpy python-pillow python-scikit-learn python-scipy python-sympy
@@ -21,7 +21,7 @@ Printing       : a2ps cups foomatic-db-nonfree hplip
 Publishing     : aspell aspell-en aspell-es ghostscript markdown python-markdown texlive-lang texlive-most
 Server         : autossh mosh gnu-netcat openssh
 Shell          : bash-completion tmux vifm
-Sound          : alsa-oss alsa-plugins alsa-utils
+Sound          : alsa-plugins alsa-utils
 Terminal       : dina-font profont rlwrap rxvt-unicode terminus-font urxvt-perls xterm
 Utilities      : ack acpi cpio inotify-tools jshon kexec-tools lsof mlocate moreutils p7zip pass pv sharutils unrar unzip zip
 Widget         : gtk-chtheme gtk-engine-murrine
@@ -29,23 +29,24 @@ Windowing      : xclip xdotool xmobar xmonad xmonad-contrib
 
 ## DEPENDENCIES
 Buildtime      : boost cmake cppunit cython2 fftw linux-headers python2-distribute slang
-General        : gnupg gpgme mime-types opencv python-imaging python-jinja python-pygments python-pyzmq python-tornado python-yaml yajl
+General        : gnupg gpgme mime-types opencv python-imaging python-jinja python-pygments python-pyqt5 python-pyzmq python-tornado python-yaml qt5-webkit yajl
 
 ## AUR
 Administration : wavemon
 Display        : xpra-winswitch
 Document       : pdfgrep-git uni2ascii
-Dependencies   : fftw2 
+Dependencies   : fftw2
 Editor         : sc
 Fonts          : ttf-lklug
 Games          : myman tint-tetris
 Graphics       : tiv
 Internet       : grive uber-mutt
 Linguistics    : python-nltk-git
+Math Libraries : python-control python-slycot
 Media          : popcorntime-bin vkeybd
 Publishing     : diction
 Scanning       : brscan4-network
 Server         : python3-threaded_servers quickserve
 Terminal       : montecarlo-font
-Utilities      : detox weatherman
+Utilities      : cv-git detox weatherman
 Widget         : gtk-theme-murrine-collection

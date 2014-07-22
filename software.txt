@@ -10,6 +10,7 @@ python:
 	mahotas
 	pandas
 	patsy
+	rfc6266
 	seaborn
 	scikit-image
 	scikit-learn

@@ -9,34 +9,35 @@
 --
 --
 
-Config	{ font         = "-*-profont-*-*-*-*-10-*-*-*-*-*-iso8859-*"
-	, bgColor          = "#000000"
-	, fgColor          = "#e5e5e5"
-	, position         = Bottom
-	, lowerOnStart     = True
-	, hideOnStart      = False
-	, allDesktops      = True
-	, overrideRedirect = True
-	, persistent       = False
-	, border           = NoBorder
-	, borderColor      = "#ff0000"
-	, commands         =
-				[ Run MultiCpu
-				["-t","CPU0:<total>% <fc=#ff0000>|</fc> CPU1:<total0>% <fc=#ff0000>|</fc> CPU2:<total1>% <fc=#ff0000>|</fc> CPU3:<total2>% <fc=#ff0000>|</fc> CPU4:<total3>%","-L","5","-H","50","-n","#00ff00","-h","#ff0000","-p","3","-c"," "] 10
-				, Run ThermalZone 0 ["-t","Temp: <temp>°C","-L","40","-H","70","-h","#ff0000","-l","#729fcf"] 10
-				, Run Memory
-				["-t","Mem: <used>MB,<usedratio>% <fc=#ff0000>|</fc> Cache: <cache>MB <fc=#ff0000>|</fc> Buffer: <buffer>MB","-p","3","-m","3","-c"," "] 10
-				, Run Swap ["-t","Swap: <used>MB, <usedratio>%","-p","2","-c"," "] 10
-				, Run DynNetwork
-				["-t","Dn: <rx>kb/s <fc=#ff0000>|</fc> Up: <tx>kb/s","-L","0","-H","1000","-n","#00ff00","-h","#ff0000","-m","6","-c"," "] 10
-				, Run CommandReader "$HOME/bin/volumed.sh" "volume"
-				, Run BatteryP ["BAT0"] ["-t","Batt: <left>%","-m","3", "--", "-l", "#ff0000", "-p", "#ffcd00"] 10
-				, Run Weather "KSMF"
-				["-t","Sacramento: <tempC>°C - <rh>%","-L","15","-H","25","-n","#00ff00","-h","#ff0000","-l","#729fcf"] 9000
-				, Run Date "%a, %D %T" "date" 10
-				]
-	, sepChar         = "%"
-	, alignSep        = "}{"
-	, template        = "%multicpu% <fc=#ff0000>|</fc> %thermal0% <fc=#ff0000>|</fc> %memory% <fc=#ff0000>|</fc> %swap% <fc=#ff0000>|</fc> %dynnetwork% <fc=#ff0000>|</fc> }{ <fc=#ff0000>|</fc> %volume% <fc=#ff0000>|</fc> %battery% <fc=#ff0000>|</fc> %KSMF% <fc=#ff0000>|</fc> <fc=#ffcd00>%date%</fc>"
+Config	{ font             = "-*-profont-*-*-*-*-10-*-*-*-*-*-iso8859-*"
+        , bgColor          = "#000000"
+        , fgColor          = "#e5e5e5"
+        , position         = Bottom
+        , lowerOnStart     = True
+        , hideOnStart      = False
+        , pickBroadest     = False
+        , allDesktops      = True
+        , overrideRedirect = True
+        , persistent       = False
+        , border           = NoBorder
+        , borderColor      = "#ff0000"
+        , commands         =
+                           [ Run MultiCpu
+                           ["-t","CPU0:<total>% <fc=#ff0000>|</fc> CPU1:<total0>% <fc=#ff0000>|</fc> CPU2:<total1>% <fc=#ff0000>|</fc> CPU3:<total2>% <fc=#ff0000>|</fc> CPU4:<total3>%","-L","5","-H","50","-n","#00ff00","-h","#ff0000","-p","3","-c"," "] 10
+                           , Run ThermalZone 0 ["-t","Temp: <temp>°C","-L","40","-H","70","-h","#ff0000","-l","#729fcf"] 10
+                           , Run Memory
+                           ["-t","Mem: <used>MB,<usedratio>% <fc=#ff0000>|</fc> Cache: <cache>MB <fc=#ff0000>|</fc> Buffer: <buffer>MB","-p","3","-m","3","-c"," "] 10
+                           , Run Swap ["-t","Swap: <used>MB, <usedratio>%","-p","2","-c"," "] 10
+                           , Run DynNetwork
+                           ["-t","Dn: <rx>kb/s <fc=#ff0000>|</fc> Up: <tx>kb/s","-L","0","-H","1000","-n","#00ff00","-h","#ff0000","-m","6","-c"," "] 10
+                           , Run CommandReader "$HOME/bin/volumed.sh" "volume"
+                           , Run BatteryP ["BAT0"] ["-t","Batt: <left>%","-m","3", "--", "-l", "#ff0000", "-p", "#ffcd00"] 10
+                           , Run Weather "KSMF"
+                           ["-t","Sacramento: <tempC>°C - <rh>%","-L","15","-H","25","-n","#00ff00","-h","#ff0000","-l","#729fcf"] 9000
+                           , Run Date "%a, %D %T" "date" 10
+                           ]
+       , sepChar           = "%"
+       , alignSep          = "}{"
+       , template          = "%multicpu% <fc=#ff0000>|</fc> %thermal0% <fc=#ff0000>|</fc> %memory% <fc=#ff0000>|</fc> %swap% <fc=#ff0000>|</fc> %dynnetwork% <fc=#ff0000>|</fc> }{ <fc=#ff0000>|</fc> %volume% <fc=#ff0000>|</fc> %battery% <fc=#ff0000>|</fc> %KSMF% <fc=#ff0000>|</fc> <fc=#ffcd00>%date%</fc>"
 	}
 

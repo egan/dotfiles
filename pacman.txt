@@ -25,7 +25,7 @@ Sound          : alsa-plugins alsa-utils
 Terminal       : dina-font profont rlwrap rxvt-unicode terminus-font urxvt-perls xterm
 Utilities      : ack acpi cpio inotify-tools jshon kexec-tools lsof mlocate moreutils p7zip pass pv sharutils unrar unzip zip
 Widget         : gtk-chtheme gtk-engine-murrine
-Windowing      : xclip xdotool xmobar xmonad xmonad-contrib
+Windowing      : dmenu2 slock spectrwm xclip xdotool xmobar xmonad xmonad-contrib
 
 ## DEPENDENCIES
 Buildtime      : boost cmake cppunit cython2 fftw linux-headers python2-distribute slang

@@ -1,7 +1,7 @@
 ## INSTALL
 Administration : at abs bwm-ng htop iftop iotop nethogs pkgstats powertop procinfo-ng rsync sdparm
 Codecs         : gstreamer0.10-plugins
-Development    : base-devel bochs ctags cython diffstat gcc-fortran gdb git ipython nasm python-pip scons sdcc strace subversion yasm
+Development    : addinclude base-devel bochs ctags cython diffstat gcc-fortran gdb git ipython nasm python-pip scons sdcc strace subversion yasm
 Drivers        : xf86-input-evdev xf86-input-synaptics xf86-video-dummy xf86-video-intel
 Display        : unclutter xorg-server xorg-server-utils xorg-server-xvfb xorg-twm xorg-xinit xorg-utils xorg-xfontsel
 Document       : antiword catdvi dos2unix html2text odt2txt unrtf zathura zathura-djvu zathura-pdf-mupdf zathura-ps
@@ -12,7 +12,7 @@ Graphics       : asymptote blender fswebcam gimp imagemagick mypaint qiv recordm
 Hardware       : dosfstools cdrkit exfat-utils fuse-exfat libdvdread libdvdcss libdvdnav ntfs-3g rfkill smartmontools wireless_tools
 Internet       : cclive curl dictd dwb elinks firefox inetutils mktorrent newsbeuter rdesktop rtorrent weechat wget
 Linguistics    : python2-nltk nltk-data
-Mathematics    : bc calc gnuplot maxima octave pari r sage-mathematics units wxmaxima
+Mathematics    : bc calc gnuplot maxima octave pari r units wxmaxima
 Math Libraries : python-bottleneck python-matplotlib python-numpy python-pillow python-scikit-learn python-scipy python-sympy
 Media          : audacity cuetools ffmpeg mediainfo mac mp3splt mplayer shntool timidity-freepats timidity++ vorbis-tools
 Network        : dnsutils ettercap hping iptraf-ng ntp nmap tcpdump tigervnc whois wpa_actiond wput

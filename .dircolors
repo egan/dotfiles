@@ -81,6 +81,7 @@ OTHER_WRITABLE 01;34		# o+w directory
 .hpp 00;32
 .hxx 00;32
 .hs 00;32
+.ino 00;32
 .js 00;32
 .ksh 00;32
 .ld 00;32

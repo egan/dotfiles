@@ -1,58 +1,61 @@
 ## INSTALL
-Administration : at abs bwm-ng htop iftop iotop nethogs pkgstats powertop procinfo-ng
-Codecs         : gstreamer0.10-plugins
-Development    : base-devel bochs cmake ctags cython gcc-fortran gdb ipython nasm python-pip scons sdcc strace yasm
-Display        : xorg-server xorg-server-utils xorg-server-xvfb xorg-twm xorg-xinit xorg-utils xorg-xfontsel
-Document       : antiword catdvi dos2unix html2text odt2txt unrtf zathura zathura-djvu zathura-pdf-mupdf zathura-ps
-Drivers        : xf86-input-evdev xf86-input-synaptics xf86-video-dummy xf86-video-intel
-Editor         : ed gvim hexedit
-Fonts          : bdf-unifont ttf-freebanglafont ttf-indic-otf ttf-khmer ttf-liberation ttf-mph-2b-damase ttf-tibetan-machine
-Games          : espeak xmahjongg
-Graphics       : asymptote blender fswebcam gimp imagemagick mypaint qiv recordmydesktop scrot
-Hardware       : kexec-tools rfkill wireless_tools
-Internet       : dictd mktorrent newsbeuter rdesktop rtorrent tigervnc weechat
-Linguistics    : python2-nltk nltk-data
-Mathematics    : bc calc gnuplot maxima octave pari r units wxmaxima
-Math Libraries : python-bottleneck python-matplotlib python-numpy python-pillow python-scikit-learn python-scipy python-sympy
-Media          : audacity cuetools ffmpeg mediainfo mac mp3splt mplayer shntool timidity-freepats timidity++ vorbis-tools
-Network        : dnsutils ettercap inetutils hping iptraf-ng ntp nmap tcpdump whois wpa_actiond wput
-Plugin         : flashplugin icedtea-web-java7 jdk7-openjdk
-Printing       : a2ps cups foomatic-db-nonfree hplip
-Publishing     : aspell aspell-en aspell-es ghostscript markdown python-markdown texlive-lang texlive-most
-Server         : autossh mosh gnu-netcat openssh
-Shell          : bash-completion tmux vifm
-Sound          : alsa-plugins alsa-utils
-Storage        : dosfstools cdrkit exfat-utils fuse-exfat libdvdread libdvdcss libdvdnav ntfs-3g sdparm smartmontools
-Terminal       : dina-font profont rlwrap rxvt-unicode terminus-font urxvt-perls xterm
-Utilities      : ack acpi cpio inotify-tools jshon lsof mlocate moreutils p7zip pass pv rsync sharutils unrar unzip zip
-Versioning     : addinclude diffstat git subversion
-Web            : cclive curl elinks firefox wget
-Widget         : gtk-chtheme gtk-engine-murrine
-Windowing      : slock xclip xdotool xmobar unclutter
+Administration  : at abs bwm-ng htop iftop iotop nethogs pkgstats powertop procinfo-ng
+Codecs          : gstreamer0.10-plugins
+Development     : base-devel bochs cmake ctags cython gcc-fortran gdb ipython nasm python-pip scons sdcc strace yasm
+Display         : xorg-server xorg-server-utils xorg-server-xvfb xorg-twm xorg-xinit xorg-utils xorg-xfontsel
+Document        : antiword catdvi dos2unix html2text odt2txt unrtf zathura zathura-djvu zathura-pdf-mupdf zathura-ps
+Drivers         : xf86-input-evdev xf86-input-synaptics xf86-video-dummy xf86-video-intel
+Editor          : ed gvim hexedit
+Fonts           : bdf-unifont ttf-freebanglafont ttf-indic-otf ttf-khmer ttf-liberation ttf-mph-2b-damase ttf-tibetan-machine
+Games           : espeak xmahjongg
+Graphics        : asymptote blender fswebcam gimp imagemagick mypaint qiv recordmydesktop scrot
+Hardware        : kexec-tools rfkill wireless_tools
+Internet        : dictd mktorrent newsbeuter rdesktop rtorrent tigervnc weechat
+Linguistics     : python2-nltk nltk-data
+Mathematics     : bc calc gnuplot maxima octave pari r units wxmaxima
+Math Libraries  : python-bottleneck python-matplotlib python-numpy python-pillow python-scikit-learn python-scipy python-sympy
+Media           : audacity cuetools ffmpeg mediainfo mac mp3splt mplayer shntool timidity-freepats timidity++ vorbis-tools
+Microcontroller : avr-gcc avr-libc avrdude java-rxtx picocom
+Network         : dnsutils ettercap inetutils hping iptraf-ng ntp nmap tcpdump whois wpa_actiond wput
+Plugin          : flashplugin icedtea-web-java7 jdk7-openjdk
+Printing        : a2ps cups foomatic-db-nonfree hplip
+Publishing      : aspell aspell-en aspell-es ghostscript markdown python-markdown texlive-lang texlive-most
+Server          : autossh mosh gnu-netcat openssh
+Shell           : bash-completion tmux vifm
+Sound           : alsa-plugins alsa-utils
+Storage         : dosfstools cdrkit exfat-utils fuse-exfat libdvdread libdvdcss libdvdnav ntfs-3g sdparm smartmontools
+Terminal        : dina-font profont rlwrap rxvt-unicode terminus-font urxvt-perls xterm
+Utilities       : ack acpi cpio inotify-tools jshon lsof mlocate moreutils p7zip pass pv rsync sharutils unrar unzip zip
+Versioning      : addinclude diffstat git subversion
+Web             : cclive curl elinks firefox wget
+Widget          : gtk-chtheme gtk-engine-murrine
+Windowing       : slock xclip xdotool xmobar unclutter
 
 ## DEPENDENCIES
-Buildtime      : boost cppunit cython2 fftw linux-headers python2-distribute slang
-General        : gnupg gpgme mime-types opencv qt5-webkit yajl
-Python         : python-imaging python-jinja python-pygments python-pyqt5 python-pyzmq python-tornado python-yaml
+Buildtime       : apache-ant boost cppunit cython2 fftw linux-headers python2-distribute slang
+General         : gnupg gpgme mime-types opencv qt5-webkit yajl
+Python3         : python-imaging python-jinja python-pygments python-pypeg2 python-pyqt5 python-pyzmq python-tornado python-yaml
+Python2         : python2-configobj python2-jinja python2-pyserial python2-six
 
 ## AUR
-Administration : wavemon
-Display        : xpra-winswitch
-Document       : pdfgrep-git uni2ascii
-Dependencies   : fftw2
-Editor         : sc
-Fonts          : ttf-lklug
-Games          : myman tint-tetris
-Graphics       : tiv
-Internet       : grive uber-mutt
-Linguistics    : python-nltk-git
-Math Libraries : python-control python-slycot
-Media          : popcorntime-bin vkeybd
-Publishing     : diction
-Scanning       : brscan4-network
-Server         : python3-threaded_servers quickserve
-Terminal       : montecarlo-font
-Utilities      : cv-git detox weatherman
-Web            : dwb-git
-Widget         : gtk-theme-murrine-collection
-Windowing      : dmenu2 spectrwm-git
+Administration  : wavemon
+Display         : xpra-winswitch
+Document        : pdfgrep-git uni2ascii
+Dependencies    : fftw2
+Editor          : sc
+Fonts           : ttf-lklug
+Games           : myman tint-tetris
+Graphics        : tiv
+Internet        : grive uber-mutt
+Linguistics     : python-nltk-git
+Math Libraries  : python-control python-slycot
+Media           : popcorntime-bin vkeybd
+Microcontroller : arduino ino
+Publishing      : diction
+Scanning        : brscan4-network
+Server          : python3-threaded_servers quickserve
+Terminal        : montecarlo-font
+Utilities       : cv-git detox weatherman
+Web             : dwb-git
+Widget          : gtk-theme-murrine-collection
+Windowing       : dmenu2 spectrwm-git

@@ -1,0 +1,14 @@
+# ~/.conkyrc: executed by conky(1)
+#
+# For the original version, see /etc/conky/conky.conf
+#
+# Written by Egan McComb, June 13, 2010
+
+background no
+out_to_console yes
+update_interval 1.0
+total_run_times 0
+use_spacer none
+
+TEXT
+Up: ${uptime}, Load: ${loadavg 1 2 3} ^fg(red)|^fg() Cpu: ${cpu cpu1}% ${cpu cpu2}% ${cpu cpu0}% @ ${acpitemp}°C ^fg(red)|^fg() Mem: ${mem}, ${memperc}% Cache: ${cached} ^fg(red)|^fg() Swap: ${swap}, ${swapperc}% ^fg(red)|^fg() Speed: ${downspeedf wlan0} - ${upspeedf wlan0}kbps, Total: ${totaldown wlan0} - ${totalup wlan0} ^fg(red)|^fg() Batt: ${battery} ^fg(red)|^fg() ${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ KNUQ temperature} ^fg(red)|^fg() ^fg(#ee9a00)${time %a, %D %T}^fg()

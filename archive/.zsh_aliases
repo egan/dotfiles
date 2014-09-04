@@ -1,0 +1,49 @@
+#
+# ~/.zsh_aliases: sourced by .zshrc for user aliases.
+#
+# written: 8 July, 2010 by Egan McComb
+#
+
+# Enable color and human friendly output.
+alias ls="ls -h --color=auto"
+alias dir="dir -h --color=auto"
+alias vdir="vdir -h --color=auto"
+alias grep="grep --color=auto"
+alias fgrep="fgrep --color=auto"
+alias egrep="egrep --color=auto"
+
+# Essential flag aliases.
+alias la="ls -a"
+alias le="ls -la"
+alias ll="ls -l"
+alias llp="lp -o sides=two-sided-long-edge"
+alias mkdir="mkdir -p"
+
+# Essential global aliases.
+alias -g L="| less"
+alias -g S="&> /dev/null"
+
+# Application aliases.
+alias apropos="L apropos"
+alias aspell="aspell -x"
+alias dict="L dict"
+alias epdfview="S epdfview &"
+alias firefox="S firefox &"
+alias gimp="S gimp &"
+alias qiv="S qiv"
+alias xdvi="S xdvi -q &"
+alias zathura="S zathura &"
+
+# Specialized aliases.
+alias cclean="rm -rf ~/.macromedia/* ~/.icedteaplugin/*"
+alias cflush="sudo sh -c 'echo 3 >! /proc/sys/vm/drop_caches'"
+alias cls="tput reset"
+alias forecast="curl -s http://weather.noaa.gov/pub/data/forecasts/city/ca/san_jose.txt"
+alias iwscan="sudo iwlist wlan0 scan | piwlist.py"
+alias lclean="rm -f *.aux *.bbl *.dvi *.idx *.ilg *.ind *.lof *.log *.lot *.toc"
+alias nettest="echo 'Testing Name Resolution:';ping -c 4 www.example.com;echo;echo 'Testing Connectivity:';ping -c 4 192.0.32.10"
+alias ntpsync="sudo ntpdate 0.us.pool.ntp.org"
+alias scrsave="sleep 1 && xset s activate"
+alias sprunge="curl -sF 'sprunge=<-' http://sprunge.us | tclip"
+alias sflush="sudo swapoff -a && sudo swapon -a"
+alias weather="curl -s http://weather.noaa.gov/pub/data/observations/metar/decoded/KNUQ.TXT"

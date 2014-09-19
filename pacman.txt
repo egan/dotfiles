@@ -9,7 +9,7 @@ Editor          : ed gvim hexedit
 Fonts           : bdf-unifont ttf-freebanglafont ttf-indic-otf ttf-khmer ttf-liberation ttf-mph-2b-damase ttf-tibetan-machine
 Games           : espeak xmahjongg
 Graphics        : asymptote blender fswebcam gimp imagemagick mypaint qiv recordmydesktop scrot
-Hardware        : kexec-tools lshw qemu rfkill wireless_tools
+Hardware        : kexec-tools libva-intel-driver libvdpau-va-gl lshw qemu rfkill wireless_tools
 Internet        : dictd lftp mktorrent ncftp newsbeuter rdesktop rtorrent tigervnc weechat
 Linguistics     : python2-nltk nltk-data
 Mathematics     : bc calc gnuplot maxima octave pari r units wxmaxima

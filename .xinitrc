@@ -1,3 +1,4 @@
+xrdb -merge ~/.Xresources
 xmodmap ~/.xmodmaprc
 synclient TouchpadOff=1
 xmobar &

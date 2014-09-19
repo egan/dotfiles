@@ -9,8 +9,8 @@ Editor          : ed gvim hexedit
 Fonts           : bdf-unifont ttf-freebanglafont ttf-indic-otf ttf-khmer ttf-liberation ttf-mph-2b-damase ttf-tibetan-machine
 Games           : espeak xmahjongg
 Graphics        : asymptote blender fswebcam gimp imagemagick mypaint qiv recordmydesktop scrot
-Hardware        : kexec-tools rfkill wireless_tools
-Internet        : dictd mktorrent newsbeuter rdesktop rtorrent tigervnc weechat
+Hardware        : kexec-tools lshw qemu rfkill wireless_tools
+Internet        : dictd lftp mktorrent ncftp newsbeuter rdesktop rtorrent tigervnc weechat
 Linguistics     : python2-nltk nltk-data
 Mathematics     : bc calc gnuplot maxima octave pari r units wxmaxima
 Math Libraries  : python-bottleneck python-matplotlib python-numpy python-pillow python-scikit-learn python-scipy python-sympy
@@ -25,7 +25,7 @@ Shell           : bash-completion tmux vifm
 Sound           : alsa-plugins alsa-utils
 Storage         : dosfstools cdrkit exfat-utils fuse-exfat libdvdread libdvdcss libdvdnav ntfs-3g sdparm smartmontools
 Terminal        : dina-font profont rlwrap rxvt-unicode terminus-font urxvt-perls xterm
-Utilities       : ack acpi cpio inotify-tools jshon lsof mlocate moreutils p7zip pass pv rsync sharutils unrar unzip zip
+Utilities       : ack acpi cpio inotify-tools jshon lsof mlocate moreutils p7zip pass pv rsync sharutils unison unrar unzip zip
 Versioning      : addinclude diffstat git subversion
 Web             : cclive curl elinks firefox wget
 Widget          : gtk-chtheme gtk-engine-murrine
@@ -53,6 +53,7 @@ Media           : popcorntime-bin vkeybd
 Microcontroller : arduino ino
 Publishing      : diction
 Scanning        : brscan4-network
+Science         : xoscope
 Server          : python3-threaded_servers quickserve
 Terminal        : montecarlo-font
 Utilities       : cv-git detox weatherman

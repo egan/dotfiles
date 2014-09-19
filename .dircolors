@@ -101,6 +101,7 @@ OTHER_WRITABLE 01;34		# o+w directory
 .s 00;32
 .sed 00;32
 .sh 00;32
+.sim 00;32
 .vim 00;32
 .zsh 00;32
 

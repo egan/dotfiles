@@ -74,7 +74,7 @@ nmap <silent><Leader>W :%s/\s\+$//<CR>:let @/=''<CR>
 nmap <Leader>ff [I:let nr = input("Which one: ")<BAR>exe "normal " . nr ."[\t"<CR>
 "cmap cwd lcd %:p:h
 "cmap w!! w !sudo tee % >/dev/null
-nmap <silent><F3> :w!<CR>:silent !aspell -c -x %<CR>:e! %<CR>:redraw!<CR>
+nmap <silent><F3> :w!<CR>:silent !aspell -c -x '%'<CR>:e! %<CR>:redraw!<CR>
 nmap <silent><F4> :silent !dict <cword> \| less<CR>:redraw!<CR>
 nmap <silent><F5> :set number!<CR>
 nmap <silent><F6> :set relativenumber!<CR>

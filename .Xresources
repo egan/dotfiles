@@ -16,8 +16,10 @@ URxvt.keysym.M-u:                  perl:url-select:select_next
 *.colorBD:                         #ffffff
 *.cursorColor:                     #4d4d4d
 *.cursorColor2:                    #ffffff
-*.highlightColor:                  #414141
-*.highlightTextColor:              #000000
+! Default highlight is invert video.
+!*.highlightColor:                  #414141
+!*.highlightTextColor:              #000000
+
 ! KRGYBMCW normal, bright
 *.color0:                          #000000
 *.color1:                          #990000

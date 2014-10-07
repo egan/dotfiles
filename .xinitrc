@@ -1,7 +1,7 @@
 xrdb -merge ~/.Xresources
+urxvtd -q -o -f &> /dev/null
 xmodmap ~/.xmodmaprc
 synclient TouchpadOff=1
-xmobar &
 unclutter -noevents -root -idle 0 &
-urxvtd -q -o -f &> /dev/null
+xmobar &
 exec spectrwm &> ~/.spectrwm.log

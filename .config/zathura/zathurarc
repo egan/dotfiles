@@ -21,7 +21,6 @@ set highlight-active-color  "#e5e500"
 
 set recolor-lightcolor      "#000000"
 set recolor-darkcolor       "#f2f2f2"
-set recolor                 "true"
 set recolor-keephue         "false"
 
 set font                    "monospace normal 8"

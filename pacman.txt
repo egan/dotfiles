@@ -8,8 +8,8 @@ Drivers         : xf86-input-evdev xf86-input-synaptics xf86-video-dummy xf86-vi
 Editor          : ed gvim hexedit
 Fonts           : bdf-unifont ttf-freebanglafont ttf-indic-otf ttf-khmer ttf-liberation ttf-mph-2b-damase ttf-tibetan-machine
 Games           : espeak xmahjongg
-Graphics        : asymptote blender fswebcam gimp imagemagick mypaint qiv recordmydesktop scrot
-Hardware        : kexec-tools libva-intel-driver libvdpau-va-gl lshw qemu rfkill wireless_tools
+Graphics        : asymptote blender fswebcam gimp imagemagick mypaint qiv recordmydesktop scrot sxiv
+Hardware        : acpi_call kexec-tools libva-intel-driver lshw mesa-vdpau qemu rfkill wireless_tools
 Internet        : dictd lftp mktorrent ncftp newsbeuter rdesktop rtorrent tigervnc weechat
 Linguistics     : python2-nltk nltk-data
 Mathematics     : bc calc gnuplot maxima octave pari r units wxmaxima
@@ -25,7 +25,7 @@ Shell           : bash-completion tmux vifm
 Sound           : alsa-plugins alsa-utils
 Storage         : dosfstools cdrkit exfat-utils fuse-exfat libdvdread libdvdcss libdvdnav ntfs-3g sdparm smartmontools
 Terminal        : dina-font profont rlwrap rxvt-unicode terminus-font urxvt-perls xterm
-Utilities       : ack acpi cpio inotify-tools jshon lsof mlocate moreutils p7zip pass pv rsync sharutils unison unrar unzip zip
+Utilities       : ack acpi cpio inotify-tools jshon lsof mlocate moreutils p7zip pass pv rsync sharutils srm unison unrar unzip zip
 Versioning      : addinclude diffstat git subversion
 Web             : cclive curl elinks firefox wget
 Widget          : gtk-chtheme gtk-engine-murrine
@@ -33,7 +33,7 @@ Windowing       : slock xclip xdotool xmobar unclutter
 
 ## DEPENDENCIES
 Buildtime       : apache-ant boost cppunit cython2 fftw linux-headers python2-distribute slang
-General         : gnupg gpgme mime-types opencv qt5-webkit yajl
+General         : gnupg gpgme mime-types opencv qt5-graphicaleffects qt5-quickcontrols qt5-webkit yajl
 Python3         : python-imaging python-jinja python-pygments python-pypeg2 python-pyqt5 python-pyzmq python-tornado python-yaml
 Python2         : python2-configobj python2-jinja python2-pyserial python2-six
 
@@ -44,7 +44,7 @@ Document        : pdfgrep-git uni2ascii
 Dependencies    : fftw2
 Editor          : sc
 Fonts           : ttf-lklug
-Games           : myman tint-tetris
+Games           : cool-retro-terminal myman tint-tetris
 Graphics        : tiv
 Internet        : grive uber-mutt
 Linguistics     : python-nltk-git

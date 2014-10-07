@@ -1,11 +1,11 @@
 ## Colors
 
 # Default
-color normal brightwhite default
+color normal default default
 
 # Main
-color status      brightwhite  blue
-color indicator   black        brightwhite
+color status      default      blue
+color indicator   black        white
 color tree        brightblue   default
 color error       brightred    default
 color message     brightyellow default

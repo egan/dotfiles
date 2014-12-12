@@ -65,7 +65,7 @@ alias ghost='sudo mount -o rw,noauto,async,user,umask=1000 /dev/disk/by-uuid/346
 alias gsync='cd $HOME/var/grive && grive; cd - > /dev/null'
 alias hastings='exec tmux source-file $HOME/.tmux/hastings.conf \; attach'
 alias hibernate='sudo systemctl hibernate'
-alias imsput='rsync -avz -e "ssh -p 1250 -l IMSLABM" $HOME/docs/ims/ 10.1.1.106:/mnt/labdata/IMS/Backup/2014/EMcComb/'
+alias imsput='rsync -avz --exclude-from=$HOME/.rsync/exclude -e "ssh -p 1729 -l EMcComb" $HOME/docs/ims/ 10.1.1.128:'
 alias iwscan='sudo iwlist wlan0 scan | piwlist.py'
 alias lclean='rm -f *.aux *.auxlock *.bbl *.bcf *.blg *.dvi *.fff *.idx *.ilg *.ind *.lof *.log *.lot *.nav *.out *.run.xml *.snm *.toc *.ttt'
 alias loxodonta='sudo mount /dev/disk/by-uuid/2B2194F372B5C053 /media/Loxodonta'

@@ -3,13 +3,13 @@ Administration  : at abs bwm-ng htop iftop iotop nethogs pkgstats powertop proci
 Codecs          : gstreamer0.10-plugins
 Development     : base-devel bochs cmake ctags cython gcc-fortran gdb ipython nasm python-pip scons sdcc strace yasm
 Display         : xorg-server xorg-server-utils xorg-server-xvfb xorg-twm xorg-xinit xorg-utils xorg-xfontsel
-Document        : antiword catdvi dos2unix html2text odt2txt unrtf zathura zathura-djvu zathura-pdf-mupdf zathura-ps
+Document        : antiword catdvi dos2unix html2text odt2txt pdfgrep unrtf zathura zathura-djvu zathura-pdf-mupdf zathura-ps
 Drivers         : xf86-input-evdev xf86-input-synaptics xf86-video-dummy xf86-video-intel
 Editor          : ed gvim hexedit
 Fonts           : bdf-unifont ttf-freebanglafont ttf-indic-otf ttf-khmer ttf-liberation ttf-mph-2b-damase ttf-tibetan-machine
 Games           : espeak xmahjongg
-Graphics        : asymptote blender fswebcam gimp imagemagick mypaint qiv recordmydesktop scrot sxiv
-Hardware        : acpi_call kexec-tools libva-intel-driver lshw mesa-vdpau qemu rfkill wireless_tools
+Graphics        : asymptote blender fswebcam gimp imagemagick inkscape mypaint qiv recordmydesktop scrot sxiv
+Hardware        : acpi_call intel-ucode kexec-tools libva-intel-driver lshw mesa-vdpau qemu rfkill wireless_tools
 Internet        : dictd lftp mktorrent ncftp newsbeuter rdesktop rtorrent tigervnc weechat
 Linguistics     : python2-nltk nltk-data
 Mathematics     : bc calc gnuplot maxima octave pari r units wxmaxima
@@ -32,19 +32,19 @@ Widget          : gtk-chtheme gtk-engine-murrine
 Windowing       : slock xclip xdotool xmobar unclutter
 
 ## DEPENDENCIES
-Buildtime       : apache-ant boost cppunit cython2 fftw linux-headers python2-distribute slang
-General         : gnupg gpgme mime-types opencv qt5-graphicaleffects qt5-quickcontrols qt5-webkit yajl
+Buildtime       : apache-ant boost cppunit cython2 fftw linux-headers python2-distribute slang tk
+General         : gnupg gpgme icoutils mime-types opencv qt5-webkit x264 yajl
 Python3         : python-imaging python-jinja python-pygments python-pypeg2 python-pyqt5 python-pyzmq python-tornado python-yaml
 Python2         : python2-configobj python2-jinja python2-pyserial python2-six
 
 ## AUR
 Administration  : wavemon
 Display         : xpra-winswitch
-Document        : pdfgrep-git uni2ascii
+Document        : uni2ascii
 Dependencies    : fftw2
 Editor          : sc
 Fonts           : ttf-lklug
-Games           : cool-retro-terminal myman tint-tetris
+Games           : myman tint-tetris
 Graphics        : tiv
 Internet        : grive uber-mutt
 Linguistics     : python-nltk-git

@@ -3,7 +3,7 @@ URxvt.boldFont:                    -*-profont-*-*-*-*-11-*-*-*-*-*-iso8859-*
 URxvt.scrollstyle:                 xterm
 URxvt.scrollBar_right:             true
 URxvt.scrollBar:                   false
-URxvt.url-select.launcher:         /usr/bin/dwb
+URxvt.url-select.launcher:         qutebrowser
 URxvt.url-select.underline:        false
 URxvt.perl-ext-common:             keyboard-select,url-select
 URxvt.keysym.M-y:                  perl:keyboard-select:activate

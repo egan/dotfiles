@@ -1,6 +1,6 @@
 # ~/.newsbeuter/config: configuration for newsbeuter
 
-browser                 "dwb"
+browser                 "qutebrowser"
 
 # Bindings
 bind-key j              down

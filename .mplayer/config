@@ -1,6 +1,7 @@
-input=file=/home/USER/.mplayer/pipe
+input=file=/home/egan/.mplayer/pipe
 msglevel=all=0:cplayer=5:statusline=5
 nolirc=yes
+idx=yes
 ao=alsa
 vo=xv
 dvd-device=/dev/sr0

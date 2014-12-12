@@ -1,16 +1,16 @@
 # ~/.newsbeuter/config: configuration for newsbeuter
 
-browser			"dwb"
+browser                 "dwb"
 
 # Bindings
-bind-key j		down
-bind-key k		 up
+bind-key j              down
+bind-key k              up
 
 # Colors
-color background	white	black	bold
-color listnormal	white	black	bold
-color listnormal_unread	white	black
-color listfocus		white	blue
-color listfocus_unread	white	blue
-color info		white	blue
-color article		white	black	bold
+color background        white black bold
+color listnormal        white black bold
+color listnormal_unread white black
+color listfocus         white blue
+color listfocus_unread  white blue
+color info              white blue
+color article           white black bold

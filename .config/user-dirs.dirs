@@ -1,8 +1,8 @@
 # Directory Configuration for Stupid GTK
-XDG_DESKTOP_DIR="/home/egan/"
-XDG_DOWNLOAD_DIR="/home/egan/"
+XDG_DESKTOP_DIR="/home/egan/var"
+XDG_DOWNLOAD_DIR="/home/egan/var"
 XDG_TEMPLATES_DIR="/home/egan/"
-XDG_PUBLICSHARE_DIR="/home/egan/"
+XDG_PUBLICSHARE_DIR="/home/egan/var"
 XDG_DOCUMENTS_DIR="/home/egan/docs"
 XDG_MUSIC_DIR="/home/egan/music"
 XDG_PICTURES_DIR="/home/egan/pics"

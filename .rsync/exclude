@@ -34,7 +34,7 @@
 .vim/bundle/*
 .Xauthority
 code/share/*
-docs/ims/drop/*
+docs/ims/Drop/*
 docs/ims/var/*
 src/*
 var/*

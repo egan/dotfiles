@@ -13,8 +13,8 @@
 
 # History settings.
 HISTCONTROL=erasedups:ignorespace
-HISTFILE=".bash_history"
-HISTFILESIZE=2000
+HISTFILE=""
+#HISTFILESIZE=2000
 HISTSIZE=500
 shopt -s histappend
 shopt -s histreedit
@@ -44,7 +44,7 @@ _dir_chomp () {
 }
 
 # Command prompts.
-PS1='\[\033[G\]\u@\h:$(_dir_chomp "$(pwd)" 20)\$ '
+PS1='\[\033[G\]\u@\h:$(_dir_chomp "$(pwd)" 35)\$ '
 
 # Check for clobber.
 #set -o noclobber

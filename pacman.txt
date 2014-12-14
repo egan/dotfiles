@@ -1,5 +1,6 @@
 ## INSTALL
 Administration  : at abs bwm-ng htop iftop iotop nethogs pkgstats powertop procinfo-ng
+Benchmark       : mesa-demos
 Boot            : base dosfstools efibootmgr grub
 Codecs          : gstreamer0.10-plugins
 Development     : base-devel bochs cmake ctags cython gcc-fortran gdb ipython nasm python-pip scons sdcc strace yasm
@@ -7,10 +8,11 @@ Display         : xorg-server xorg-server-utils xorg-server-xvfb xorg-twm xorg-x
 Document        : antiword catdvi dos2unix html2text odt2txt pdfgrep unrtf zathura zathura-djvu zathura-pdf-mupdf zathura-ps
 Drivers         : xf86-video-ati xf86-video-dummy
 Editor          : ed gvim hexedit
+Engineering     : freecad
 Fonts           : bdf-unifont ttf-freebanglafont ttf-indic-otf ttf-khmer ttf-liberation ttf-mph-2b-damase ttf-tibetan-machine
 Games           : espeak xmahjongg
 Graphics        : asymptote blender gimp imagemagick inkscape mypaint qiv scrot sxiv
-Hardware        : i7z lshw mesa-demos mesa-vdpau qemu
+Hardware        : i7z lm_sensors lshw mesa-vdpau opencl-headers qemu
 Internet        : dictd lftp mktorrent ncftp newsbeuter rdesktop rtorrent tigervnc weechat
 Linguistics     : python2-nltk nltk-data
 Mathematics     : bc calc gnuplot maxima octave pari r units wxmaxima
@@ -20,27 +22,32 @@ Microcontroller : avr-gcc avr-libc avrdude java-rxtx picocom
 Network         : dnsutils ettercap inetutils hping iptraf-ng ntp nmap tcpdump whois
 Plugin          : flashplugin icedtea-web
 Printing        : a2ps cups hplip
-Publishing      : aspell aspell-en aspell-es ghostscript markdown python-markdown texlive-lang texlive-most
+Publishing      : asciidoc aspell aspell-en aspell-es ghostscript markdown python-markdown texlive-lang texlive-most
 Server          : autossh mosh gnu-netcat openssh
 Shell           : bash-completion tmux vifm
 Sound           : alsa-plugins alsa-tools alsa-utils
-Storage         : dosfstools cdrkit exfat-utils fuse-exfat libdvdread libdvdcss libdvdnav ntfs-3g sdparm smartmontools
+Storage         : dosfstools cdrkit exfat-utils fuse-exfat fuseiso libdvdread libdvdcss libdvdnav ntfs-3g sdparm smartmontools
 Terminal        : profont rlwrap rxvt-unicode urxvt-perls xterm
-Utilities       : ack acpi cpio inotify-tools jshon lsof mlocate moreutils p7zip pass pv rsync sharutils srm unison unrar unzip zip
+Utilities       : ack acpi cpio inotify-tools jshon lsof mlocate moreutils notify-send p7zip pass pv rsync sharutils srm unison unrar unzip zip
 Versioning      : addinclude diffstat git subversion
-Web             : cclive curl dwb elinks firefox wget wput
+Web             : cclive curl dwb elinks firefox qutebrowser wget wput
 Widget          : gtk-chtheme gtk-engine-murrine
-Windowing       : slock spectrwm xclip xdotool xmobar unclutter
+Windowing       : dunst slock spectrwm xclip xdotool xmobar unclutter
 
 ## DEPENDENCIES
-Buildtime       : boost cython2 slang tk
-General         : icoutils x264 yajl
-Python3         : python-imaging python-yaml
+Buildtime       : boost cython2 linux-headers qt5-webkit slang tk
+General         : cgal ffmpeg-compat icoutils qtwebkit x264 yajl
+Graphics        : lib32-libxext lib32-libdrm lib32-libxinerama lib32-mesa
+Python3         : python-imaging python-jinja python-pygments python-yaml
 Python2         : python2-configobj python2-jinja python2-pyserial python2-six
 
 ## AUR
+Benchmark       : unigine-heaven
+Dependencies    : libcgns-paraview metis parmetis ptscotch-openmpi python-pypeg2
 Display         : xpra-winswitch
 Document        : uni2ascii
+Drivers         : catalyst-total
+Engineering     : openfoam paraview
 Editor          : sc
 Fonts           : ttf-lklug
 Games           : myman tint-tetris

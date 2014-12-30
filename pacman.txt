@@ -54,7 +54,7 @@ Games           : myman tint-tetris
 Graphics        : tiv
 Internet        : grive uber-mutt
 Linguistics     : python-nltk-git
-Math Libraries  : python-control python-slycot
+Math Libraries  : python-control
 Media           : popcorntime-bin vkeybd
 Microcontroller : arduino ino
 Publishing      : diction

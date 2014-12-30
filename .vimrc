@@ -20,45 +20,54 @@ set nojoinspaces                                 " Do not doublespace on join (J
 set pastetoggle=<F2>                             " Enable unformatted paste.
 set splitright                                   " Open new vsplit window to the right.
 set splitbelow                                   " Open new split window to the bottom.
-
-"" Vundle Config
-set rtp+=~/.vim/bundle/vundle                    " Include vundle in runtime path.
-call vundle#rc()                                 " Run vundle.
+set nrformats=hex                                " Don't interpret leading 0s as octal.
 
 "" Folding
 set foldmethod=marker                            " Use markers for folding.
 set foldmarker={{{,}}}                           " Markers for folding.
 
+"" Vundle Config
+set rtp+=~/.vim/bundle/Vundle.vim                " Include vundle in runtime path.
+call vundle#begin()                              " Run vundle.
+
 "" Bundles
-Bundle 'gmarik/vundle'
-Bundle 'mileszs/ack.vim'
-Bundle 'chrisbra/csv.vim'
-Bundle 'bling/vim-airline'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/nerdtree'
-Bundle 'xuhdev/SingleCompile'
-Bundle 'chriskempson/vim-tomorrow-theme'
-Bundle 'godlygeek/tabular'
-" Bundle 'spf13/vim-autoclose'
-Bundle 'Lokaltog/vim-distinguished'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'mbbill/undotree'
-Bundle 'tpope/vim-fugitive'
-" Bundle 'terryma/vim-multiple-cursors'
-Bundle 'tpope/vim-repeat'
-Bundle 'goldfeld/vim-seek'
-Bundle 'tpope/vim-surround'
-Bundle 'bronson/vim-trailing-whitespace'
-Bundle 'tpope/vim-unimpaired'
-Bundle 'tpope/vim-vividchalk'
-Bundle 'vim-scripts/ZoomWin'
+Plugin 'gmarik/vundle'
+Plugin 'mileszs/ack.vim'
+Plugin 'chrisbra/csv.vim'
+"Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'xuhdev/SingleCompile'
+Plugin 'godlygeek/tabular'
+Plugin 'mbbill/undotree'
+Plugin 'tpope/vim-abolish'
+Plugin 'bling/vim-airline'
+"Plugin 'spf13/vim-autoclose'
+Plugin 'tpope/vim-commentary'
+Plugin 'Lokaltog/vim-distinguished'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'tpope/vim-fugitive'
+"Plugin 'terryma/vim-multiple-cursors'
+Plugin 'tpope/vim-repeat'
+Plugin 'goldfeld/vim-seek'
+Plugin 'tpope/vim-surround'
+Plugin 'kana/vim-textobj-entire'
+Plugin 'kana/vim-textobj-lastpat'
+Plugin 'kana/vim-textobj-user'
+Plugin 'chriskempson/vim-tomorrow-theme'
+Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'tpope/vim-vividchalk'
+Plugin 'vim-scripts/VisIncr'
+Plugin 'vim-scripts/ZoomWin'
+
+call vundle#end()
 
 "" General Modes
 filetype plugin indent on                        " Enable filetype plugins and indentation.
 syntax on                                        " Enable syntax highlighting.
+runtime macros/matchit.vim                       " Enable enhanced functionality for % motion.
 
 "" Overrides
-let mapleader=","                                " Use comma for leader key rather than backspace.
 let g:tex_flavor="latex"                         " Assume *.tex are LaTeX files rather than TeX.
 let g:is_posix=1                                 " Assume POSIX shell files.
 let g:is_bash=1                                  " Assume *.sh are bash files rather than sh.
@@ -67,18 +76,20 @@ let g:netrw_alto=1                               " Split netrw to the bottom.
 au BufNewFile,BufRead *.md set filetype=markdown " Assume *.md are markdown, not simula.
 
 "" Mappings
+cnoremap <expr> %%getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+nnoremap <silent> <C-l> :<C-u>nohl<CR><C-l>
 nnoremap Y y$
 nnoremap <CR> o<Esc>
-nmap <silent><Leader>/ :noh<CR>
 nmap <silent><Leader>W :%s/\s\+$//<CR>:let @/=''<CR>
 nmap <Leader>ff [I:let nr = input("Which one: ")<BAR>exe "normal " . nr ."[\t"<CR>
-"cmap cwd lcd %:p:h
-"cmap w!! w !sudo tee % >/dev/null
+cmap cwd lcd %:p:h
+cmap w!! w !sudo tee % >/dev/null
 nmap <silent><F3> :w!<CR>:silent !aspell -c -x '%'<CR>:e! %<CR>:redraw!<CR>
 nmap <silent><F4> :silent !dict <cword> \| less<CR>:redraw!<CR>
 nmap <silent><F5> :set number!<CR>
-nmap <silent><F6> :set relativenumber!<CR>
+nmap <silent><S-F5> :set relativenumber!<CR>
 nmap <silent><F6> :let &virtualedit=&virtualedit=="" ? "all" : ""<CR>
+nmap <silent><F7> :let &colorcolumn=&colorcolumn=="" ? "80" : ""<CR>
 
 "" Airline Config
 set laststatus=2
@@ -121,3 +132,6 @@ vmap <Leader>a<Bar> :Tabularize /<Bar><CR>
 "" UndoTree Config
 nnoremap <Leader>u :UndotreeToggle<CR>
 let g:undotree_SetFocusWhenToggle=1
+
+"" Visual Increment Config
+cmap Iz II 1 0

@@ -5,6 +5,7 @@ dwb:
 firefox:
 	Adblock Plus
 	Pentadactyl
+MATLAB: /usr/local/MATLAB, /usr/local/bin
 python:
 	CoolProp
 	mahotas
@@ -12,7 +13,6 @@ python:
 	patsy
 	seaborn
 	scikit-image
-	scikit-learn
 	statsmodels
 	uncertainties
 vim:

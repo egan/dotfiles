@@ -4,7 +4,7 @@ Benchmark       : mesa-demos
 Boot            : base dosfstools efibootmgr grub
 Codecs          : gstreamer0.10-plugins
 Development     : base-devel bochs cmake ctags cython gcc-fortran gdb ipython nasm python-pip scons sdcc strace yasm
-Display         : xorg-server xorg-server-utils xorg-server-xvfb xorg-twm xorg-xinit xorg-utils xorg-xfontsel
+Display         : xorg-server xorg-server-utils xorg-server-xnest xorg-server-xvfb xorg-twm xorg-xinit xorg-utils xorg-xfontsel
 Document        : antiword catdvi dos2unix html2text odt2txt pdfgrep unrtf zathura zathura-djvu zathura-pdf-mupdf zathura-ps
 Drivers         : xf86-video-ati xf86-video-dummy
 Editor          : ed gvim hexedit
@@ -17,7 +17,7 @@ Internet        : dictd lftp mktorrent ncftp newsbeuter rdesktop rtorrent tigerv
 Linguistics     : python2-nltk nltk-data
 Mathematics     : bc calc gnuplot maxima octave pari r units wxmaxima
 Math Libraries  : python-bottleneck python-matplotlib python-numpy python-pillow python-scikit-learn python-scipy python-sympy
-Media           : audacity cuetools ffmpeg mediainfo mac mp3splt mplayer shntool timidity-freepats timidity++ vorbis-tools
+Media           : audacity cuetools ffmpeg lmms mediainfo mac mp3splt mplayer shntool timidity-freepats timidity++ vorbis-tools
 Microcontroller : avr-gcc avr-libc avrdude java-rxtx picocom
 Network         : dnsutils ettercap inetutils hping iptraf-ng ntp nmap tcpdump whois
 Plugin          : flashplugin icedtea-web
@@ -32,7 +32,7 @@ Utilities       : ack acpi cpio inotify-tools jshon lsof mlocate moreutils notif
 Versioning      : addinclude diffstat git subversion
 Web             : cclive curl dwb elinks firefox qutebrowser wget wput
 Widget          : gtk-chtheme gtk-engine-murrine
-Windowing       : dunst slock spectrwm xclip xdotool xmobar unclutter
+Windowing       : dunst openbox slock spectrwm xclip xdotool xmobar unclutter
 
 ## DEPENDENCIES
 Buildtime       : boost cython2 linux-headers qt5-webkit slang tk

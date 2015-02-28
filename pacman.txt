@@ -6,7 +6,7 @@ Codecs          : gstreamer0.10-plugins
 Development     : base-devel bochs cmake ctags cython gcc-fortran gdb ipython nasm python-pip scons sdcc strace yasm
 Display         : xorg-server xorg-server-utils xorg-server-xnest xorg-server-xvfb xorg-twm xorg-xinit xorg-utils xorg-xfontsel
 Document        : antiword catdvi dos2unix html2text odt2txt pdfgrep unrtf zathura zathura-djvu zathura-pdf-mupdf zathura-ps
-Drivers         : xf86-video-ati xf86-video-dummy
+Drivers         : mesa-libgl xf86-video-ati xf86-video-dummy
 Editor          : ed gvim hexedit
 Engineering     : freecad
 Fonts           : bdf-unifont ttf-freebanglafont ttf-indic-otf ttf-khmer ttf-liberation ttf-mph-2b-damase ttf-tibetan-machine
@@ -35,19 +35,15 @@ Widget          : gtk-chtheme gtk-engine-murrine
 Windowing       : dunst openbox slock spectrwm xclip xdotool xmobar unclutter
 
 ## DEPENDENCIES
-Buildtime       : boost cython2 linux-headers qt5-webkit slang tk
-General         : cgal ffmpeg-compat icoutils qtwebkit x264 yajl
-Graphics        : lib32-libxext lib32-libdrm lib32-libxinerama lib32-mesa
+Buildtime       : cython2 icoutils qt5-webkit slang tk
+General         : qtwebkit x264 yajl
 Python3         : python-imaging python-jinja python-pygments python-yaml
 Python2         : python2-configobj python2-jinja python2-pyserial python2-six
 
 ## AUR
-Benchmark       : unigine-heaven
-Dependencies    : libcgns-paraview metis parmetis ptscotch-openmpi python-pypeg2
+Dependencies    : python-pypeg2
 Display         : xpra-winswitch
 Document        : uni2ascii
-Drivers         : catalyst-total
-Engineering     : openfoam paraview
 Editor          : sc
 Fonts           : ttf-lklug
 Games           : myman tint-tetris
@@ -56,7 +52,7 @@ Internet        : grive uber-mutt
 Linguistics     : python-nltk-git
 Math Libraries  : python-control
 Media           : popcorntime-bin vkeybd
-Microcontroller : arduino ino
+Microcontroller : arduino10 ino
 Publishing      : diction
 Scanning        : brscan4-network
 Science         : xoscope

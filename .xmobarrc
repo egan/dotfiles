@@ -10,9 +10,13 @@
 --
 
 Config	{ font             = "-*-profont-*-*-*-*-11-*-*-*-*-*-iso8859-*"
+        , additionalFonts  = []
+		, textOffset       = -1
         , bgColor          = "#000000"
         , fgColor          = "#e5e5e5"
+		, alpha            = 255
 		, iconRoot         = "."
+		, iconOffset       = -1
         , position         = Bottom
         , lowerOnStart     = True
         , hideOnStart      = False

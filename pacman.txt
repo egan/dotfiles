@@ -35,8 +35,8 @@ Widget          : gtk-chtheme gtk-engine-murrine
 Windowing       : dunst openbox slock spectrwm xclip xdotool xmobar unclutter
 
 ## DEPENDENCIES
-Buildtime       : cython2 icoutils qt5-webkit slang tk
-General         : qtwebkit x264 yajl
+Buildtime       : boost cython2 icoutils qt5-webkit slang tk
+General         : gtkdatabox qtwebkit x264 yajl
 Python3         : python-imaging python-jinja python-pygments python-yaml
 Python2         : python2-configobj python2-jinja python2-pyserial python2-six
 

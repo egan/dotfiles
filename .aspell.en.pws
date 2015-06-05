@@ -1,4 +1,4 @@
-personal_ws-1.1 en 891 
+personal_ws-1.1 en 911 
 poloidal
 predation
 API
@@ -60,6 +60,7 @@ FFT
 DRM
 EOF
 ahistorical
+suprasegmental
 Drs
 stator
 spintronic
@@ -241,6 +242,7 @@ packetized
 Tori's
 electrochemical
 Problematizing
+diachronic
 rase
 SBC
 monolingualist
@@ -270,10 +272,12 @@ centric
 counterfeeding
 Bernoulli's
 Resize
+PWM
 qtd
 Livermore
 Simko
 Preantepenultimate
+TCP
 Psycholinguistics
 libre
 rms
@@ -304,6 +308,7 @@ polygynous
 faux
 delocalization
 multiline
+transformational
 covalently
 endian
 Teslas
@@ -324,6 +329,7 @@ chamfer
 gage
 molecularly
 prepended
+Novato
 pushbutton
 haute
 precedented
@@ -332,6 +338,7 @@ Romanization
 TTL
 performatives
 TUI
+psychosocial
 workplane
 accelerometer
 TTY
@@ -451,6 +458,7 @@ Fixturing
 locknut
 benefactive
 phototransistors
+HDMI
 continuant
 macrorole
 prescriptivists
@@ -472,6 +480,7 @@ another's
 hiragana
 combinational
 zettabyte
+UART
 Foo's
 mashup
 equilibrates
@@ -509,13 +518,16 @@ IEEE
 Colvin
 functionalities
 FTCS
+hostname
 centroidal
 Unformatted
 smartphones
+UARTs
 interlinguistic
 potentiometer
 rescale
 consonantal
+sublexical
 lamentability
 Reynold's
 unhandled
@@ -541,6 +553,7 @@ unchoked
 SPST
 microelectromechanical
 Spectrophotometry
+prosodic
 Inserter
 inductor's
 uniaxial
@@ -588,6 +601,7 @@ renewables
 Ardalan
 fisheye
 plasmas
+diachrony
 Chamfers
 unembellished
 unstartling
@@ -617,6 +631,7 @@ toroidal
 prescriptivist
 Indo
 deduplication
+preconfiguration
 unrounded
 dialectically
 subcircuits
@@ -626,6 +641,7 @@ boreal
 circlips
 Zuckerberg's
 Hermann
+pinouts
 chapes
 militaries
 epenthesized
@@ -679,6 +695,7 @@ Colvin's
 antinode
 grammatic
 prepending
+hostnames
 uncalibrated
 electret
 reënable
@@ -706,6 +723,7 @@ pretrained
 grapheme
 diphthongized
 counterrotate
+synchrony
 neurolinguistic
 Butterworth
 Lang's
@@ -734,6 +752,7 @@ ocholocracy
 stereophones
 albethey
 login
+Petaluma
 urolagia
 outlier
 multi
@@ -862,6 +881,7 @@ decrement
 synchronic
 clusivity
 symbology
+muxed
 nonideal
 Vortices
 modularity
@@ -890,3 +910,47 @@ unordered
 Inkjet
 DAC
 Degeminations
+aurget
+backup
+bashmarks.sh
+beep
+catpdf
+cconvert
+cflush
+colors
+downstr.sh
+dpmstoggle.sh
+esplit
+excpdf
+gitnew
+gitpull
+gurl
+imgur
+isup
+lnmv
+mklauncher
+mkoff
+netbool.sh
+openrecentpdf.sh
+passmenu
+pless
+radar
+randf
+sleeptill
+statmirrors
+svnnew
+svnup
+swap
+tablize
+tclip
+tex2img
+texwc
+tikz2png
+turl
+upaur
+upmirrors
+upstr.sh
+userbool.sh
+volume
+volumed.sh
+xdostart

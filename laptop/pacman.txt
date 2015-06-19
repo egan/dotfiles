@@ -8,7 +8,7 @@ Drivers         : xf86-input-evdev xf86-input-synaptics xf86-video-dummy xf86-vi
 Editor          : ed gvim hexedit
 Fonts           : bdf-unifont ttf-freebanglafont ttf-indic-otf ttf-khmer ttf-liberation ttf-mph-2b-damase ttf-tibetan-machine
 Games           : espeak xmahjongg
-Graphics        : asymptote blender fswebcam gimp imagemagick inkscape mypaint qiv recordmydesktop scrot sxiv
+Graphics        : asymptote blender fswebcam gimp imagemagick inkscape mypaint recordmydesktop scrot sxiv
 Hardware        : acpi_call intel-ucode kexec-tools libva-intel-driver lshw mesa-vdpau qemu rfkill wireless_tools
 Internet        : dictd lftp mktorrent ncftp newsbeuter rdesktop rtorrent tigervnc weechat
 Linguistics     : python2-nltk nltk-data
@@ -57,6 +57,6 @@ Science         : xoscope
 Server          : python3-threaded_servers quickserve
 Terminal        : montecarlo-font
 Utilities       : cv-git detox weatherman
-Web             : dwb-git
+Web             : qutebrowser
 Widget          : gtk-theme-murrine-collection
 Windowing       : dmenu2 spectrwm-git

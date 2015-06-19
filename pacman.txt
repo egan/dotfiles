@@ -3,7 +3,7 @@ Administration  : at abs bwm-ng htop iftop iotop nethogs pkgstats powertop proci
 Benchmark       : mesa-demos
 Boot            : base dosfstools efibootmgr grub
 Codecs          : gstreamer0.10-plugins
-Development     : base-devel bochs cmake ctags cython gcc-fortran gdb ipython nasm python-pip scons sdcc strace yasm
+Development     : base-devel bochs capstone cmake ctags cython gcc-fortran gdb ipython nasm python-capstone python-pip scons sdcc strace yasm
 Display         : xorg-server xorg-server-utils xorg-server-xnest xorg-server-xvfb xorg-twm xorg-xinit xorg-utils xorg-xfontsel
 Document        : antiword catdvi dos2unix html2text odt2txt pdfgrep unrtf zathura zathura-djvu zathura-pdf-mupdf zathura-ps
 Drivers         : mesa-libgl xf86-video-ati xf86-video-dummy

@@ -3,7 +3,7 @@
 --
 -- vim: filetype=haskell
 --
--- note: Moffet Field KNUQ; Sacramento KSMF; Davis KEDU
+-- note: weather stations use ICAO codes
 --
 -- written: 2009 by Egan McComb
 --
@@ -37,12 +37,12 @@ Config	{ font             = "-*-profont-*-*-*-*-10-*-*-*-*-*-iso8859-*"
                            ["-t","Dn: <rx>kb/s <fc=#990000>|</fc> Up: <tx>kb/s","-L","0","-H","1024000","-n","#00d900","-h","#e50000","-m","6","-c"," "] 10
                            , Run CommandReader "$HOME/bin/volumed.sh" "volume"
                            , Run BatteryP ["BAT0"] ["-t","Batt: <left>%","-m","3", "--", "-l", "#e50000", "-p", "#e5e500"] 10
-                           , Run Weather "KSMF"
-                           ["-t","Sacramento: <tempC>°C - <rh>%","-L","15","-H","25","-n","#00d900","-h","#e50000","-l","#00a6b2"] 9000
+                           , Run Weather "KDVO"
+                           ["-t","Novato: <tempC>°C - <rh>%","-L","15","-H","25","-n","#00d900","-h","#e50000","-l","#00a6b2"] 9000
                            , Run Date "%a, %D %T" "date" 10
                            ]
        , sepChar           = "%"
        , alignSep          = "}{"
-       , template          = "%multicpu% <fc=#990000>|</fc> %thermal0% <fc=#990000>|</fc> %memory% <fc=#990000>|</fc> %swap% <fc=#990000>|</fc> %dynnetwork% <fc=#990000>|</fc> }{ <fc=#990000>|</fc> %volume% <fc=#990000>|</fc> %battery% <fc=#990000>|</fc> %KSMF% <fc=#990000>|</fc> <fc=#e5e500>%date%</fc>"
+       , template          = "%multicpu% <fc=#990000>|</fc> %thermal0% <fc=#990000>|</fc> %memory% <fc=#990000>|</fc> %swap% <fc=#990000>|</fc> %dynnetwork% <fc=#990000>|</fc> }{ <fc=#990000>|</fc> %volume% <fc=#990000>|</fc> %battery% <fc=#990000>|</fc> %KDVO% <fc=#990000>|</fc> <fc=#e5e500>%date%</fc>"
 	}
 

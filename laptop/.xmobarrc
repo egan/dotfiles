@@ -39,10 +39,12 @@ Config	{ font             = "-*-profont-*-*-*-*-10-*-*-*-*-*-iso8859-*"
                            , Run BatteryP ["BAT0"] ["-t","Batt: <left>%","-m","3", "--", "-l", "#e50000", "-p", "#e5e500"] 10
                            , Run Weather "KDVO"
                            ["-t","Novato: <tempC>°C - <rh>%","-L","15","-H","25","-n","#00d900","-h","#e50000","-l","#00a6b2"] 9000
+                           , Run Weather "KSTS"
+                           ["-t","Windsor: <tempC>°C - <rh>%","-L","15","-H","25","-n","#00d900","-h","#e50000","-l","#00a6b2"] 9000
                            , Run Date "%a, %D %T" "date" 10
                            ]
        , sepChar           = "%"
        , alignSep          = "}{"
-       , template          = "%multicpu% <fc=#990000>|</fc> %thermal0% <fc=#990000>|</fc> %memory% <fc=#990000>|</fc> %swap% <fc=#990000>|</fc> %dynnetwork% <fc=#990000>|</fc> }{ <fc=#990000>|</fc> %volume% <fc=#990000>|</fc> %battery% <fc=#990000>|</fc> %KDVO% <fc=#990000>|</fc> <fc=#e5e500>%date%</fc>"
+       , template          = "%multicpu% <fc=#990000>|</fc> %thermal0% <fc=#990000>|</fc> %memory% <fc=#990000>|</fc> %swap% <fc=#990000>|</fc> %dynnetwork% <fc=#990000>|</fc> }{ <fc=#990000>|</fc> %volume% <fc=#990000>|</fc> %battery% <fc=#990000>|</fc> %KDVO% <fc=#990000>|</fc> %KSTS% <fc=#990000>|</fc> <fc=#e5e500>%date%</fc>"
 	}
 

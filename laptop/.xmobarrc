@@ -10,8 +10,13 @@
 --
 
 Config	{ font             = "-*-profont-*-*-*-*-10-*-*-*-*-*-iso8859-*"
+        , additionalFonts  = []
+        , textOffset       = -1
         , bgColor          = "#000000"
         , fgColor          = "#e5e5e5"
+		, alpha            = 255
+		, iconRoot         = "."
+		, iconOffset       = -1
         , position         = Bottom
         , lowerOnStart     = True
         , hideOnStart      = False
@@ -29,7 +34,7 @@ Config	{ font             = "-*-profont-*-*-*-*-10-*-*-*-*-*-iso8859-*"
                            ["-t","Mem: <used>MB,<usedratio>% <fc=#990000>|</fc> Cache: <cache>MB <fc=#990000>|</fc> Buffer: <buffer>MB","-p","3","-m","3","-c"," "] 10
                            , Run Swap ["-t","Swap: <used>MB, <usedratio>%","-p","2","-c"," "] 10
                            , Run DynNetwork
-                           ["-t","Dn: <rx>kb/s <fc=#990000>|</fc> Up: <tx>kb/s","-L","0","-H","1000","-n","#00d900","-h","#e50000","-m","6","-c"," "] 10
+                           ["-t","Dn: <rx>kb/s <fc=#990000>|</fc> Up: <tx>kb/s","-L","0","-H","1024000","-n","#00d900","-h","#e50000","-m","6","-c"," "] 10
                            , Run CommandReader "$HOME/bin/volumed.sh" "volume"
                            , Run BatteryP ["BAT0"] ["-t","Batt: <left>%","-m","3", "--", "-l", "#e50000", "-p", "#e5e500"] 10
                            , Run Weather "KSMF"

@@ -22,7 +22,7 @@ Microcontroller : avr-gcc avr-libc avrdude java-rxtx picocom
 Network         : dnsutils ettercap inetutils hping iptraf-ng ntp nmap tcpdump whois
 Plugin          : flashplugin icedtea-web
 Printing        : a2ps cups hplip
-Publishing      : asciidoc aspell aspell-en aspell-es ghostscript markdown python-markdown texlive-lang texlive-most
+Publishing      : asciidoc aspell aspell-en aspell-es ghostscript lilypond markdown python-markdown texlive-lang texlive-most
 Server          : autossh mosh gnu-netcat openssh
 Shell           : bash-completion tmux vifm
 Sound           : alsa-plugins alsa-tools alsa-utils
@@ -41,7 +41,7 @@ Python3         : python-imaging python-jinja python-pygments python-yaml
 Python2         : python2-configobj python2-jinja python2-pyserial python2-six
 
 ## AUR
-Dependencies    : python-pypeg2
+Dependencies    : python-pypeg2 python2-lz4
 Display         : xpra-winswitch
 Document        : uni2ascii
 Editor          : sc

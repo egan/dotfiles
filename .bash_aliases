@@ -5,7 +5,7 @@
 #
 
 # Enable color and human friendly output.
-alias ls='ls -h --color=auto'
+alias ls='ls -hN --color=auto'
 alias dir='dir -h --color=auto'
 alias vdir='vdir -h --color=auto'
 alias grep='grep --color=auto'
@@ -66,6 +66,7 @@ alias myip='ip addr show | grep -w inet | grep -v 127.0.0.1 | awk "{ print \$2 }
 alias nettest='echo "Testing Connectivity:";ping -c 4 93.184.216.119;echo;echo "Testing Name Resolution:";ping -c 4 www.example.org'
 alias ntpsync='sudo ntpd -qg'
 alias putlogs='rsync -avz --delete -e ssh $HOME/.weechat/logs/ paijanne:$HOME/.weechat/logs/'
+alias repitch='mplayer -af scaletempo=scale=1.0:speed=pitch -speed'
 alias rscp='rsync -avz -e ssh'
 alias sflush='sudo swapoff -a && sudo swapon -a'
 alias scrsave='sleep 1 && xset s activate'
@@ -78,6 +79,7 @@ alias wotd='curl -s http://feeds.reference.com/DictionarycomWordOfTheDay | sed "
 # Media aliases.
 alias augustine='sudo mount -o rw,noauto,async,user,umask=1000 /dev/disk/by-uuid/D941-3F25 /media/Augustine'
 alias ghost='sudo mount -o rw,noauto,async,user,umask=1000 /dev/disk/by-uuid/3469-33AC /media/Ghostbear'
+alias kharkiv='sudo mount /dev/disk/by-uuid/d4d02146-f823-4a87-8618-d5b5e4e3efca /media/Kharkiv'
 alias kindle='sudo mount -o rw,noauto,async,user,umask=1000 /dev/disk/by-uuid/452B-19F2 /media/Kindle'
 alias loxodonta='sudo mount /dev/disk/by-uuid/2B2194F372B5C053 /media/Loxodonta'
 alias mercury='sudo mount -o rw,noauto,async,user,umask=1000 /dev/disk/by-uuid/805D-07BD /media/Mercury'
@@ -85,6 +87,7 @@ alias pangolin='sudo mount /dev/disk/by-uuid/5CB2739EB2737AFA /media/Pangolin'
 alias pekkl='sudo mount -o rw,noauto,async,user,umask=1000 /dev/disk/by-uuid/0128-FED0 /media/Pekkl'
 alias uaugustine='sudo umount /media/Augustine'
 alias ughost='sudo umount /media/Ghostbear'
+alias ukharkiv='sudo umount /media/Kharkiv'
 alias ukindle='sudo umount /media/Kindle'
 alias uloxodonta='sudo umount /media/Loxodonta'
 alias umercury='sudo umount /media/Mercury'

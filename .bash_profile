@@ -16,5 +16,9 @@ export GTK_IM_MODULE="xim"
 export PAGER="less"
 export PASSWORD_STORE_X_SELECTION="primary"
 export PASSWORD_STORE_CLIP_TIME="15"
-export PATH=$HOME/bin:$HOME/bin/.launch:$PATH
+# Include some Windows software directories.
+PATH=/c/Anaconda3:/c/Anaconda3/Scripts:/c/Anaconda3/Library/bin:$PATH
+PATH=/c/Program\ Files\ \(x86\)/MikTex\ 2.9/miktex/bin:$PATH
+PATH=/c/Program\ Files/ImageMagick-6.4.3-Q16:$PATH
+export PATH=$HOME/bin:$PATH
 export VISUAL=$EDITOR

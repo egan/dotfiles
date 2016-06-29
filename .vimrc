@@ -11,6 +11,7 @@ set hlsearch                                     " Highlight search terms.
 set incsearch                                    " Find as you type search.
 set ignorecase                                   " Case insensitive search.
 set smartcase                                    " Case sensitive when uppercase present.
+set backspace=indent,eol,start                   " Allow unrestricted backspace.
 set linebreak                                    " Perform linebreaks at appropriate characters.
 set autoindent                                   " Indent at same level as previous line.
 set tabstop=4                                    " Use four columns for tabstop.

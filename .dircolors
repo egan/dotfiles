@@ -115,6 +115,7 @@ OTHER_WRITABLE 01;34		# o+w directory
 .html 00;33
 .log 00;33
 .log 00;33
+.md 00;33
 .odp 00;33
 .ods 00;33
 .odt 00;33

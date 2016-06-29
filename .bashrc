@@ -43,8 +43,11 @@ _dir_chomp () {
 	echo ${b/\/~/\~}${b+/}$p
 }
 
+. /usr/share/git/git-prompt.sh
+export GIT_PS1_SHOWDIRTYSTATE=1
+
 # Command prompts.
-PS1='\[\033[G\]\u@\h:$(_dir_chomp "$(pwd)" 35)\$ '
+PS1='\[\033[G\]egan@occhio:$(_dir_chomp "$(pwd)" 35)$(__git_ps1 " (%s)")\$ '
 
 # Check for clobber.
 #set -o noclobber

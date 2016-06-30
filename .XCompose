@@ -32,9 +32,21 @@ include "%L"
 # <Multi_key> <minus> <minus> <period>	: "–"	U2013		# EN DASH
 <Multi_key> <minus> <minus> <space>	: "– "			# EN DASH (followed by space)
 <Multi_key> <minus> <asciitilde> <minus> : "―" U2015 # HORIZONTAL BAR
+<Multi_key> <minus> <2> <M>	 	 : "⸺" U2E3A # TWO-EM DASH
+<Multi_key> <minus> <3> <M>	 	 : "⸻" U2E3B # THREE-EM DASH
 <Multi_key> <backslash> <minus>		: "­"	U00AD		# SOFT HYPHEN
+# This is the recommended typographical practice for em dashes in English.
+# Unfortunately, it doesn’t work out all that well in monospace fonts,
+# where the thin spaces aren’t thin.  But I think this is okay.
+# This conflicts with the default binding to “~”, which is potentially
+# a problem for non-American keyboards.
+<Multi_key> <space> <minus>             : " — "                 # EM DASH surrounded by THIN SPACEs.
+
+
+# Quotation marks.
 <Multi_key> <comma> <space>		: "‚"	U201A		# SINGLE LOW-9 QUOTATION MARK
 <Multi_key> <comma> <comma>		: "„"	U201E		# DOUBLE LOW-9 QUOTATION MARK
+<Multi_key> <less> <comma> <comma>	: "⹂"	U2E42		# DOUBLE LOW-REVERSED-9 QUOTATION MARK
 <Multi_key> <apostrophe> <space>	: "’"	U2019		# RIGHT SINGLE QUOTATION MARK
 <Multi_key> <apostrophe> <apostrophe>	: "”"	U201D		# RIGHT DOUBLE QUOTATION MARK
 <Multi_key> <grave> <space>		: "‘"	U2018		# LEFT SINGLE QUOTATION MARK
@@ -47,19 +59,46 @@ include "%L"
 <Multi_key> <less> <9> <quotedbl>	: "‟"	U201F		# DOUBLE HIGH-REVERSED-9 QUOTATION MARK
 <Multi_key> <comma> <apostrophe>	: "‚"	U201A		# SINGLE LOW-9 QUOTATION MARK (quote resembling a comma)
 <Multi_key> <comma> <quotedbl>		: "„"	U201E		# DOUBLE LOW-9 QUOTATION MARK
+
+# Convenience shortcuts for quotation marks.
+<Multi_key> <space> <quotedbl>          : " “"                  # space followed by LEFT DOUBLE QUOTATION MARK
+<Multi_key> <quotedbl> <space>          : "” "                  # RIGHT DOUBLE QUOTATION MARK followed by space
+<Multi_key> <space> <apostrophe>        : " ‘"                # space followed by LEFT SINGLE QUOTATION MARK
+# Unfortunately <apostrophe> <space> is, asymmetrically, just "’".  Whatever.
+<Multi_key> <n> <t>                     : "n’t "              # Apostrophized English “not.”
+# Some more English shortcuts:
+<Multi_key> <space> <t>                 : " the "
+<Multi_key> <space> <T>                 : "  The "
+<Multi_key> <space> <a>                 : " and "
+<Multi_key> <i> <m>                     : " I’m "
+<Multi_key> <v> <e>                     : "’ve "
+
+<Multi_key> <comma> <at>		: "⸲"	U2E32		# TURNED COMMA
+# Conflicts with system def? (·)
+<Multi_key> <period> <asciicircum>	: "⸳"	U2E33		# RAISED DOT
+<Multi_key> <period> <asciitilde>	: "⸳"	U2E33		# RAISED DOT
+<Multi_key> <comma> <asciicircum>	: "⸴"	U2E34		# RAISED COMMA
+<Multi_key> <semicolon> <at>		: "⸵"	U2E35		# TURNED SEMICOLON
+# Convlicts with system def? (⍭)
+<Multi_key> <asciitilde> <bar>		: "ⸯ"	U2E2F		# VERTICAL TILDE
+<Multi_key> <asciicircum> <bar>		: "ⸯ"	U2E2F		# VERTICAL TILDE
+<Multi_key> <minus> <equal>		: "⹀"	U2E40		# DOUBLE HYPHEN
+<Multi_key> <comma> <less>		: "⹁"	U2E41		# REVERSED COMMA
 <Multi_key> <less> <bar>		: "↵"	U21B5		# DOWNWARDS ARROW WITH CORNER LEFTWARDS
 # The bullet was <o> <period>, but it clashes with ꙭ
 <Multi_key> <asterisk> <1>		: "•"	U2022		# BULLET
 # By default <Multi_key> <period> <period> does this, but we broke that with the ... binding.
 <Multi_key> <o> <underscore>		: "⁃"   U2043		# HYPHEN BULLET
 <Multi_key> <o> <comma>			: "·"	periodcentered	# MIDDLE DOT
-<Multi_key> <space> <minus>		: "‑"	U2011		# NON-BREAKING HYPHEN
+# I don’t use this nearly as often as the em-dash sequence I’ve remapped it to:
+#<Multi_key> <space> <minus>		: "‑"	U2011		# NON-BREAKING HYPHEN
 # Already present for me:
 # <Multi_key> <space> <space>		: " "	U00A0		# NO-BREAK SPACE
 # Do we want/need these?
 <Multi_key> <d> <a> <g>			: "†"	U2020		# DAGGER
 <Multi_key> <d> <d> <a> <g>		: "‡"	U2021		# DOUBLE DAGGER
-# We already have THIN SPACE below, as <space> <apostrophe>!  Keep both?
+# We used to have THIN SPACE as <space> <apostrophe>, but now that’s remapped
+# to " ‘", for conveniently enclosing things in proper single-quotes.
 <Multi_key> <backslash> <comma>		: " "	U2009		# THIN SPACE
 <Multi_key> <s> <e> <c> : "§"   U00A7   # SECTION SIGN
 # It's in the Asian section, but it's a general-purpose punctuation:
@@ -131,6 +170,7 @@ include "%L"
 # These are just too cool-looking not to have (if your font supports them)
 <Multi_key> <equal> <period> <equal>	: "⸎"	U2E0E		# EDITORIAL CORONIS
 <Multi_key> <Multi_key> <p> <a> <l> <m>	: "⸙"	U2E19		# PALM BRANCH
+<Multi_key> <Multi_key> <b> <r> <a> <n> <c> <h>: "⸙"	U2E19		# PALM BRANCH
 
 
 <Multi_key> <f> <f>		: "ﬀ"	   UFB00   # LATIN SMALL LIGATURE FF
@@ -144,6 +184,7 @@ include "%L"
 <Multi_key> <U017F> <t>		: "ﬅ"  UFB05	   # LATIN SMALL LIGATURE LONG S T
 # ß is already available as <s><s> I think.  But now it comes in industrial size!
 <Multi_key> <S> <S> 		: "ẞ"  U1E9E	   # LATIN CAPITAL LETTER SHARP S
+
 # Eventually we'll have to look over the really crazy-cakes Latin letters 
 # they're adding as "mediævalist extensions"
 # ꜢꜣꜤꜥ for the Egyptologists, Ꝏꝏ because they're cꝏl...  Maybe some others.
@@ -157,10 +198,13 @@ include "%L"
 <Multi_key> <I> <bar>		: "ꟾ"	UA7FE	# LATIN EPIGRAPHIC LETTER I LONGA
 <Multi_key> <M> <slash>		: "ꟿ"	UA7FF	# LATIN EPIGRAPHIC LETTER ARCHAIC M
 # I'd been avoiding this because we already have ∃...
+# Hey, these, being *letters* can be used as identifiers in some languages...
 <Multi_key> <E> <less>	 	 : "Ǝ"	    U018E	# LATIN CAPITAL LETTER REVERSED E
 <Multi_key> <E> <BackSpace>	 : "Ǝ"	    U018E	# LATIN CAPITAL LETTER REVERSED E
 <Multi_key> <e> <less>		 : "ɘ"	    U0258	# LATIN SMALL LETTER REVERSED E
 <Multi_key> <e> <BackSpace>	 : "ɘ"	    U0258	# LATIN SMALL LETTER REVERSED E
+# Complete the set
+<Multi_key> <A> <less>		 : "Ɐ"	    U2C6F	# LATIN CAPITAL LETTER TURNED A
 # These seem too long as keystrokes; any suggestions?
 # How about 2o?
 <Multi_key> <o> <ampersand> <o>	: "ꝏ"	UA74F	# LATIN SMALL LETTER OO
@@ -176,6 +220,39 @@ include "%L"
 # close to usefulness (it was very common for abbreviations, and is the 
 # source of the "z" in abbreviations like oz. and viz.)  Some others 
 # are a little appealing too.
+
+<Multi_key> <A> <ampersand> <A> :	"Ꜳ"	UA732		# LATIN CAPITAL LETTER AA
+<Multi_key> <a> <ampersand> <a> :	"ꜳ"	UA733		# LATIN SMALL LETTER AA
+<Multi_key> <2> <A> :	"Ꜳ"	UA732		# LATIN CAPITAL LETTER AA
+<Multi_key> <2> <a> :	"ꜳ"	UA733		# LATIN SMALL LETTER AA
+<Multi_key> <A> <ampersand> <O>	:	"Ꜵ"	UA734	# LATIN CAPITAL LETTER AO
+<Multi_key> <a> <ampersand> <o>	:	"ꜵ"	UA735	# LATIN SMALL LETTER AO
+<Multi_key> <A> <ampersand> <U>	:	"Ꜷ"	UA736	# LATIN CAPITAL LETTER AU
+<Multi_key> <a> <ampersand> <u>	:	"ꜷ"	UA737	# LATIN SMALL LETTER AU
+<Multi_key> <A> <ampersand> <V> :	"Ꜹ"	UA738	# LATIN CAPITAL LETTER AV
+<Multi_key> <a> <ampersand> <v> :	"ꜹ"	UA739	# LATIN SMALL LETTER AV
+<Multi_key> <A> <ampersand> <Y> :	"Ꜽ"	UA73C	# LATIN CAPITAL LETTER AY
+<Multi_key> <a> <ampersand> <y> :	"ꜽ"	UA73D	# LATIN SMALL LETTER AY
+<Multi_key> <slash> <ampersand> <L> :	"Ꝇ"	UA746	# LATIN CAPITAL LETTER BROKEN L
+<Multi_key> <slash> <ampersand> <l> :	"ꝇ"	UA747	# LATIN SMALL LETTER BROKEN L
+# (See above for reason behind keystrokes)
+<Multi_key> <Z> <period>	:	"Ꝫ"	UA75A	# LATIN CAPITAL LETTER ET
+<Multi_key> <z> <period>	:	"ꝫ"	UA75B	# LATIN SMALL LETTER ET
+<Multi_key> <V> <ampersand> <Y>	:	"Ꝡ"	UA760	# LATIN CAPITAL LETTER VY
+<Multi_key> <v> <ampersand> <y>	:	"ꝡ"	UA761	# LATIN SMALL LETTER VY
+<Multi_key> <C> <Z>	    	:	"Ꝣ"	UA762	# LATIN CAPITAL LETTER VISIGOTHIC Z
+<Multi_key> <c> <z>		:	"ꝣ"	UA763	# LATIN SMALL LETTER VISIGOTHIC Z
+<Multi_key> <L> <ampersand> <L>	:	"Ỻ"	U1EFA	# LATIN CAPITAL LETTER MIDDLE-WELSH LL
+<Multi_key> <l> <ampersand> <l>	:	"ỻ"	U1EFB	# LATIN SMALL LETTER MIDDLE-WELSH LL
+<Multi_key> <V> <ampersand> <V>	:	"Ỽ"	U1EFC	# LATIN CAPITAL LETTER MIDDLE-WELSH V
+<Multi_key> <v> <ampersand> <v>	:	"ỽ"	U1EFD	# LATIN SMALL LETTER MIDDLE-WELSH V
+<Multi_key> <d> <ampersand> <b>	:	"ȸ"	U0238	# LATIN SMALL LETTER DB DIGRAPH
+<Multi_key> <q> <ampersand> <p>	:	"ȹ"	U0239	# LATIN SMALL LETTER QP DIGRAPH
+<Multi_key> <w> <y>	    	:	"ƿ"	U01BF	# LATIN LETTER WYNN
+<Multi_key> <W> <Y>		:	"Ƿ"	U01F7	# LATIN CAPITAL LETTER WYNN
+<Multi_key> <O> <U>		:	"Ȣ"	U0222	# LATIN CAPITAL LETTER OU
+<Multi_key> <o> <u>		:	"ȣ"	U0223	# LATIN SMALL LETTER OU
+<Multi_key> <y> <r>		:	"Ʀ"	U01A6	# LATIN LETTER YR
 
 # Custom additions: Mathematical symbols
 <Multi_key> <exclam> <equal>		: "≠"	U2260		# NOT EQUAL TO
@@ -201,6 +278,7 @@ include "%L"
 <Multi_key> <asciitilde> <equal>			: "≅"	U2245		# APPROXIMATELY EQUAL TO (It actually means "congruent"!)
 <Multi_key> <equal> <question>		: "≟"	U225f		# QUESTIONED EQUAL TO
 <Multi_key> <equal> <d> <e> <f>		: "≝"	U225D		# EQUAL TO BY DEFINITION
+<Multi_key> <d> <e> <f> <equal>		: "≝"	U225D		# EQUAL TO BY DEFINITION
 <Multi_key> <equal> <equal>		: "≡"	U2261		# IDENTICAL TO
 <Multi_key> <colon> <equal> 		: "≔"  U2254		# COLON EQUALS
 <Multi_key> <equal> <colon> 		: "≕"  U2255		# EQUALS COLON
@@ -256,6 +334,7 @@ include "%L"
 <Multi_key> <quotedbl> <period>	   	: "∵"	U2235  		# BECAUSE
 <Multi_key> <Multi_key> <b> <e> <c> <a> <u> <s> <e>	   	: "∵"	U2235  		# BECAUSE
 <Multi_key> <percent> <percent>		: "‱"	U2031	# PER TEN THOUSAND (basis points)
+<Multi_key> <slash> <u>                : "µ"   U00B5      # MICRO SIGN
 # Ordinal indicators, for femenine and masculine, used in Romance languages
 <Multi_key> <minus> <a>	      	  	: "ª"   U00AA		# FEMININE ORDINAL INDICATOR
 <Multi_key> <minus> <o>			: "º"	U00BA		# MASCULINE ORDINAL INDICATOR
@@ -288,6 +367,7 @@ include "%L"
 <Multi_key> <h> <p>	    :	"ℎ"	    U210E   # PLANCK CONSTANT
 <Multi_key> <Multi_key> <e> <x> <p> :   "ℯ"	U212F   # SCRIPT SMALL E
 <Multi_key> <e> <1> <0> :	"⏨" 	U23E8   # DECIMAL EXPONENT SYMBOL
+<Multi_key> <w> <p> 	:	"℘"	U2118	# SCRIPT CAPITAL P
 # Would we prefer 20D1 COMBINING RIGHT HARPOON ABOVE?
 <Multi_key> <asciicircum> <greater>     : "⃗"   U20D7           # COMBINING RIGHT ARROW ABOVE (vector)
 # There's a whole passel of these guys starting at U+1D538 but I have no fonts for those.
@@ -362,6 +442,7 @@ include "%L"
 
 # The system file gives us subscript numbers, plus/minus, and parens.  But
 # there are letters missing.  It would be nice to have at least a few of them.
+<<<<<<< HEAD
 <Multi_key> <underscore> <i>  	       :  "ᵢ"  U1D62   	  # LATIN SUBSCRIPT SMALL LETTER I
 <Multi_key> <underscore> <o>	       :  "ₒ"  U2092	  # LATIN SUBSCRIPT SMALL LETTER O
 <Multi_key> <underscore> <x>	       :  "ₓ"  U2093	  # LATIN SUBSCRIPT SMALL LETTER X
@@ -380,7 +461,43 @@ include "%L"
 <Multi_key> <underscore> <p>           : "ₚ"   U209A      # LATIN SUBSCRIPT SMALL LETTER P
 <Multi_key> <underscore> <s>           : "ₛ"   U209B      # LATIN SUBSCRIPT SMALL LETTER S
 <Multi_key> <underscore> <t>           : "ₜ"   U209C      # LATIN SUBSCRIPT SMALL LETTER T
+=======
+>>>>>>> a6871a9c142fb64e5bda33cc241afe258dbf9cbe
 
+# block U+208x
+<Multi_key> <underscore> <0>  	       : "₀"  U2080   	  # SUBSCRIPT ZERO
+<Multi_key> <underscore> <1>  	       : "₁"  U2081   	  # SUBSCRIPT ONE
+<Multi_key> <underscore> <2>  	       : "₂"  U2082   	  # SUBSCRIPT TWO
+<Multi_key> <underscore> <3>  	       : "₃"  U2083   	  # SUBSCRIPT THREE
+<Multi_key> <underscore> <4>  	       : "₄"  U2084   	  # SUBSCRIPT FOUR
+<Multi_key> <underscore> <5>  	       : "₅"  U2085   	  # SUBSCRIPT FIVE
+<Multi_key> <underscore> <6>  	       : "₆"  U2086   	  # SUBSCRIPT SIX
+<Multi_key> <underscore> <7>  	       : "₇"  U2087   	  # SUBSCRIPT SEVEN
+<Multi_key> <underscore> <8>  	       : "₈"  U2088   	  # SUBSCRIPT EIGHT
+<Multi_key> <underscore> <9>  	       : "₉"  U2089   	  # SUBSCRIPT NONE
+<Multi_key> <underscore> <plus>	       : "₊"  U208A	  # SUBSCRIPT PLUS
+<Multi_key> <underscore> <minus>       : "₋"  U208B	  # SUBSCRIPT MINUS
+<Multi_key> <underscore> <equal>           : "₌"  U208C	  # SUBSCRIPT EQUALS SIGN
+<Multi_key> <underscore> <parenleft>           : "₍"  U208D	  # SUBSCRIPT LEFT PARENTHESIS
+<Multi_key> <underscore> <parenright>           : "₎"  U208E	  # SUBSCRIPT RIGHT PARENTHESIS
+
+# block U+209x
+<Multi_key> <underscore> <a>	       : "ₐ"  U2090	  # LATIN SUBSCRIPT SMALL LETTER A
+<Multi_key> <underscore> <e>	       : "ₑ"  U2091	  # LATIN SUBSCRIPT SMALL LETTER E
+<Multi_key> <underscore> <o>	       : "ₒ"  U2092	  # LATIN SUBSCRIPT SMALL LETTER O
+<Multi_key> <underscore> <x>	       : "ₓ"  U2093	  # LATIN SUBSCRIPT SMALL LETTER X
+<Multi_key> <underscore> <h>	       : "ₕ"  U2095	  # LATIN SUBSCRIPT SMALL LETTER H
+<Multi_key> <underscore> <k>           : "ₖ"  U2096	  # LATIN SUBSCRIPT SMALL LETTER K
+<Multi_key> <underscore> <l>           : "ₗ"  U2097	  # LATIN SUBSCRIPT SMALL LETTER L
+<Multi_key> <underscore> <m>	       : "ₘ"  U2098	  # LATIN SUBSCRIPT SMALL LETTER M
+<Multi_key> <underscore> <n>	       : "ₙ"  U2099	  # LATIN SUBSCRIPT SMALL LETTER N
+<Multi_key> <underscore> <p>	       : "ₚ"  U209A	  # LATIN SUBSCRIPT SMALL LETTER P
+<Multi_key> <underscore> <s>	       : "ₛ"  U209B	  # LATIN SUBSCRIPT SMALL LETTER S
+<Multi_key> <underscore> <t>	       : "ₜ"  U209C	  # LATIN SUBSCRIPT SMALL LETTER T
+
+# subscripts in other blocks
+<Multi_key> <underscore> <i>  	       : "ᵢ"  U1D62   	  # LATIN SUBSCRIPT SMALL LETTER I
+<Multi_key> <underscore> <j>           : "ⱼ"  U2C7C	  # LATIN SUBSCRIPT SMALL LETTER J
 
 # Custom additions: Greek letters.  Mapping corresponds to Emacs Greek
 # input method.  Aristotle Pagaltzis informs me that this is the
@@ -430,7 +547,7 @@ include "%L"
 <Multi_key> <asterisk> <N>		: "Ν"	U039D		# GREEK CAPITAL LETTER NU
 <Multi_key> <asterisk> <O>		: "Ο"	U039F		# GREEK CAPITAL LETTER OMICRON
 <Multi_key> <asterisk> <P>		: "Π"	U03A0		# GREEK CAPITAL LETTER PI
-# no mapping for Q; in Emacs that's ":"
+# see below for Q qoppa; in Emacs Q is “:”
 <Multi_key> <asterisk> <R>		: "Ρ"	U03A1		# GREEK CAPITAL LETTER RHO
 <Multi_key> <asterisk> <S>		: "Σ"	U03A3		# GREEK CAPITAL LETTER SIGMA
 <Multi_key> <asterisk> <T>		: "Τ"	U03A4		# GREEK CAPITAL LETTER TAU
@@ -478,6 +595,8 @@ include "%L"
 <Multi_key> <asterisk> <period> <U>    : "ϴ"	U03F4	# GREEK CAPITAL THETA SYMBOL
 <Multi_key> <asterisk> <period> <e>    : "ϵ"	U03F5	# GREEK LUNATE EPSILON SYMBOL
 # Not doing the lunate sigmas and dotted versions thereof...  What about SAN, which is at least a letter?
+<Multi_key> <asterisk> <period> <s>	 : "ϻ"	  U03FB	      # GREEK SMALL LETTER SAN
+<Multi_key> <asterisk> <period> <S>	 : "Ϻ"	  U03FA	      # GREEK CAPITAL LETTER SAN
 
 # If you wanted to actually type in Greek, you would also need άίέ
 # etc.  But you would probably just switch to a Greek keyboard layout.
@@ -496,6 +615,11 @@ include "%L"
 <Multi_key> <3> <8>                     : "⅜" U215C           # VULGAR FRACTION THREE EIGHTHS
 <Multi_key> <5> <8>                     : "⅝" U215D           # VULGAR FRACTION FIVE EIGHTHS
 <Multi_key> <7> <8>                     : "⅞" U215E           # VULGAR FRACTION SEVEN EIGHTHS
+<Multi_key> <1> <7>			: "⅐" U2150	      # VULGAR FRACTION ONE SEVENTH
+<Multi_key> <1> <9>			: "⅑" U2151	      # VULGAR FRACTION ONE NINTH
+<Multi_key> <1> <x>			: "⅒" U2152	      # VULGAR FRACTION ONE TENTH
+<Multi_key> <0> <3>			: "↉" U2189	      # VULGAR FRACTION ZERO THIRDS
+<Multi_key> <1> <slash>			: "⅟" U215F	      # FRACTION NUMERATOR ONE
 
 # How about roman numerals?  Percent for numerical mnemonic?
 # Does this go against the spirit of this file?  These symbols are accessible 
@@ -541,6 +665,12 @@ include "%L"
 <Multi_key> <percent> <C>		: "Ⅽ"	U216D		# ROMAN NUMERAL ONE HUNDRED
 <Multi_key> <percent> <D>		: "Ⅾ"	U216E		# ROMAN NUMERAL FIVE HUNDRED
 <Multi_key> <percent> <M>		: "Ⅿ"	U216F		# ROMAN NUMERAL ONE THOUSAND
+<Multi_key> <percent> <0> <C> <D>	: "ↀ"	U2180		# ROMAN NUMERAL ONE THOUSAND C D
+<Multi_key> <percent> <0> <D> 		: "ↁ"	U2181		# ROMAN NUMERAL FIVE THOUSAND
+<Multi_key> <percent> <0> <M>		: "ↂ"	U2182		# ROMAN NUMERAL TEN THOUSAND
+<Multi_key> <percent> <0> <0> <D>	: "ↇ"	U2187		# ROMAN NUMERAL FIFTY THOUSAND
+<Multi_key> <percent> <0> <0> <M>	: "ↈ"	U2188		# ROMAN NUMERAL ONE HUNDRED THOUSAND
+
 
 # Custom additions: for chat (kragen)
 <Multi_key> <parenleft> <colon>         : "☻"   U263B           # BLACK SMILING FACE
@@ -562,7 +692,7 @@ include "%L"
 # While we're doing stacks of circles with dots.
 <Multi_key> <o> <3>			: "߷"	U07F7		# NKO SYMBOL GBAKURUNEN
 <Multi_key> <exclam> <question>         : "‽"   U203D           # INTERROBANG
-<Multi_key> <question> <exclam>         : "‽"   U203D           # INTERROBANG (in case you can’t remember the order)
+<Multi_key> <question> <exclam>         : "⸘"	U2E18		# INVERTED INTERROBANG, standard now.
 <Multi_key> <questiondown> <exclamdown>	: "⸘"	U2E18		# INVERTED INTERROBANG (if you have a ¡ key.  Otherwise...? "?i" maybe?
 <Multi_key> <exclamdown> <questiondown>	: "⸘"	U2E18		# INVERTED INTERROBANG (if you have a ¡ key.  Otherwise...? "?i" maybe?
 <Multi_key> <question> <less>	      : "⸮"	  U2E2E		# REVERSED QUESTION MARK
@@ -591,6 +721,7 @@ include "%L"
 <Multi_key> <Multi_key> <p> <c>         : "☮"   U262E           # PEACE SYMBOL
 <Multi_key> <Multi_key> <p> <e> <a> <c> <e> : "☮"   U262E           # PEACE SYMBOL
 <Multi_key> <Multi_key> <y> <y>		: "☯" U262F		# YIN YANG
+<Multi_key> <Multi_key> <y> <i>	<n> <y> <a> <n>	: "☯" U262F	# YIN YANG
 # And now that we are into hearts...
 <Multi_key> <Left> <less> <3>           : "❥"  U2765            # ROTATED HEAVY BLACK HEART BULLET
 <Multi_key> <exclam> <less> <3>         : "❣"  U2763            # HEAVY HEART EXCLAMATION MARK ORNAMENT
@@ -615,6 +746,10 @@ include "%L"
 <Multi_key> <at> <X>  		:	"✗"	U2717	# BALLOT X
 <Multi_key> <at> <at> <X>	:	"✘"	U2718	# HEAVY BALLOT X
 # Will I want <at> <at> for something else?
+# Now there is such a thing as text style and emoji style.  Use the
+# "dingbat prefix" in an unusual way:
+<Multi_key> <at> <Multi_key>	:	"️"	UFE0F		# Emoji selector
+<Multi_key> <exclam> <Multi_key>	:	"︎"		UFE0E	# Text selector
 # How about dice?
 <Multi_key> <bracketleft> <1> <bracketright>  :  "⚀"  U2680	# DIE FACE-1
 <Multi_key> <bracketleft> <2> <bracketright>  :  "⚁"  U2681	# DIE FACE-2
@@ -635,6 +770,7 @@ include "%L"
 # a useful word.
 <Multi_key> <Multi_key> <r> <a> <d>	: "☢"	U2622		# RADIOACTIVE SIGN
 <Multi_key> <Multi_key> <b> <h>		: "☣"	U2623		# BIOHAZARD SIGN
+<Multi_key> <Multi_key> <b> <i> <o> <h>	<a> <z>	: "☣"	U2623		# BIOHAZARD SIGN
 # Changing this from ⚝
 <Multi_key> <Multi_key> <A> <A> <A> <A> <A>	:	"⛤" U26E4 # PENTAGRAM (pentalpha, get it?)
 <Multi_key> <Multi_key> <p> <l> <a> <n> <e>	: "✈"   U2708	  # AIRPLANE
@@ -648,19 +784,11 @@ include "%L"
 # SNOWMAN? COMET? ANCHOR?
 # Maybe if we go with having a "word" symbol and spelling out lots and 
 # lots of whole words, we can have all the planets.
-#    "Word Symbol" Notion:
-#    Have a semi-reserved symbol reserved for this.  Probably ampersand.
-#    Something that isn't already used for much.  Then you can happily make
-#    all the &-j-u-p-i-t-e-r and &-a-r-i-e-s combos you want without worrying
-#    that you'll run into a combination already used, like "ca"=ǎ or something.
-#    (unless you have whole words that are prefixes).  Worth doing?
-#    I think so. -Kragen
 #
 # I already have STAR OF DAVID on another map.
 # 231A, 231B -- WATCH and HOURGLASS -- one should be &-w-a-i-t
 # 23D4 METRICAL LONG OVER TWO SHORTS a.k.a. METRICAL BOOBS
 # 0950 DEVANAGARI OM?
-# 214C PER SIGN?
 # 212E ESTIMATED SYMBOL?
 # 2324 UP ARROWHEAD BETWEEN TWO HORIZONTAL BARS a.k.a. NOT AMUSED
 # 237E BELL SYMBOL a.k.a. ALIENS LANDING
@@ -680,12 +808,10 @@ include "%L"
 
 
 <Multi_key> <O> <X>: 			"☠" U2620 # SKULL AND CROSSBONES
-<Multi_key> <Multi_key> <s> <k> <u> <l> <l>:	  "☠" U2620 # SKULL AND CROSSBONES
+<Multi_key> <Multi_key> <d> <e> <a> <t> <h>:	  "☠" U2620 # SKULL AND CROSSBONES
+<Multi_key> <Multi_key> <X> <b> <o> <n> <e> <s>:	  "☠" U2620 # SKULL AND CROSSBONES
 <Multi_key> <Multi_key> <k> <b> <d> :	"⌨"	  U2328	    # KEYBOARD
-# Can we get better keycodes for these?
-<Multi_key> <equal> <minus>	: "☞" U261E # WHITE RIGHT POINTING INDEX
 <Multi_key> <Multi_key> <r> <h> <a> <n> <d>	: "☞" U261E # WHITE RIGHT POINTING INDEX
-<Multi_key> <minus> <equal>	: "☜" U261C # WHITE LEFT POINTING INDEX
 <Multi_key> <Multi_key> <l> <h> <a> <n> <d>	: "☜" U261C # WHITE LEFT POINTING INDEX
 <Multi_key> <asterisk> <asterisk>	:"★" U2605 # BLACK STAR
 <Multi_key> <asterisk> <0>	:"☆" U2606 # WHITE STAR
@@ -702,15 +828,16 @@ include "%L"
 # Using backslash-minus-slash etc. conflicts with combining accents.
 <Multi_key> <grave> <minus> <apostrophe>	 : "⚞"	U269E  # THREE LINES CONVERGING RIGHT
 <Multi_key> <apostrophe> <minus> <grave>	 : "⚟"	U269F  # THREE LINES CONVERGING LEFT
-<Multi_key> <Multi_key> <b> <e> <l> <l>		: "⍾" U237E  # BELL SYMBOL (or ALIENS LANDING) -- &-a-l-i-e-n ?
-# Other monstery characters... ѪꙚ (alien abductions?) 
-# ඏൠഋ & others from Kannada et al...? 
+<Multi_key> <Multi_key> <B> <e> <l> <l> <s> <y> <m>	: "⍾" U237E  # BELL SYMBOL (or ALIENS LANDING) -- &-a-l-i-e-n ?
+# Other monstery characters... ѪꙚ (alien abductions?)
+# ඏൠഋ & others from Kannada et al...?
 # Can't use -^- for this; conflicts with -^ for ↑, and getting those arrows
 # workable was complicated enough.  How about this?
 <Multi_key> <underscore> <asciicircum> <underscore>	: "⌤" U2324  # UP ARROWHEAD BETWEEN TWO HORIZONTAL BARS; aka ENTER KEY, aka NOT AMUSED.
 <Multi_key> <Multi_key> <w> <a> <i> <t>		: "⌛" U231B   # HOURGLASS
+<Multi_key> <Multi_key> <h> <o> <u> <r>		: "⌛" U231B   # HOURGLASS
 <Multi_key> <Multi_key> <t> <i> <m> <e>		: "⌚" U231A   # WATCH
-<Multi_key> <space> <apostrophe>  : " " U2009  # THIN SPACE
+<Multi_key> <Multi_key> <w> <a> <t> <c> <h>	: "⌚" U231A   # WATCH
 <Multi_key> <space> <N>		  : " "	U2002  # EN SPACE
 <Multi_key> <space> <M>		  : " " U2003  # EM SPACE
 <Multi_key> <space> <3> <M>	  : " "	U2004  # THREE-PER-EM SPACE
@@ -772,6 +899,8 @@ include "%L"
 <Multi_key> <BackSpace> <e> <h>		: "ɜ"	U025C		# LATIN SMALL LETTER REVERSED OPEN E
 <Multi_key> <less> <e> <r>		: "ɝ"	U025D		# LATIN SMALL LETTER REVERSED OPEN E WITH HOOK
 <Multi_key> <BackSpace> <e> <r>		: "ɝ"	U025D		# LATIN SMALL LETTER REVERSED OPEN E WITH HOOK
+# It's spelled "gy" in Hungarian...
+<Multi_key> <g> <y>			: "ɟ"	U025F		# LATIN SMALL LETTER DOTLESS J WITH STROKE
 # How are these keystrokes?
 <Multi_key> <bar> <apostrophe>		: "ˈ"	U02C8		# MODIFIER LETTER VERTICAL LINE
 <Multi_key> <bar> <comma>		: "ˌ"	U02CC		# MODIFIER LETTER LOW VERTICAL LINE
@@ -784,7 +913,10 @@ include "%L"
 <Multi_key> <u> <i>			: "ɯ"	U026F		# LATIN SMALL LETTER TURNED M
 # doubling a letter seems to be mostly used for turning
 <Multi_key> <w> <w>			: "ʍ"	U028D		# LATIN SMALL LETTER TURNED W
+<Multi_key> <y> <y>			: "ʎ"	U028E		# LATIN SMALL LETTER TURNED Y
 <Multi_key> <a> <a>			: "ɐ"	U0250		# LATIN SMALL LETTER TURNED A
+# ı is already available in the "standard" .XCompose
+<Multi_key> <j> <period>    		: "ȷ"	U0237		# LATIN SMALL LETTER DOTLESS J
 # I'll use capitals for a different double
 <Multi_key> <W> <W>			: "ʬ"	U02AC		# LATIN LETTER BILABIAL PERCUSSIVE
 # Sorry, I miss having this and hate having to use colon instead:
@@ -792,6 +924,8 @@ include "%L"
 # Also handy for writing urls: http://ʬw.omniglot.com/
 # ɣ? ᴥ?  Important enough to add? ᴥ is cool just as a "latin" letter.
 <Multi_key> <g> <h>	     	    : "ɣ"   U0263     # LATIN SMALL LETTER GAMMA
+# It looks like a ɣ and makes an "o" sorta sound:
+<Multi_key> <o> <g> <h>	      	    : "ɤ"  U0264      # LATIN SMALL LETTER RAMS HORN
 <Multi_key> <a> <i> <n>		    : "ᴥ"   U1D25     # LATIN LETTER AIN
 # Sometimes it's a "tail", sometimes a "hook", and sometimes a "retroflex hook"
 <Multi_key> <d> <comma>		    : "ɖ"   U0256     # LATIN SMALL LETTER D WITH TAIL
@@ -812,6 +946,7 @@ include "%L"
 <Multi_key> <G> <apostrophe>	    : "ʛ"   U029B     # LATIN LETTER SMALL CAPITAL G WITH HOOK
 <Multi_key> <N> <o>			: "№"	U2116		# NUMERO SIGN
 <Multi_key> <R> <x>			: "℞"	U211E		# PRESCRIPTION TAKE
+<Multi_key> <P> <e> <r>			: "⅌"	U214C		# PER SIGN
 <Multi_key> <o> <z> <period>		: "℥"	U2125		# OUNCE SIGN
 <Multi_key> <s> <c> <r> <period>	: "℈"	U2108		# SCRUPLE
 # There are all kinds of awesome combining characters in the U+0300 page.
@@ -850,8 +985,13 @@ include "%L"
 <Multi_key> <backslash> <bar>       	: "̍"	U030d	# COMBINING VERTICAL LINE ABOVE
 <Multi_key> <backslash> <2> <bar>	: "̎"	U030e	# COMBINING DOUBLE VERTICAL LINE ABOVE
 <Multi_key> <backslash> <2> <grave>	: "̏"	U030f	# COMBINING DOUBLE GRAVE ACCENT
+# For writing PSILI and DASIA in Greek
+# Ugh, better key-coding?  I may need @ for BELOW.
+<Multi_key> <backslash> <backslash> <backslash> <comma>	:	"̒"  U0312   # COMBINING TURNED COMMA ABOVE
+<Multi_key> <backslash> <backslash> <comma>	:	"̓"  U0313   # COMBINING COMMA ABOVE
+<Multi_key> <backslash> <backslash> <less> <comma>	:	"̔"   U0314   # COMBINING REVERSED COMMA ABOVE
 <Multi_key> <backslash> <f> <m>                 : "͒"   U0352   # COMBINING FERMATA
-<Multi_key> <backslash> <parenleft> <period>:	: "̐"	U0310	# COMBINING CHANDRABINDU
+<Multi_key> <backslash> <parenleft> <period>	: "̐"	U0310	# COMBINING CHANDRABINDU
 <Multi_key> <backslash> <i> <b>		: "̑"	U0311	# COMBINING INVERTED BREVE -- ??
 <Multi_key> <backslash> <parenleft> <parenright>: "⃝"  U20DD # COMBINING ENCLOSING CIRCLE
 <Multi_key> <backslash> <parenleft> <slash> <parenright>:    "⃠"	 U20E0	   # COMBINING ENCLOSING CIRCLE BACKSLASH
@@ -895,6 +1035,8 @@ include "%L"
 <Multi_key> <period> <parenright>	: "͒"	U0352   # COMBINING FERMATA
 
 <Multi_key> <backslash> <asterisk>	: "҉"	U0489	# COMBINING CYRILLIC MILLIONS SIGN  -- aka COMBINING SHINY
+<Multi_key> <P> <minus>		: "₽"	U20BD	# RUBLE SIGN
+<Multi_key> <p> <minus>		: "₽"	U20BD	# RUBLE SIGN
 
 # How about for a little extra control:
 <Multi_key> <Z> <W> <S> <P>		: "​"	U200B	# ZERO WIDTH SPACE
@@ -1154,3 +1296,11 @@ include "%L"
 <Multi_key> <parenleft> <1> <1> <colon> <3> <0> <parenright>     : "🕦" U1F566 # CLOCK FACE ELEVEN-THIRTY
 <Multi_key> <parenleft> <1> <2> <colon> <3> <0> <parenright>     : "🕧" U1F567 # CLOCK FACE TWELVE-THIRTY
 
+# Bitcoin signs
+# Real bitcoin codepoint coming at U+20BF!
+<Multi_key> <B> <bar> : "฿" U0E3F # BITCOIN CURRENCY SIGN, ORIGINAL THAI CURRENCY SYMBOL BAHT
+
+<Multi_key> <minus> <B> : "Ƀ" U0243 # ALTERNATIVE BITCOIN CURRENCY SIGN, LATIN CAPITAL LETTER B WITH STROKE
+<Multi_key> <B> <minus> : "Ƀ" U0243 # ALTERNATIVE BITCOIN CURRENCY SIGN, LATIN CAPITAL LETTER B WITH STROKE
+<Multi_key> <minus> <b> : "ƀ" U0180 # ALTERNATIVE BIT CURRENCY SIGN, LATIN SMALL LETTER B WITH STROKE
+<Multi_key> <b> <minus> : "ƀ" U0180 # ALTERNATIVE BIT CURRENCY SIGN, LATIN SMALL LETTER B WITH STROKE

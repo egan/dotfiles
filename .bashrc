@@ -29,6 +29,7 @@ shopt -s extglob globstar
 # Check window size after command.
 shopt -s checkwinsize
 
+# Abbreviate working directory if long.
 _dir_chomp () {
 	local p=${1/#$HOME/\~} b s
 	s=${#p}
@@ -43,6 +44,7 @@ _dir_chomp () {
 	echo ${b/\/~/\~}${b+/}$p
 }
 
+# Show git information in prompt.
 . /usr/share/git/git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE=1
 

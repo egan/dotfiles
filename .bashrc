@@ -49,6 +49,9 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 # Command prompts.
 PS1='\[\033[G\]egan@occhio:$(_dir_chomp "$(pwd)" 35)$(__git_ps1 " (%s)")\$ '
 
+# Add line of scrollback for reflow.
+#printf '\e[99999;H\n\e[H'
+
 # Check for clobber.
 #set -o noclobber
 

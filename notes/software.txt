@@ -1,16 +1,14 @@
 # Packages installed locally.
-dwb:
-	adblock_subscriptions
-	simplyread
 firefox:
-	Adblock Plus
-	Pentadactyl
+	ublock origin
+	vimfx
 MATLAB: /usr/local/MATLAB, /usr/local/bin
 python:
 	CoolProp
 	mahotas
 	pandas
 	patsy
+	pint
 	seaborn
 	scikit-image
 	statsmodels

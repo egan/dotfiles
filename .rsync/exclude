@@ -1,7 +1,7 @@
 .adobe/*
 .audacity-data/*
 .cache/*
-.compose_cache/*
+.compose-cache/*
 .config/configstore/*
 .config/matplotlib/*cache*
 .config/Popcorn-Time/*

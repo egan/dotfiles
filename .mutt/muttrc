@@ -1,113 +1,113 @@
 ## Identity
-set realname			= "REAL NAME"
-set signature			= ~/.mutt/signature
+set realname          = "REAL NAME"
+set signature         = ~/.mutt/signature
 
 ## Main Configuration
 # Show aliases instead of addresses in index.
-set reverse_alias		= yes
+set reverse_alias     = yes
 # Use "From:" header as envelope sender.
-set use_envelope_from		= yes
+set use_envelope_from = yes
 # Remove messages marked for deletion on sync.
-set delete			= yes
+set delete            = yes
 # Don't confirm adding messages to mailbox.
-set confirmappend		= no
+set confirmappend     = no
 # Do not mark unread messages as old on quit.
-set mark_old			= no
+set mark_old          = no
 # Timeout for user input.
-set timeout			= 10
+set timeout           = 10
 
 ## Global Connection Settings
 # Reopen a new IMAP connection.
-set imap_passive		= no
+set imap_passive      = no
 # Interval to poll open IMAP connections.
-set imap_keepalive		= 300
+set imap_keepalive    = 300
 # Interval to check for new mail.
-set mail_check			= 5
+set mail_check        = 5
 # Require that all connections be encrypted.
-set ssl_force_tls		= yes
+set ssl_force_tls     = yes
 
-## Settings for Davismail account.
-set imap_user			= "EMAIL.USER@gmail.com"
-set imap_pass			= "GMAILPASSWORD"
-set folder			= "imaps://imap.gmail.com"
-mailboxes			"+INBOX" "+[Gmail]/Sent Mail" "+[Gmail]/Drafts" "+[Gmail]/All Mail" "+[Gmail]/Spam" "+[Gmail]/Trash"
-set spoolfile			= "+INBOX"
-set from			= "EMAIL.USER@gmail.com"
-set smtp_url			= "smtps://EMAIL.USER@smtp.gmail.com"
-set smtp_pass			= "GMAILPASSWORD"
-set record			= ""
-set postponed			= "+[Gmail]/Drafts"
-set mbox			= "+[Gmail]/All Mail"
-set trash			= "+[Gmail]/Trash"
+## Settings for Gmail account.
+set imap_user         = "EMAIL.USER@gmail.com"
+set imap_pass         = "GMAILPASSWORD"
+set folder            = "imaps://imap.gmail.com"
+mailboxes             "+INBOX" "+[Gmail]/Sent Mail" "+[Gmail]/Drafts" "+[Gmail]/All Mail" "+[Gmail]/Spam" "+[Gmail]/Trash"
+set spoolfile         = "+INBOX"
+set from              = "EMAIL.USER@gmail.com"
+set smtp_url          = "smtps://EMAIL.USER@smtp.gmail.com"
+set smtp_pass         = "GMAILPASSWORD"
+set record            = ""
+set postponed         = "+[Gmail]/Drafts"
+set mbox              = "+[Gmail]/All Mail"
+set trash             = "+[Gmail]/Trash"
 
 ## Message Composition
 # Reuse recipients and subject when replying.
-set fast_reply			= yes
+set fast_reply        = yes
 # Subject format string for forwarding.
-set forward_format		= "Fwd: %s"
+set forward_format    = "Fwd: %s"
 # Include copy of original message in reply.
-set include			= yes
+set include           = yes
 # Quote original messages for forwarding.
-set forward_quote		= yes
+set forward_quote     = yes
 # Keyword to suggest intended attachment.
-set attach_keyword		= "attach"
+set attach_keyword    = "attach"
 # Ask to abort send if attachment expected.
-set abort_noattach		= "ask-yes"
+set abort_noattach    = "ask-yes"
 
 ## Pager Configuration
 # Lines of mini-index to show while in pager.
-set pager_index_lines		= 8
+set pager_index_lines = 8
 # Lines of context to show in pager.
-set pager_context       	= 5
+set pager_context     = 5
 # Do not move to next message at end of page.
-set pager_stop			= yes
+set pager_stop        = yes
 # Scroll in menus across boundaries.
-set menu_scroll			= yes
+set menu_scroll       = yes
 # Pad blank lines in pager with tildes.
-set tilde			= yes
+set tilde             = yes
 # Don't show markers for wrapped lines.
-set markers			= no
+set markers           = no
 # Order in which to display multipart messages.
-alternative_order		text/plain text/enriched text/html *
+alternative_order     text/plain text/enriched text/html *
 # MIME types to autoview with mailcap.
-auto_view			text/html
+auto_view             text/html
 
 ## Index Configuration
-set sort			= "threads"
-set sort_aux			= "reverse-last-date-received"
+set sort              = "threads"
+set sort_aux          = "reverse-last-date-received"
 
 ## Side Bar Configuration
-set sidebar_delim	= "│"
-set sidebar_visible	= yes
-set sidebar_width	= 20
+set sidebar_delim     = "│"
+set sidebar_visible   = yes
+set sidebar_width     = 20
 
 ## File Resources
-set header_cache		= ~/.mutt/cache/headers
-set message_cachedir		= ~/.mutt/cache/bodies
-set certificate_file		= ~/.mutt/certificates
-set alias_file			= ~/.mutt/aliases
-set tmpdir			= ~/.mutt/temp
-set mailcap_path 		= ~/.mutt/mailcap
+set header_cache      = ~/.mutt/cache/headers
+set message_cachedir  = ~/.mutt/cache/bodies
+set certificate_file  = ~/.mutt/certificates
+set alias_file        = ~/.mutt/aliases
+set tmpdir            = ~/.mutt/temp
+set mailcap_path      = ~/.mutt/mailcap
 
 ## File Includes
-source				$alias_file
-source				~/.mutt/bindings
-source				~/.mutt/colors
+source                $alias_file
+source                ~/.mutt/bindings
+source                ~/.mutt/colors
 
 ## String Formats
 # Show date like Sun, 01/01/01 01:01:01.
-set date_format			= "%a, %D %T"
+set date_format       = "%a, %D %T"
 # Show "| Flags | Name Subject - Date
-set index_format		= "│%Z│ %-15F %s - %D"
-set quote_regexp		= "^( {0,4}[>|:#%]| {0,4}[a-z0-9]+[>|]+)+"
-set reply_regexp		= "^(([Rr][Ee]?(\[[0-9]+\])?: *)?(\[[^]]+\] *)?)*"
-set status_format		= "──────Gmail──────┴───[ %m%?n? [+%n]?%?d? [-%d]?%?t? [*%t]? ]%?p?─[ %p postponed ]?─%>─(%4P)─"
+set index_format      = "│%Z│ %-15F %s - %D"
+set quote_regexp      = "^( {0,4}[>|:#%]| {0,4}[a-z0-9]+[>|]+)+"
+set reply_regexp      = "^(([Rr][Ee]?(\[[0-9]+\])?: *)?(\[[^]]+\] *)?)*"
+set status_format     = "──────Gmail──────┴───[ %m%?n? [+%n]?%?d? [-%d]?%?t? [*%t]? ]%?p?─[ %p postponed ]?─%>─(%4P)─"
 
 ## Header Information
-ignore				*
-unignore			Date From To Subject
-hdr_order			Date From To Cc
+ignore                *
+unignore              Date From To Subject
+hdr_order             Date From To Cc
 
 ## Commands Configuration
-set ispell			= "aspell -e -c"
-set print_command		= ""
+set ispell            = "aspell -e -c"
+set print_command     = ""

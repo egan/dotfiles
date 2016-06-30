@@ -54,6 +54,7 @@ alias weechat='exec weechat-curses'
 
 # Specialized aliases.
 alias cclean='rm -rf ~/.adobe/* ~/.macromedia/* ~/.icedtea/* ~/.config/matplotlib/tex.cache/*'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias cls='tput reset'
 alias extip='curl -s ifconfig.me'
 alias getlogs='rsync -avz --delete -e ssh paijanne:$HOME/.weechat/logs/ $HOME/.weechat/logs/'

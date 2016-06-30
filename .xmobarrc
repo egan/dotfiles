@@ -9,7 +9,7 @@
 --
 --
 
-Config	{ font             = "-*-profont-*-*-*-*-11-*-*-*-*-*-iso8859-*"
+Config	{ font             = "-*-profont-*-*-*-*-10-*-*-*-*-*-iso8859-*"
         , additionalFonts  = []
         , textOffset       = -1
         , bgColor          = "#000000"
@@ -28,16 +28,15 @@ Config	{ font             = "-*-profont-*-*-*-*-11-*-*-*-*-*-iso8859-*"
         , borderColor      = "#990000"
         , commands         =
                            [ Run MultiCpu
-                           ["-t","CPU:<total>% <fc=#990000>|</fc> C01:<total0>% <fc=#990000>|</fc> C02:<total1>% <fc=#990000>|</fc> C03:<total2>% <fc=#990000>|</fc> C04:<total3>% <fc=#990000>|</fc> C05:<total4>% <fc=#990000>|</fc> C06:<total5>% <fc=#990000>|</fc> C07:<total6>% <fc=#990000>|</fc> C08:<total7>% <fc=#990000>|</fc> C09:<total8>% <fc=#990000>|</fc> C10:<total9>% <fc=#990000>|</fc> C11:<total10>% <fc=#990000>|</fc> C12:<total11>%","-L","5","-H","50","-n","#00d900","-h","#e50000","-p","3","-c"," "] 10
-                           , Run ThermalZone 0
-                           ["-t","Temp: <temp>°C","-L","30","-H","70","-h","#e50000","-l","#729fcf"] 10
-                           , Run CoreTemp
-                           ["-t", "T1: <core0>°C <fc=#990000>|</fc> T2: <core1>°C <fc=#990000>|</fc> T3: <core2>°C <fc=#990000>|</fc> T4: <core3>°C", "-L", "30", "-H", "70", "-h", "#e50000", "-l", "#729fcf"] 10
+                           ["-t","CPU0:<total>% <fc=#990000>|</fc> CPU1:<total0>% <fc=#990000>|</fc> CPU2:<total1>% <fc=#990000>|</fc> CPU3:<total2>% <fc=#990000>|</fc> CPU4:<total3>%","-L","5","-H","50","-n","#00d900","-h","#e50000","-p","3","-c"," "] 10
+                           , Run ThermalZone 0 ["-t","Temp: <temp>°C","-L","40","-H","70","-h","#e50000","-l","#729fcf"] 10
                            , Run Memory
-                           ["-t","Mem: <used>MB,<usedratio>% <fc=#990000>|</fc> Cache: <cache>MB <fc=#990000>|</fc> Buffer: <buffer>MB","-p","3","-m","5","-c"," "] 10
-                           , Run Network "eno1"
+                           ["-t","Mem: <used>MB,<usedratio>% <fc=#990000>|</fc> Cache: <cache>MB <fc=#990000>|</fc> Buffer: <buffer>MB","-p","3","-m","3","-c"," "] 10
+                           , Run Swap ["-t","Swap: <used>MB, <usedratio>%","-p","2","-c"," "] 10
+                           , Run DynNetwork
                            ["-t","Dn: <rx>kb/s <fc=#990000>|</fc> Up: <tx>kb/s","-L","0","-H","1024000","-n","#00d900","-h","#e50000","-m","6","-c"," "] 10
                            , Run CommandReader "$HOME/bin/volumed.sh" "volume"
+                           , Run BatteryP ["BAT0"] ["-t","Batt: <left>%","-m","3", "--", "-l", "#e50000", "-p", "#e5e500"] 10
                            , Run Weather "KDVO"
                            ["-t","Novato: <tempC>°C - <rh>%","-L","15","-H","25","-n","#00d900","-h","#e50000","-l","#00a6b2"] 9000
                            , Run Weather "KSTS"
@@ -46,6 +45,6 @@ Config	{ font             = "-*-profont-*-*-*-*-11-*-*-*-*-*-iso8859-*"
                            ]
        , sepChar           = "%"
        , alignSep          = "}{"
-       , template          = "%multicpu% <fc=#990000>|</fc> %thermal0% <fc=#990000>|</fc> %coretemp% <fc=#990000>|</fc> %memory% <fc=#990000>|</fc> %eno1% <fc=#990000>|</fc> }{ <fc=#990000>|</fc> %volume% <fc=#990000>|</fc> %KDVO% <fc=#990000>|</fc> %KSTS% <fc=#990000>|</fc> <fc=#e5e500>%date%</fc>"
+       , template          = "%multicpu% <fc=#990000>|</fc> %thermal0% <fc=#990000>|</fc> %memory% <fc=#990000>|</fc> %swap% <fc=#990000>|</fc> %dynnetwork% <fc=#990000>|</fc> }{ <fc=#990000>|</fc> %volume% <fc=#990000>|</fc> %battery% <fc=#990000>|</fc> %KDVO% <fc=#990000>|</fc> %KSTS% <fc=#990000>|</fc> <fc=#e5e500>%date%</fc>"
 	}
 

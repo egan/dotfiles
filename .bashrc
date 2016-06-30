@@ -44,7 +44,7 @@ _dir_chomp () {
 }
 
 # Command prompts.
-PS1='\[\033[G\]\u@\h:$(_dir_chomp "$(pwd)" 35)\$ '
+PS1='\[\033[G\]\u@\h:$(_dir_chomp "$(pwd)" 20)\$ '
 
 # Add line of scrollback for reflow.
 #printf '\e[99999;H\n\e[H'

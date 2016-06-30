@@ -1,5 +1,5 @@
-URxvt.font:                        -*-profont-*-*-*-*-11-*-*-*-*-*-iso8859-*
-URxvt.boldFont:                    -*-profont-*-*-*-*-11-*-*-*-*-*-iso8859-*
+URxvt.font:                        -*-profont-*-*-*-*-10-*-*-*-*-*-iso8859-*
+URxvt.boldFont:                    -*-profont-*-*-*-*-10-*-*-*-*-*-iso8859-*
 URxvt.scrollstyle:                 xterm
 URxvt.scrollBar_right:             true
 URxvt.scrollBar:                   false

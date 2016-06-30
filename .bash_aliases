@@ -62,6 +62,7 @@ alias mclean='find . -type d -exec chmod 744 {} \; && find . -type f -exec chmod
 alias myip='ip addr show | grep -w inet | grep -v 127.0.0.1 | awk "{ print \$2 }" | cut -d / -f 1'
 alias nettest='echo "Testing Connectivity:";ping -c 4 93.184.216.119;echo;echo "Testing Name Resolution:";ping -c 4 www.example.org'
 alias ntpsync='sudo ntpd -qg'
+alias putbin='rsync -avL --files-from=$HOME/.rsync/putbin ~/bin $HOME/code/share/scripts/'
 alias putcfg='rsync -avL --files-from=$HOME/.rsync/putcfg ~ $HOME/code/share/dotfiles/'
 alias putlogs='rsync -avz --delete -e ssh $HOME/.weechat/logs/ paijanne:$HOME/.weechat/logs/'
 alias repitch='mplayer -af scaletempo=scale=1.0:speed=pitch -speed'

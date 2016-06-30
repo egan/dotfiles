@@ -76,13 +76,12 @@ Fully featured vim configuration enabling all the useful features, with minimal
 mappings added. Includes a selection of plugins managed by Vundle.
 
 ## .xinitrc
-Basic xinit configuration. Sets up dual monitors and disables screensaver. Runs
-xmodmap
+Basic xinit configuration. Disables touchpad and hides cursor. Runs xmodmap
 
 ## .xmobarrc
 Basic xmobar configuration to act as a status bar. Includes CPU use, CPU
-temperature, memory use, network use, speaker volume, current weather, and the
-time.
+temperature, memory use, network use, speaker volume, battery status, current
+weather, and the time.
 
 ## .xmodmaprc
 Maps Caps Lock to Escape, and enables Compose on Right Alt.

@@ -33,6 +33,16 @@ File lists for rsync backups.
 ## .weechat/
 Basic weechat configuration.
 
+## archive/
+Archived configurations for software I no longer use. See README.
+
+## notes/
+Lists of packages I install.
+
++ pacman.txt: List of packages from official and AUR.
++ software.txt: List of packages I install outside of pacman, including python
+  libraries.
+
 ## .XCompose
 Very nice XCompose file from <https://github.com/kragen/xcompose>.
 

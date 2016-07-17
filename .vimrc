@@ -137,3 +137,12 @@ let g:undotree_SetFocusWhenToggle=1
 
 "" Visual Increment Config
 cmap Iz II 1 0
+
+"" Functions
+" Refactor the given lines using a dictionary, replacing all occurrences of
+" each key in the dictionary with its value.
+function! Refactor(dict) range
+	execute a:firstline . ',' . a:lastline .  's/\C\<\%(' . join(keys(a:dict),'\|'). '\)\>/\='.string(a:dict).'[submatch(0)]/ge'
+endfunction
+
+command! -range=% -nargs=1 Refactor :<line1>,<line2>call Refactor(<args>)

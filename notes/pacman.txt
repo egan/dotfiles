@@ -31,6 +31,7 @@ Terminal        : profont rlwrap rxvt-unicode urxvt-perls xterm
 Utilities       : ack acpi cpio inotify-tools jshon lsof mlocate moreutils notify-send p7zip pass pv rsync sharutils srm unison unrar unzip zip
 Versioning      : addinclude diffstat git subversion
 Web             : cclive curl elinks firefox qutebrowser wget wput
+Web Design      : nodejs
 Widget          : gtk-chtheme gtk-engine-murrine
 Windowing       : dunst openbox slock spectrwm xclip xdotool xmobar unclutter
 

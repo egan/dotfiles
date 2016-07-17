@@ -13,5 +13,8 @@ python:
 	scikit-image
 	statsmodels
 	uncertainties
+ruby:
+	bundler
+	github-pages
 vim:
 	Vundle

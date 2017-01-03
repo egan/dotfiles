@@ -428,6 +428,7 @@ include "%L"
 <Multi_key> <L> <apostrophe>	    : "｣"     UFF63   # HALFWIDTH RIGHT CORNER BRACKET
 <Multi_key> <7> <quotedbl>	    : "『"    U300E   # LEFT WHITE CORNER BRACKET
 <Multi_key> <L> <quotedbl>	    : "』"    U300F   # RIGHT WHITE CORNER BRACKET
+<Multi_key> <parenleft> <ampersand> <parenright> :  "≬"	U226C	# BETWEEN
 <Multi_key> <l> <l>		: "ℓ" U2113	# SCRIPT SMALL L
 <Multi_key> <bracketleft> <bracketleft> : "⊏"   U228F           # SQUARE IMAGE OF
 <Multi_key> <bracketleft> <equal>       : "⊑"   U2291           # SQUARE IMAGE OF OR EQUAL TO
@@ -437,12 +438,14 @@ include "%L"
 <Multi_key> <bracketright> <underscore> : "⊒"   U2292           # SQUARE ORIGINAL OF OR EQUAL TO
 # If I did more Haskell, I'd want this more:
 <Multi_key> <underscore> <bar> <underscore>:	"⊥"	 U22A5	# UP TACK (bottom) or should we use U27C2 PERPENDICULAR?
+<Multi_key> <underscore> <exclam> <underscore>:	"⊤"	 U22A4	# DOWN TACK (opposite of False)
+<Multi_key> <underscore> <greater> <underscore>:	"⊢"	 U22A2	# RIGHT TACK
+<Multi_key> <underscore> <less> <underscore>:	"⊣"	 U22A2	# LEFT TACK
 # Handy for UNIX filenames... but XXX conflicts with standard <Multi_key> <slash> <slash> → "\"
 <Multi_key> <slash> <slash>		: "⁄"	U2044	# FRACTION SLASH
 
 # The system file gives us subscript numbers, plus/minus, and parens.  But
 # there are letters missing.  It would be nice to have at least a few of them.
-<<<<<<< HEAD
 <Multi_key> <underscore> <i>  	       :  "ᵢ"  U1D62   	  # LATIN SUBSCRIPT SMALL LETTER I
 <Multi_key> <underscore> <o>	       :  "ₒ"  U2092	  # LATIN SUBSCRIPT SMALL LETTER O
 <Multi_key> <underscore> <x>	       :  "ₓ"  U2093	  # LATIN SUBSCRIPT SMALL LETTER X
@@ -461,8 +464,6 @@ include "%L"
 <Multi_key> <underscore> <p>           : "ₚ"   U209A      # LATIN SUBSCRIPT SMALL LETTER P
 <Multi_key> <underscore> <s>           : "ₛ"   U209B      # LATIN SUBSCRIPT SMALL LETTER S
 <Multi_key> <underscore> <t>           : "ₜ"   U209C      # LATIN SUBSCRIPT SMALL LETTER T
-=======
->>>>>>> a6871a9c142fb64e5bda33cc241afe258dbf9cbe
 
 # block U+208x
 <Multi_key> <underscore> <0>  	       : "₀"  U2080   	  # SUBSCRIPT ZERO
@@ -498,6 +499,14 @@ include "%L"
 # subscripts in other blocks
 <Multi_key> <underscore> <i>  	       : "ᵢ"  U1D62   	  # LATIN SUBSCRIPT SMALL LETTER I
 <Multi_key> <underscore> <j>           : "ⱼ"  U2C7C	  # LATIN SUBSCRIPT SMALL LETTER J
+<Multi_key> <underscore> <r>           : "ᵣ"  U1D63       # LATIN SUBSCRIPT SMALL LETTER R
+<Multi_key> <underscore> <u>           : "ᵤ"  U1D64       # LATIN SUBSCRIPT SMALL LETTER U
+<Multi_key> <underscore> <v>           : "ᵥ"  U1D65       # LATIN SUBSCRIPT SMALL LETTER V
+<Multi_key> <underscore> <asterisk> <b> : "ᵦ"  U1D66     # GREEK SUBSCRIPT SMALL LETTER BETA
+<Multi_key> <underscore> <asterisk> <g> : "ᵧ"  U1D67     # GREEK SUBSCRIPT SMALL LETTER GAMMA
+<Multi_key> <underscore> <asterisk> <r> : "ᵨ"  U1D68     # GREEK SUBSCRIPT SMALL LETTER RHO
+<Multi_key> <underscore> <asterisk> <f> : "ᵩ"  U1D69     # GREEK SUBSCRIPT SMALL LETTER PHI
+<Multi_key> <underscore> <asterisk> <x> : "ᵪ"  U1D6A     # GREEK SUBSCRIPT SMALL LETTER CHI
 
 # Custom additions: Greek letters.  Mapping corresponds to Emacs Greek
 # input method.  Aristotle Pagaltzis informs me that this is the

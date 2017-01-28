@@ -24,12 +24,13 @@ Network         : dnsutils ettercap inetutils hping iptraf-ng ntp nmap tcpdump w
 Plugin          : flashplugin icedtea-web
 Printing        : a2ps cups hplip
 Publishing      : asciidoc aspell aspell-en aspell-es ghostscript lilypond markdown python-markdown texlive-lang texlive-most
+Security        : encfs pass
 Server          : autossh mosh gnu-netcat openssh
 Shell           : bash-completion tmux vifm
 Sound           : alsa-plugins alsa-tools alsa-utils
 Storage         : dosfstools cdrkit exfat-utils fuse-exfat fuseiso libdvdread libdvdcss libdvdnav ntfs-3g sdparm smartmontools
 Terminal        : profont rlwrap rxvt-unicode urxvt-perls xterm
-Utilities       : ack acpi cpio inotify-tools jshon lsof mlocate moreutils notify-send p7zip pass pv rsync sharutils srm unison unrar unzip zip
+Utilities       : ack acpi cpio inotify-tools jshon lsof mlocate moreutils notify-send p7zip pv rsync sharutils srm unison unrar unzip zip
 Versioning      : addinclude diffstat git subversion
 Web             : cclive curl elinks firefox qutebrowser wget wput
 Web Design      : nodejs

@@ -141,5 +141,16 @@ cmap Iz II 1 0
 function! Refactor(dict) range
 	execute a:firstline . ',' . a:lastline .  's/\C\<\%(' . join(keys(a:dict),'\|'). '\)\>/\='.string(a:dict).'[submatch(0)]/ge'
 endfunction
-
 command! -range=% -nargs=1 Refactor :<line1>,<line2>call Refactor(<args>)
+
+" Prune the argslist to just those buffers listed in the quickfix list.
+function! QuickfixFilenames()
+	" Building a hash ensures we get each buffer only once
+	let buffer_numbers = {}
+	for quickfix_item in getqflist()
+		let buffer_numbers[quickfix_item['bufnr']] = bufname(quickfix_item['bufnr'])
+	endfor
+	return join(map(values(buffer_numbers), 'fnameescape(v:val)'))
+endfunction
+command! -nargs=0 -bar Qargs execute 'args' QuickfixFilenames()
+

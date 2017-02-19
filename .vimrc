@@ -32,7 +32,7 @@ set rtp+=~/.vim/bundle/Vundle.vim                " Include vundle in runtime pat
 call vundle#begin()                              " Run vundle.
 
 "" Bundles
-Plugin 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'chrisbra/csv.vim'
 "Plugin 'scrooloose/nerdcommenter'
@@ -46,7 +46,7 @@ Plugin 'vim-airline/vim-airline-themes'
 "Plugin 'spf13/vim-autoclose'
 Plugin 'tpope/vim-commentary'
 Plugin 'Lokaltog/vim-distinguished'
-Plugin 'Lokaltog/vim-easymotion'
+Plugin 'easymotion/vim-easymotion'
 Plugin 'tpope/vim-fugitive'
 "Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-repeat'

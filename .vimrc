@@ -1,28 +1,32 @@
 "" General Settings
 set nocompatible                                 " Enable vim-specific features.
-set shortmess+=I                                 " Disable startup message.
-set nobackup                                     " Don't backup saved files.
-set ruler                                        " Show the ruler.
-set showcmd                                      " Show partial commands in statusline.
+set autoindent                                   " Indent at same level as previous line.
+set autoread                                     " Automatically read a file when it changes.
+set backspace=indent,eol,start                   " Allow unrestricted backspace.
+set display+=lastline                            " Show part of last line even if too long.
+set foldenable                                   " Automatically fold code.
+set formatoptions+=j                             " Remove comment leader when joining lines.
+set hlsearch                                     " Highlight search terms.
+set ignorecase                                   " Case insensitive search.
+set incsearch                                    " Find as you type search.
+set linebreak                                    " Perform linebreaks at appropriate characters.
 set mouse=a                                      " Enable mouse usage.
 set mousefocus                                   " Focus windows with mouse in GVim
-set showmatch                                    " Show matching parenthetical delimitters.
-set hlsearch                                     " Highlight search terms.
-set incsearch                                    " Find as you type search.
-set ignorecase                                   " Case insensitive search.
-set smartcase                                    " Case sensitive when uppercase present.
-set backspace=indent,eol,start                   " Allow unrestricted backspace.
-set linebreak                                    " Perform linebreaks at appropriate characters.
-set autoindent                                   " Indent at same level as previous line.
-set tabstop=4                                    " Use four columns for tabstop.
-set shiftwidth=4                                 " Indent by four columns.
-set foldenable                                   " Automatically fold code.
+set nobackup                                     " Don't backup saved files.
 set nojoinspaces                                 " Do not doublespace on join (J).
+set nrformats-=octal                             " Don't interpret leading 0s as octal.
 set pastetoggle=<F2>                             " Enable unformatted paste.
-set splitright                                   " Open new vsplit window to the right.
+set ruler                                        " Show the ruler.
+set shiftwidth=4                                 " Indent by four columns.
+set shortmess+=I                                 " Disable startup message.
+set showcmd                                      " Show partial commands in statusline.
+set showmatch                                    " Show matching parenthetical delimitters.
+set smartcase                                    " Case sensitive when uppercase present.
 set splitbelow                                   " Open new split window to the bottom.
-set nrformats=hex                                " Don't interpret leading 0s as octal.
+set splitright                                   " Open new vsplit window to the right.
+set tabstop=4                                    " Use four columns for tabstop.
 set tags+=;                                      " Search up tree for tags file.
+set wildmenu                                     " Show command line completion.
 
 "" Folding
 set foldmethod=marker                            " Use markers for folding.
@@ -93,7 +97,7 @@ nmap <silent><F6> :let &virtualedit=&virtualedit=="" ? "all" : ""<CR>
 nmap <silent><F7> :let &colorcolumn=&colorcolumn=="" ? "80" : ""<CR>
 
 "" Airline Config
-set laststatus=2
+set laststatus=2                                 " Always show the status line.
 let g:airline_theme = 'simple'
 
 "" NERDTree Config

@@ -33,34 +33,31 @@ call vundle#begin()                              " Run vundle.
 
 "" Bundles
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'mileszs/ack.vim'
-Plugin 'chrisbra/csv.vim'
-"Plugin 'scrooloose/nerdcommenter'
-Plugin 'scrooloose/nerdtree'
-Plugin 'xuhdev/SingleCompile'
-Plugin 'godlygeek/tabular'
-Plugin 'mbbill/undotree'
-Plugin 'tpope/vim-abolish'
 Plugin 'bling/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-"Plugin 'spf13/vim-autoclose'
-Plugin 'tpope/vim-commentary'
-Plugin 'Lokaltog/vim-distinguished'
-Plugin 'easymotion/vim-easymotion'
-Plugin 'tpope/vim-fugitive'
-"Plugin 'terryma/vim-multiple-cursors'
-Plugin 'tpope/vim-repeat'
-Plugin 'goldfeld/vim-seek'
-Plugin 'tpope/vim-surround'
-Plugin 'kana/vim-textobj-entire'
-Plugin 'kana/vim-textobj-lastpat'
-Plugin 'kana/vim-textobj-user'
-Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'bronson/vim-trailing-whitespace'
-Plugin 'tpope/vim-unimpaired'
+Plugin 'chrisbra/csv.vim'
+Plugin 'chriskempson/vim-tomorrow-theme'
+Plugin 'easymotion/vim-easymotion'               " \\MOTION
+Plugin 'godlygeek/tabular'                       " :Tab REGEX # \zs
+Plugin 'goldfeld/vim-seek'                       " sSEQ; OPERATORx
+Plugin 'kana/vim-textobj-entire'                 " ae; ie
+Plugin 'kana/vim-textobj-lastpat'                " a/; i/
+Plugin 'kana/vim-textobj-user'
+Plugin 'Lokaltog/vim-distinguished'
+Plugin 'mbbill/undotree'
+Plugin 'mileszs/ack.vim'                         " :Ack REGEX
+Plugin 'scrooloose/nerdtree'                     " ^e
+Plugin 'tpope/vim-abolish'                       " :Subvert; crs; crm; crc; cru
+Plugin 'tpope/vim-commentary'                    " gcc
+Plugin 'tpope/vim-fugitive'                      " :Gstatus; :Gdiff; :Gedit; :Ggrep
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-surround'                      " csXY; ysMOTIONX; dsX
+Plugin 'tpope/vim-unimpaired'                    " [b; [n; [<Space>
 Plugin 'tpope/vim-vividchalk'
-Plugin 'vim-scripts/VisIncr'
-Plugin 'vim-scripts/ZoomWin'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'vim-scripts/VisIncr'                     " :I
+Plugin 'vim-scripts/ZoomWin'                     " ^wo
+Plugin 'xuhdev/SingleCompile'
 
 call vundle#end()
 

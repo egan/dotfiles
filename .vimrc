@@ -48,6 +48,7 @@ Plugin 'Lokaltog/vim-distinguished'
 Plugin 'mbbill/undotree'
 Plugin 'mileszs/ack.vim'                         " :Ack REGEX
 Plugin 'scrooloose/nerdtree'                     " ^e
+Plugin 'terryma/vim-expand-region'               " v+; v_
 Plugin 'tpope/vim-abolish'                       " :Subvert; crs; crm; crc; cru
 Plugin 'tpope/vim-commentary'                    " gcc
 Plugin 'tpope/vim-fugitive'                      " :Gstatus; :Gdiff; :Gedit; :Ggrep

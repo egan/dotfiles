@@ -82,7 +82,7 @@ au BufNewFile,BufRead *.md set filetype=markdown " Assume *.md are markdown, not
 
 "" Mappings
 cnoremap <expr> %%getcmdtype() == ':' ? expand('%:h').'/' : '%%'
-nnoremap <silent> <C-l> :<C-u>nohl<CR><C-l>
+nnoremap <silent><C-l> :<C-u>nohl<C-r>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-l>
 nnoremap Y y$
 nnoremap <CR> o<Esc>
 nmap <silent><Leader>W :%s/\s\+$//<CR>:let @/=''<CR>

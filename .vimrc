@@ -22,6 +22,7 @@ set pastetoggle=<F2>                             " Enable unformatted paste.
 set splitright                                   " Open new vsplit window to the right.
 set splitbelow                                   " Open new split window to the bottom.
 set nrformats=hex                                " Don't interpret leading 0s as octal.
+set tags+=;                                      " Search up tree for tags file.
 
 "" Folding
 set foldmethod=marker                            " Use markers for folding.

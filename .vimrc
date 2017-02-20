@@ -25,7 +25,7 @@ set smartcase                                    " Case sensitive when uppercase
 set splitbelow                                   " Open new split window to the bottom.
 set splitright                                   " Open new vsplit window to the right.
 set tabstop=4                                    " Use four columns for tabstop.
-set tags+=;                                      " Search up tree for tags file.
+set tags=./tags;                                 " Search up tree for tags file.
 set wildmenu                                     " Show command line completion.
 
 "" Folding

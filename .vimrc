@@ -1,27 +1,32 @@
 "" General Settings
 set nocompatible                                 " Enable vim-specific features.
-set shortmess+=I                                 " Disable startup message.
-set nobackup                                     " Don't backup saved files.
-set ruler                                        " Show the ruler.
-set showcmd                                      " Show partial commands in statusline.
+set autoindent                                   " Indent at same level as previous line.
+set autoread                                     " Automatically read a file when it changes.
+set backspace=indent,eol,start                   " Allow unrestricted backspace.
+set display+=lastline                            " Show part of last line even if too long.
+set foldenable                                   " Automatically fold code.
+set formatoptions+=j                             " Remove comment leader when joining lines.
+set hlsearch                                     " Highlight search terms.
+set ignorecase                                   " Case insensitive search.
+set incsearch                                    " Find as you type search.
+set linebreak                                    " Perform linebreaks at appropriate characters.
 set mouse=a                                      " Enable mouse usage.
 set mousefocus                                   " Focus windows with mouse in GVim
-set showmatch                                    " Show matching parenthetical delimitters.
-set hlsearch                                     " Highlight search terms.
-set incsearch                                    " Find as you type search.
-set ignorecase                                   " Case insensitive search.
-set smartcase                                    " Case sensitive when uppercase present.
-set backspace=indent,eol,start                   " Allow unrestricted backspace.
-set linebreak                                    " Perform linebreaks at appropriate characters.
-set autoindent                                   " Indent at same level as previous line.
-set tabstop=4                                    " Use four columns for tabstop.
-set shiftwidth=4                                 " Indent by four columns.
-set foldenable                                   " Automatically fold code.
+set nobackup                                     " Don't backup saved files.
 set nojoinspaces                                 " Do not doublespace on join (J).
+set nrformats-=octal                             " Don't interpret leading 0s as octal.
 set pastetoggle=<F2>                             " Enable unformatted paste.
-set splitright                                   " Open new vsplit window to the right.
+set ruler                                        " Show the ruler.
+set shiftwidth=4                                 " Indent by four columns.
+set shortmess+=I                                 " Disable startup message.
+set showcmd                                      " Show partial commands in statusline.
+set showmatch                                    " Show matching parenthetical delimitters.
+set smartcase                                    " Case sensitive when uppercase present.
 set splitbelow                                   " Open new split window to the bottom.
-set nrformats=hex                                " Don't interpret leading 0s as octal.
+set splitright                                   " Open new vsplit window to the right.
+set tabstop=4                                    " Use four columns for tabstop.
+set tags+=;                                      " Search up tree for tags file.
+set wildmenu                                     " Show command line completion.
 
 "" Folding
 set foldmethod=marker                            " Use markers for folding.
@@ -32,35 +37,33 @@ set rtp+=~/.vim/bundle/Vundle.vim                " Include vundle in runtime pat
 call vundle#begin()                              " Run vundle.
 
 "" Bundles
-Plugin 'gmarik/vundle'
-Plugin 'mileszs/ack.vim'
-Plugin 'chrisbra/csv.vim'
-"Plugin 'scrooloose/nerdcommenter'
-Plugin 'scrooloose/nerdtree'
-Plugin 'xuhdev/SingleCompile'
-Plugin 'godlygeek/tabular'
-Plugin 'mbbill/undotree'
-Plugin 'tpope/vim-abolish'
+Plugin 'VundleVim/Vundle.vim'
 Plugin 'bling/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-"Plugin 'spf13/vim-autoclose'
-Plugin 'tpope/vim-commentary'
-Plugin 'Lokaltog/vim-distinguished'
-Plugin 'Lokaltog/vim-easymotion'
-Plugin 'tpope/vim-fugitive'
-"Plugin 'terryma/vim-multiple-cursors'
-Plugin 'tpope/vim-repeat'
-Plugin 'goldfeld/vim-seek'
-Plugin 'tpope/vim-surround'
-Plugin 'kana/vim-textobj-entire'
-Plugin 'kana/vim-textobj-lastpat'
-Plugin 'kana/vim-textobj-user'
-Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'bronson/vim-trailing-whitespace'
-Plugin 'tpope/vim-unimpaired'
+Plugin 'chrisbra/csv.vim'
+Plugin 'chriskempson/vim-tomorrow-theme'
+Plugin 'easymotion/vim-easymotion'               " \\MOTION
+Plugin 'godlygeek/tabular'                       " :Tab REGEX # \zs
+Plugin 'goldfeld/vim-seek'                       " sSEQ; OPERATORx
+Plugin 'kana/vim-textobj-entire'                 " ae; ie
+Plugin 'kana/vim-textobj-lastpat'                " a/; i/
+Plugin 'kana/vim-textobj-user'
+Plugin 'Lokaltog/vim-distinguished'
+Plugin 'mbbill/undotree'
+Plugin 'mileszs/ack.vim'                         " :Ack REGEX
+Plugin 'scrooloose/nerdtree'                     " ^e
+Plugin 'terryma/vim-expand-region'               " v+; v_
+Plugin 'tpope/vim-abolish'                       " :Subvert; crs; crm; crc; cru
+Plugin 'tpope/vim-commentary'                    " gcc
+Plugin 'tpope/vim-fugitive'                      " :Gstatus; :Gdiff; :Gedit; :Ggrep
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-surround'                      " csXY; ysMOTIONX; dsX
+Plugin 'tpope/vim-unimpaired'                    " [b; [n; [<Space>
 Plugin 'tpope/vim-vividchalk'
-Plugin 'vim-scripts/VisIncr'
-Plugin 'vim-scripts/ZoomWin'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'vim-scripts/VisIncr'                     " :I
+Plugin 'vim-scripts/ZoomWin'                     " ^wo
+Plugin 'xuhdev/SingleCompile'
 
 call vundle#end()
 
@@ -79,7 +82,7 @@ au BufNewFile,BufRead *.md set filetype=markdown " Assume *.md are markdown, not
 
 "" Mappings
 cnoremap <expr> %%getcmdtype() == ':' ? expand('%:h').'/' : '%%'
-nnoremap <silent> <C-l> :<C-u>nohl<CR><C-l>
+nnoremap <silent><C-l> :<C-u>nohl<C-r>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-l>
 nnoremap Y y$
 nnoremap <CR> o<Esc>
 nmap <silent><Leader>W :%s/\s\+$//<CR>:let @/=''<CR>
@@ -94,7 +97,7 @@ nmap <silent><F6> :let &virtualedit=&virtualedit=="" ? "all" : ""<CR>
 nmap <silent><F7> :let &colorcolumn=&colorcolumn=="" ? "80" : ""<CR>
 
 "" Airline Config
-set laststatus=2
+set laststatus=2                                 " Always show the status line.
 let g:airline_theme = 'simple'
 
 "" NERDTree Config
@@ -137,3 +140,23 @@ let g:undotree_SetFocusWhenToggle=1
 
 "" Visual Increment Config
 cmap Iz II 1 0
+
+"" Functions
+" Refactor the given lines using a dictionary, replacing all occurrences of
+" each key in the dictionary with its value.
+function! Refactor(dict) range
+	execute a:firstline . ',' . a:lastline .  's/\C\<\%(' . join(keys(a:dict),'\|'). '\)\>/\='.string(a:dict).'[submatch(0)]/ge'
+endfunction
+command! -range=% -nargs=1 Refactor :<line1>,<line2>call Refactor(<args>)
+
+" Prune the argslist to just those buffers listed in the quickfix list.
+function! QuickfixFilenames()
+	" Building a hash ensures we get each buffer only once
+	let buffer_numbers = {}
+	for quickfix_item in getqflist()
+		let buffer_numbers[quickfix_item['bufnr']] = bufname(quickfix_item['bufnr'])
+	endfor
+	return join(map(values(buffer_numbers), 'fnameescape(v:val)'))
+endfunction
+command! -nargs=0 -bar Qargs execute 'args' QuickfixFilenames()
+

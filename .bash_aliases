@@ -64,7 +64,8 @@ alias mclean='find . -type d -exec chmod 744 {} \; && find . -type f -exec chmod
 alias myip='ip addr show | grep -w inet | grep -v 127.0.0.1 | awk "{ print \$2 }" | cut -d / -f 1'
 alias nettest='echo "Testing Connectivity:";ping -c 4 93.184.216.119;echo;echo "Testing Name Resolution:";ping -c 4 www.example.org'
 #alias ntpsync='sudo ntpd -qg'
-alias putcfg='rsync -avL --files-from=$HOME/.rsync/putcfg ~ $HOME/code/share/dotfiles/'
+alias putbin='rsync -avL --files-from=$HOME/.rsync/putbin ~/bin $HOME/w/src/egan/scripts'
+alias putcfg='rsync -avL --files-from=$HOME/.rsync/putcfg ~ $HOME/w/src/egan/dotfiles/'
 #alias putlogs='rsync -avz --delete -e ssh $HOME/.weechat/logs/ paijanne:$HOME/.weechat/logs/'
 alias repitch='mplayer -af scaletempo=scale=1.0:speed=pitch -speed'
 alias rscp='rsync -avz -e ssh'
@@ -78,6 +79,7 @@ alias wotd='curl -s http://feeds.reference.com/DictionarycomWordOfTheDay | sed "
 
 # Media aliases.
 #alias augustine='sudo mount -o rw,noauto,async,user,umask=1000 /dev/disk/by-uuid/D941-3F25 /media/Augustine'
+#alias fin='encfs ~/docs/.fin ~/docs/fin'
 #alias ghost='sudo mount -o rw,noauto,async,user,umask=1000 /dev/disk/by-uuid/3469-33AC /media/Ghostbear'
 #alias kharkiv='sudo mount /dev/disk/by-uuid/d4d02146-f823-4a87-8618-d5b5e4e3efca /media/Kharkiv'
 #alias kindle='sudo mount -o rw,noauto,async,user,umask=1000 /dev/disk/by-uuid/452B-19F2 /media/Kindle'
@@ -86,6 +88,7 @@ alias wotd='curl -s http://feeds.reference.com/DictionarycomWordOfTheDay | sed "
 #alias pangolin='sudo mount /dev/disk/by-uuid/5CB2739EB2737AFA /media/Pangolin'
 #alias pekkl='sudo mount -o rw,noauto,async,user,umask=1000 /dev/disk/by-uuid/0128-FED0 /media/Pekkl'
 #alias uaugustine='sudo umount /media/Augustine'
+#alias ufin='fusermount -u ~/docs/fin'
 #alias ughost='sudo umount /media/Ghostbear'
 #alias ukharkiv='sudo umount /media/Kharkiv'
 #alias ukindle='sudo umount /media/Kindle'

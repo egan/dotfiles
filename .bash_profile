@@ -19,6 +19,8 @@ export PASSWORD_STORE_CLIP_TIME="15"
 # Include some Windows software directories.
 PATH=/c/Anaconda3:/c/Anaconda3/Scripts:/c/Anaconda3/Library/bin:$PATH
 PATH=/c/Program\ Files\ \(x86\)/MikTex\ 2.9/miktex/bin:$PATH
-PATH=/c/Program\ Files/ImageMagick-6.4.3-Q16:$PATH
+export PATH=/mingw64/bin:$PATH
+export PATH=/mingw32/bin:$PATH
 export PATH=$HOME/bin:$PATH
 export VISUAL=$EDITOR
+export VIMRUNTIME=/usr/share/vim/vim80

@@ -1,0 +1,51 @@
+7Zip
+Anaconda
+	`"C:\Anaconda3\pythonw.exe" "C:\Anaconda3\Lib\_nsis.py" mkmenus`
+	CoolProp
+	pint
+	seaborn
+	slycot # use wheel from http://www.lfd.uci.edu/~gohlke/pythonlibs/#slycot
+	uncertainties
+Arduino
+atlassian-cli
+briss
+CCS:
+	Sitara AMx Processors
+	Spectrum Digital Debug Probes and Boards
+CoolTerm
+fritzing
+GIMP
+GVim
+iconsext
+ImageMagick
+Inkscape
+MeshLab
+MikTeX
+MSYS2: Add some windows paths to $PATH and some msys paths to %PATH% for interoperation.
+	bc
+	ctags
+	dos2unix
+	gcc
+	gcc-fortran
+	git
+	manpages-posix
+	mingw-w64-x86_64-aspell
+	mingw-w64-x86_64-aspell-en
+	mingw-w64-x86_64-astyle
+	mingw-w64-x86_64-imagemagick
+	mingw-w64-x86_64-lapack
+	mingw-w64-x86_64-openblas
+	mingw-w64-x86_64-tk
+	rsync
+	vim
+	winpty
+Octave
+pcloudpy
+ProFont
+Putty
+qutebrowser
+SumatraPDF
+Visual C++ Build Tools 2015: http://go.microsoft.com/fwlink/?LinkId=691126
+VLC
+WinAeroTweaker
+WinCompose

@@ -55,6 +55,7 @@ alias cclean='rm -rf ~/.adobe/* ~/.macromedia/* ~/.icedtea/* ~/.config/matplotli
 alias cls='tput reset'
 alias extip='curl -s ifconfig.me'
 alias getlogs='rsync -avz --delete -e ssh paijanne:$HOME/.weechat/logs/ $HOME/.weechat/logs/'
+alias groot='cd $(git rev-parse --show-cdup)'
 alias gsync='cd $HOME/var/grive && grive; cd - > /dev/null'
 alias hibernate='sudo systemctl hibernate'
 alias lclean='rm -f *.aux *.auxlock *.bbl *.bcf *.blg *.dvi *.fff *.idx *.ilg *.ind *.lof *.log *.lot *.nav *.out *.run.xml *.snm *.toc *.ttt'

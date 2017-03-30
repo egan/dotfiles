@@ -40,6 +40,7 @@ call vundle#begin()                              " Run vundle.
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'bling/vim-airline'
 Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'charoren/vim-wordmotion'
 Plugin 'chrisbra/csv.vim'
 Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'easymotion/vim-easymotion'               " \\MOTION

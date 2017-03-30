@@ -102,7 +102,7 @@ set laststatus=2                                 " Always show the status line.
 let g:airline_theme = 'simple'
 
 "" NERDTree Config
-map <leader>e :NERDTreeFind<CR>
+map <Leader>e :NERDTreeFind<CR>
 map <C-e> :NERDTreeToggle<CR>
 let NERDTreeShowBookmarks=1
 let NERDTreeIgnore=['\.pyc', '\~$', '\.swo$', '\.swp$', '\.git', '\.hg', '\.svn', '\.bzr']
@@ -141,6 +141,9 @@ let g:undotree_SetFocusWhenToggle=1
 
 "" Visual Increment Config
 cmap Iz II 1 0
+
+"" WordMotion Config
+let g:wordmotion_prefix = '<Leader>'
 
 "" Functions
 " Refactor the given lines using a dictionary, replacing all occurrences of

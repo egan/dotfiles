@@ -8,6 +8,7 @@ Anaconda
 	uncertainties
 Arduino
 atlassian-cli
+blender
 briss
 CCS:
 	Sitara AMx Processors
@@ -19,6 +20,7 @@ GVim
 iconsext
 ImageMagick
 Inkscape
+Mozilla Firefox
 MeshLab
 MikTeX
 MSYS2: Add some windows paths to $PATH and some msys paths to %PATH% for interoperation.
@@ -36,15 +38,19 @@ MSYS2: Add some windows paths to $PATH and some msys paths to %PATH% for interop
 	mingw-w64-x86_64-lapack
 	mingw-w64-x86_64-openblas
 	mingw-w64-x86_64-tk
+	perl-ack
 	rsync
 	vim
 	winpty
 Octave
+Pandoc
 pcloudpy
 ProFont
 Putty
 qutebrowser
 SumatraPDF
+Slack
+True X-Mouse Gizmo App
 Visual C++ Build Tools 2015: http://go.microsoft.com/fwlink/?LinkId=691126
 VLC
 WinAeroTweaker

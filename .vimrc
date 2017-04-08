@@ -75,6 +75,7 @@ syntax on                                        " Enable syntax highlighting.
 runtime macros/matchit.vim                       " Enable enhanced functionality for % motion.
 
 "" Overrides
+set csto=1                                       " Check ctags before cscope for definition lookup.
 let g:tex_flavor="latex"                         " Assume *.tex are LaTeX files rather than TeX.
 let g:is_posix=1                                 " Assume POSIX shell files.
 let g:is_bash=1                                  " Assume *.sh are bash files rather than sh.

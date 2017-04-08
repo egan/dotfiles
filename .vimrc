@@ -53,6 +53,7 @@ Plugin 'Lokaltog/vim-distinguished'
 Plugin 'mbbill/undotree'
 Plugin 'mileszs/ack.vim'                         " :Ack REGEX
 Plugin 'scrooloose/nerdtree'                     " ^e
+Plugin 'simplyzhao/cscope_maps.vim'              " <C-@>c
 Plugin 'terryma/vim-expand-region'               " v+; v_
 Plugin 'tpope/vim-abolish'                       " :Subvert; crs; crm; crc; cru
 Plugin 'tpope/vim-commentary'                    " gcc
@@ -149,7 +150,7 @@ let g:wordmotion_prefix = '<Leader>'
 " Refactor the given lines using a dictionary, replacing all occurrences of
 " each key in the dictionary with its value.
 function! Refactor(dict) range
-	execute a:firstline . ',' . a:lastline .  's/\C\<\%(' . join(keys(a:dict),'\|'). '\)\>/\='.string(a:dict).'[submatch(0)]/ge'
+	execute a:firstline . ',' . a:lastline . 's/\C\<\%(' . join(keys(a:dict),'\|'). '\)\>/\='.string(a:dict).'[submatch(0)]/ge'
 endfunction
 command! -range=% -nargs=1 Refactor :<line1>,<line2>call Refactor(<args>)
 
@@ -164,3 +165,15 @@ function! QuickfixFilenames()
 endfunction
 command! -nargs=0 -bar Qargs execute 'args' QuickfixFilenames()
 
+" Automatically load cscope database from a parent directory if it exists.
+function! LoadCscope()
+	let db = findfile("cscope.out", ".;")
+	if (!empty(db))
+		let path = strpart(db, 0, match(db, "/cscope.out$"))
+		" Suppress 'Duplicate Connection' error.
+		set nocscopeverbose
+		exe "cs add " . db . " " . path
+		set cscopeverbose
+	endif
+endfunction
+au BufEnter /* call LoadCscope()

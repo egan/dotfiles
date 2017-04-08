@@ -2,14 +2,15 @@
 Administration  : at abs bwm-ng htop iftop iotop nethogs pkgbuild-introspection pkgstats powertop procinfo-ng
 Benchmark       : mesa-demos
 Boot            : base dosfstools efibootmgr grub
-Codecs          : gst-libav gst-plugins-bad gst-plugins-base gst-plugins-good gst-plugins-uglly
-Development     : base-devel bochs capstone cmake ctags cython gcc-fortran gdb ipython nasm python-capstone python-pip scons sdcc strace yasm
+Codecs          : gst-libav gst-plugins-bad gst-plugins-base gst-plugins-good gst-plugins-ugly
+Development     : base-devel bochs capstone cmake cscope ctags cython gcc-fortran ipython nasm python-capstone python-pip scons sdcc yasm
+Debugging       : gdb strace valgrind
 Display         : xorg-server xorg-server-utils xorg-server-xnest xorg-server-xvfb xorg-twm xorg-xinit xorg-utils xorg-xfontsel
 Document        : antiword catdvi dos2unix html2text odt2txt pdfgrep unrtf zathura zathura-djvu zathura-pdf-mupdf zathura-ps
-Drivers         : mesa-libgl xf86-video-ati xf86-video-dummy
-Editor          : ed gvim hexedit
+Drivers         : mesa-libgl xf86-video-ati
+Editor          : astyle ed gvim hexedit
 Engineering     : freecad
-Fonts           : bdf-unifont ttf-freebanglafont ttf-indic-otf ttf-khmer ttf-liberation ttf-mph-2b-damase ttf-tibetan-machine
+Fonts           : bdf-unifont ttf-freebanglafont ttf-indic-otf ttf-iosevka ttf-khmer ttf-liberation ttf-mph-2b-damase ttf-tibetan-machine
 Games           : espeak xmahjongg
 Graphics        : asymptote blender gimp imagemagick inkscape mypaint qiv scrot sxiv
 Hardware        : i7z lm_sensors lshw mesa-vdpau opencl-headers qemu

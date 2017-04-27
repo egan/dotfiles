@@ -37,6 +37,7 @@ set rtp+=~/.vim/bundle/Vundle.vim                " Include vundle in runtime pat
 call vundle#begin()                              " Run vundle.
 
 "" Bundles
+Plugin 'AndrewRadev/linediff.vim'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'bling/vim-airline'
 Plugin 'bronson/vim-trailing-whitespace'

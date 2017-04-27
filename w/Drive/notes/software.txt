@@ -25,6 +25,7 @@ MeshLab
 MikTeX
 MSYS2: Add some windows paths to $PATH and some msys paths to %PATH% for interoperation.
 	bc
+	cscope
 	ctags
 	dos2unix
 	gcc
@@ -34,6 +35,7 @@ MSYS2: Add some windows paths to $PATH and some msys paths to %PATH% for interop
 	mingw-w64-x86_64-aspell
 	mingw-w64-x86_64-aspell-en
 	mingw-w64-x86_64-astyle
+	mingw-w64-x86_64-ffmpeg
 	mingw-w64-x86_64-imagemagick
 	mingw-w64-x86_64-lapack
 	mingw-w64-x86_64-openblas

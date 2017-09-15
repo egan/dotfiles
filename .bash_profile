@@ -19,6 +19,7 @@ export PASSWORD_STORE_CLIP_TIME="15"
 # Include some Windows software directories.
 PATH=/c/Anaconda3:/c/Anaconda3/Scripts:/c/Anaconda3/Library/bin:$PATH
 PATH=/c/Program\ Files\ \(x86\)/MikTex\ 2.9/miktex/bin:$PATH
+PATH=/c/Program\ Files/nodejs/:$PATH
 export PATH=/mingw64/bin:$PATH
 export PATH=/mingw32/bin:$PATH
 export PATH=$HOME/bin:$PATH

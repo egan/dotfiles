@@ -3,6 +3,7 @@
 .bash_profile
 .bashrc
 .dircolors
+.gitaliases
 .inputrc
 .ipython/profile_default/startup/mechpy.py
 .rsync/putcfg

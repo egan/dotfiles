@@ -20,17 +20,25 @@ GVim
 iconsext
 ImageMagick
 Inkscape
+Keil: MDK-Plus-SM
 Mozilla Firefox
+	MediaKeys
+	uBlock Origin
+	VimFX
 MeshLab
 MikTeX
-MSYS2: Add some windows paths to $PATH and some msys paths to %PATH% for interoperation.
+MSYS2: Add some windows paths to $PATH and some msys paths to %PATH% for interoperation. mv /mingw65/bin/envsubt.exe to fix 'not a valid identifierline' errors in git.
 	bc
+	binutils
 	cscope
 	ctags
 	dos2unix
+	doxygen
 	gcc
 	gcc-fortran
+	gettext
 	git
+	make
 	manpages-posix
 	mingw-w64-x86_64-aspell
 	mingw-w64-x86_64-aspell-en
@@ -45,6 +53,8 @@ MSYS2: Add some windows paths to $PATH and some msys paths to %PATH% for interop
 	vim
 	winpty
 Octave
+npm
+	electron-forge
 Pandoc
 pcloudpy
 ProFont

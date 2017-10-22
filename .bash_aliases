@@ -44,6 +44,7 @@ alias epub2pdf='java -jar $HOME/src/epub2pdf/epub2pdf.jar'
 alias exev='xev | grep -A2 --line-buffered "^KeyRelease" | sed -n "/keycode /s/^.*keycode \([0-9]*\).* (.*, \(.*\)).*$/\1 \2/p"'
 alias eprop="xprop | awk '/^WM_CLASS/{sub(/.* =/,\"instance:\");sub(/,/,\"\nclass:\");print}/^WM_NAME/{sub(/.* =/,\"title:\");print}'"
 alias iptraf='sudo iptraf-ng'
+alias kq='pkill --signal 9 qutebrowser'
 alias maxima='rlwrap maxima'
 alias news='newsbeuter -q'
 alias quickdrop='quickserve --upload=.'

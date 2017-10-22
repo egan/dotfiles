@@ -18,7 +18,7 @@ Internet        : dictd lftp mktorrent ncftp newsbeuter rdesktop rtorrent tigerv
 Linguistics     : python2-nltk nltk-data
 Mathematics     : bc calc gnuplot maxima octave pari r units wxmaxima
 Math Libraries  : python-bottleneck python-matplotlib python-numpy python-scikit-learn python-scipy python-sympy
-Media           : audacity cuetools ffmpeg lmms mediainfo mac mp3splt mplayer shntool timidity-freepats timidity++ vorbis-tools
+Media           : audacity cuetools ffmpeg lmms mediainfo mac minidlna mp3splt mplayer shntool timidity-freepats timidity++ vorbis-tools
 Microcontroller : avr-gcc avr-libc avrdude java-rxtx picocom
 Network         : dnsutils ettercap inetutils hping iptraf-ng iw ntp nmap tcpdump whois wpa_supplicant
 Plugin          : flashplugin icedtea-web

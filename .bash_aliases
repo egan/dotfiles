@@ -35,7 +35,9 @@ alias sudo='sudo '
 # Application aliases.
 alias apropos='pless apropos'
 alias aspell='aspell -x'
+alias glint='lint msys2.lnt'
 alias ipython='winpty ipython'
+alias klint='lint armcc5.lnt'
 alias python='winpty python'
 alias vu='/usr/share/vim/vim74/macros/less.sh'
 

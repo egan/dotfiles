@@ -23,6 +23,7 @@ PATH=/c/Program\ Files/nodejs/:$PATH
 PATH=/c/Keil_v5/UV4:$PATH
 export PATH=/mingw64/bin:$PATH
 export PATH=/mingw32/bin:$PATH
+export PATH=$HOME/.gem/ruby/2.3.0/bin:$PATH
 export PATH=$HOME/bin:$PATH
 export VISUAL=$EDITOR
 export VIMRUNTIME=/usr/share/vim/vim80

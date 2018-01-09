@@ -40,6 +40,8 @@ alias python='winpty python'
 alias vu='/usr/share/vim/vim74/macros/less.sh'
 
 # Specialized aliases.
+alias p2deploy='cp /c/Users/eganmccomb/Drive/firmware/P2-LB-V4/P2-LB/Phase2/binary/armv7a/cgt_ccs/am335x/MVU/application/Release/application_ti.bin /g/APP'
+alias msdeploy='cp /c/Users/eganmccomb/Drive/firmware/MotorScope/Debug/MotorScope.exe //nx-server/Usershares/eganmccomb/builds/'
 alias cclean='rm -rf ~/.adobe/* ~/.macromedia/* ~/.icedtea/* ~/.config/matplotlib/tex.cache/*'
 alias cls='tput reset'
 alias extip='curl -s ifconfig.me'

@@ -60,4 +60,4 @@ PS1='\[\033[G\]egan@occhio:$(_dir_chomp "$(pwd)" 35)$(__git_ps1 " (%s)")\$ '
 [ -f $HOME/.dircolors ] && eval $(dircolors -b $HOME/.dircolors)
 [ -f $HOME/bin/bashmarks.sh ] && . $HOME/bin/bashmarks.sh
 
-cd w/Drive
+cd $HOME/w/Drive

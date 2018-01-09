@@ -18,6 +18,7 @@ export PASSWORD_STORE_X_SELECTION="primary"
 export PASSWORD_STORE_CLIP_TIME="15"
 # Include some Windows software directories.
 PATH=/c/Anaconda3:/c/Anaconda3/Scripts:/c/Anaconda3/Library/bin:$PATH
+PATH=/c/Program\ Files\ \(x86\)/PC-lint\ 9.0/:$PATH
 PATH=/c/Program\ Files\ \(x86\)/MikTex\ 2.9/miktex/bin:$PATH
 PATH=/c/Program\ Files/nodejs/:$PATH
 PATH=/c/Keil_v5/UV4:$PATH

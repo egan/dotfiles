@@ -21,13 +21,14 @@ iconsext
 ImageMagick
 Inkscape
 Keil: MDK-Plus-SM
+LTspice XVII
 Mozilla Firefox
 	MediaKeys
 	uBlock Origin
 	VimFX
 MeshLab
 MikTeX
-MSYS2: Add some windows paths to $PATH and some msys paths to %PATH% for interoperation. mv /mingw65/bin/envsubt.exe to fix 'not a valid identifierline' errors in git.
+MSYS2: Add some windows paths to $PATH and some msys paths to %PATH% for interoperation. mv /mingw65/bin/envsubt.exe to fix 'not a valid identifierline' errors in git. mkpasswd -l -c > /etc/passwd; mkgroup -l -c > /etc/group # and comment out db from group and passwd in /etc/nsswitch.conf to get rid of lag
 	bc
 	binutils
 	cscope
@@ -45,11 +46,15 @@ MSYS2: Add some windows paths to $PATH and some msys paths to %PATH% for interop
 	mingw-w64-x86_64-astyle
 	mingw-w64-x86_64-ffmpeg
 	mingw-w64-x86_64-imagemagick
+	mingw-w64-x86_64-jq
 	mingw-w64-x86_64-lapack
 	mingw-w64-x86_64-openblas
 	mingw-w64-x86_64-tk
 	perl-ack
+	ruby
+		bundler
 	rsync
+	tmux
 	vim
 	winpty
 Octave
@@ -67,3 +72,4 @@ Visual C++ Build Tools 2015: http://go.microsoft.com/fwlink/?LinkId=691126
 VLC
 WinAeroTweaker
 WinCompose
+WinDirStat

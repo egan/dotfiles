@@ -13,8 +13,8 @@ Engineering     : freecad
 Fonts           : bdf-unifont ttf-freebanglafont ttf-indic-otf ttf-iosevka ttf-khmer ttf-liberation ttf-mph-2b-damase ttf-tibetan-machine
 Games           : espeak xmahjongg
 Graphics        : asymptote blender gimp imagemagick inkscape mypaint qiv scrot sxiv
-Hardware        : i7z lm_sensors lshw mesa-vdpau opencl-headers qemu
-Internet        : dictd lftp mktorrent ncftp newsbeuter rdesktop rtorrent tigervnc weechat
+Hardware        : i7z lm_sensors lshw intel-ucode mesa-vdpau opencl-headers qemu
+Internet        : dictd lftp mktorrent ncftp newsboat rdesktop rtorrent tigervnc weechat
 Linguistics     : python2-nltk nltk-data
 Mathematics     : bc calc gnuplot maxima octave pari r units wxmaxima
 Math Libraries  : python-bottleneck python-matplotlib python-numpy python-scikit-learn python-scipy python-sympy

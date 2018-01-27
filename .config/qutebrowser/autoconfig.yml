@@ -17,11 +17,11 @@ global:
   url.searchengines:
     DEFAULT: https://encrypted.google.com/search?q={}
     a: http://www.wolframalpha.com/input/?i={}
-    d: http://en.wiktionary.org/wiki/Special:Search?search={}
+    d: https://en.wiktionary.org/wiki/Special:Search?search={}
     ddg: https://duckduckgo.com/?q={}
     g: https://encrypted.google.com/search?q={}
-    i: http://images.google.com/search?hl=en&site=&tbm=isch&q={}
+    i: https://images.google.com/search?hl=en&site=&tbm=isch&q={}
     m: https://maps.google.com/maps?q={}
-    w: http://en.wikipedia.org/w/index.php?title=Special:Search&search={}
-    y: http://www.youtube.com/results?search_query={}
+    w: https://en.wikipedia.org/w/index.php?title=Special:Search&search={}
+    y: https://www.youtube.com/results?search_query={}
   url.start_pages: news.ycombinator.com

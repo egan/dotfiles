@@ -17,5 +17,5 @@ export GTK_IM_MODULE="xim"
 export PAGER="less"
 export PASSWORD_STORE_X_SELECTION="primary"
 export PASSWORD_STORE_CLIP_TIME="15"
-export PATH=$HOME/bin:$HOME/bin/.launch:$HOME/.gem/ruby/2.3.0/bin:$PATH
+export PATH=$HOME/bin:$HOME/bin/.launch:$GEM_HOME/bin:$PATH
 export VISUAL=$EDITOR

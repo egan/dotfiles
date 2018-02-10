@@ -9,6 +9,7 @@ Display         : xorg-server xorg-server-utils xorg-server-xnest xorg-server-xv
 Document        : antiword catdvi dos2unix html2text odt2txt pdfgrep unrtf zathura zathura-djvu zathura-pdf-mupdf zathura-ps
 Drivers         : mesa-libgl xf86-video-ati
 Editor          : astyle ed gvim hexedit
+Email           : neomutt
 Engineering     : freecad
 Fonts           : bdf-unifont ttf-freebanglafont ttf-indic-otf ttf-iosevka ttf-khmer ttf-liberation ttf-mph-2b-damase ttf-tibetan-machine
 Games           : espeak xmahjongg
@@ -50,7 +51,7 @@ Editor          : sc
 Fonts           : ttf-lklug
 Games           : myman tint-tetris
 Graphics        : tiv
-Internet        : grive uber-mutt
+Internet        : grive
 Linguistics     : python-nltk-git
 Media           : popcorntime-bin vkeybd
 Microcontroller : arduino10 ino

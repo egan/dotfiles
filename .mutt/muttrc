@@ -77,9 +77,10 @@ set sort              = "threads"
 set sort_aux          = "reverse-last-date-received"
 
 ## Side Bar Configuration
-set sidebar_delim     = "│"
-set sidebar_visible   = yes
-set sidebar_width     = 20
+set sidebar_component_depth = 1
+set sidebar_divider_char    = "│"
+set sidebar_visible         = yes
+set sidebar_width           = 20
 
 ## File Resources
 set header_cache      = ~/.mutt/cache/headers
@@ -101,7 +102,7 @@ set date_format       = "%a, %D %T"
 set index_format      = "│%Z│ %-15F %s - %D"
 set quote_regexp      = "^( {0,4}[>|:#%]| {0,4}[a-z0-9]+[>|]+)+"
 set reply_regexp      = "^(([Rr][Ee]?(\[[0-9]+\])?: *)?(\[[^]]+\] *)?)*"
-set status_format     = "──────Gmail──────┴───[ %m%?n? [+%n]?%?d? [-%d]?%?t? [*%t]? ]%?p?─[ %p postponed ]?─%>─(%4P)─"
+set status_format     = "──────Gmail────────┴───[ %m%?n? [+%n]?%?d? [-%d]?%?t? [*%t]? ]%?p?─[ %p postponed ]?─%>─(%4P)─"
 
 ## Header Information
 ignore                *
@@ -111,3 +112,4 @@ hdr_order             Date From To Cc
 ## Commands Configuration
 set ispell            = "aspell -e -c"
 set print_command     = ""
+

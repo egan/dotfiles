@@ -1,33 +1,37 @@
-## Macros
-macro index,pager	gH	"<save-message>+INBOX<enter>"				"mark message as ham"
-macro index,pager	gA	"<save-message>+[Gmail]/All Mail<enter>"		"archive message"
-macro index,pager	gS	"<save-message>+[Gmail]/Spam<enter>"			"mark message as spam"
-macro index,pager	S	"<pipe-message>cat > ~/"				"save message as"
-macro index,pager	gi	"<change-folder>+INBOX<enter>"				"go to inbox"
-macro index,pager	ga	"<change-folder>+[Gmail]/All Mail<enter>"		"go to all mail"
-macro index,pager	gs	"<change-folder>+[Gmail]/Sent Mail<enter>"		"go to sent mail"
-macro index,pager	gd	"<change-folder>+[Gmail]/Drafts<enter>"			"go to drafts"
-macro index,pager	gt	"<change-folder>+[Gmail]/Trash<enter>"			"go to trash"
+## Overrides
+bind index,pager g noop
 
-# Bindings
-bind index		gg	first-entry
-bind index		G	last-entry
-bind index		J	next-unread
-bind index		K	previous-unread
-bind index		R	group-reply
-bind index		zt	current-top
-bind index		zm	current-middle
-bind index		zb	current-bottom
-bind index,pager	\CN	sidebar-next
-bind index,pager	\CO	sidebar-open
-bind index,pager	\CP	sidebar-prev
-bind pager		G	bottom
-bind pager		gg	top
-bind pager		j	next-line
-bind pager		J	next-undeleted
-bind pager		k	previous-line
-bind pager		K	previous-undeleted
-bind pager		q	exit
-bind pager		R	group-reply
-bind pager		/	search
-bind pager		z	toggle-quoted
+## Macros
+macro index,pager gH "<save-message>+INBOX<enter>"                "mark message as ham"
+macro index,pager gA "<save-message>+[Gmail]/All Mail<enter>"   "archive message"
+macro index,pager gS "<save-message>+[Gmail]/Spam<enter>"         "mark message as spam"
+macro index,pager S  "<pipe-message>cat > ~/"                     "save message as"
+macro index,pager gi "<change-folder>+INBOX<enter>"               "go to inbox"
+macro index,pager ga "<change-folder>+[Gmail]/All Mail<enter>"  "go to all mail"
+macro index,pager gs "<change-folder>+[Gmail]/Sent Mail<enter>" "go to sent mail"
+macro index,pager gd "<change-folder>+[Gmail]/Drafts<enter>"      "go to drafts"
+macro index,pager gt "<change-folder>+[Gmail]/Trash<enter>"       "go to trash"
+
+## Bindings
+bind index       gg  first-entry
+bind index       G   last-entry
+bind index       J   next-unread
+bind index       K   previous-unread
+bind index       R   group-reply
+bind index       zt  current-top
+bind index       zm  current-middle
+bind index       zb  current-bottom
+bind index,pager \CN sidebar-next
+bind index,pager \CO sidebar-open
+bind index,pager \CP sidebar-prev
+bind pager       G   bottom
+bind pager       gg  top
+bind pager       j   next-line
+bind pager       J   next-undeleted
+bind pager       k   previous-line
+bind pager       K   previous-undeleted
+bind pager       q   exit
+bind pager       R   group-reply
+bind pager       /   search
+bind pager       z   toggle-quoted
+

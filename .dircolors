@@ -74,6 +74,7 @@ OTHER_WRITABLE 01;34		# o+w directory
 .asm 00;32
 .awk 00;32
 .c 00;32
+.cmd 00;32
 .cpp 00;32
 .cxx 00;32
 .csh 00;32
@@ -94,6 +95,7 @@ OTHER_WRITABLE 01;34		# o+w directory
 .patch 00;32
 .php 00;32
 .pl 00;32
+.ps1 00;32
 .py 00;32
 .py2 00;32
 .pyc 00;32

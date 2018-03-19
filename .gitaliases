@@ -4,8 +4,8 @@
 	cob    = checkout -b
 	dlc    = diff --cached HEAD^
 	graph  = log --graph --decorate --pretty=oneline --abbrev-commit --all
-	ll     = log --pretty=oneline --abbrev-commit --all --numstat
-	ls     = log --pretty=oneline --abbrev-commit --all
+	ll     = log --pretty=oneline --abbrev-commit --numstat
+	ls     = log --pretty=oneline --abbrev-commit
 	ls-ign = ls-files -i --exclude-standard # Not 100% reliable.
 	rm-ign = clean -fX
 	sha    = rev-parse --verify HEAD

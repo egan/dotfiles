@@ -1,5 +1,5 @@
 [alias]
-	amend  = commit -a --amend
+	amend  = commit --amend
 	co     = checkout
 	cob    = checkout -b
 	dlc    = diff --cached HEAD^

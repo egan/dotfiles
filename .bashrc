@@ -60,5 +60,4 @@ PS1='\[\033[G\]$PS:$(_dir_chomp "$(pwd)" 35)$(__git_ps1 " (%s)")\$ '
 [ -f $HOME/.bash_aliases ] && . $HOME/.bash_aliases
 [ -f $HOME/.dircolors ] && eval $(dircolors -b $HOME/.dircolors)
 [ -f $HOME/bin/bashmarks.sh ] && . $HOME/bin/bashmarks.sh
-
-cd $HOME/w/Drive
+[ -f $HOME/.cdir ] && . $HOME/.cdir

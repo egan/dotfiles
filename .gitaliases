@@ -10,3 +10,4 @@
 	rm-ign = clean -fX
 	sha    = rev-parse --verify HEAD
 	undo   = reset HEAD~1 --mixed
+	new    = !sh -c 'git log $1@{1}..$1@{0} "$@"'

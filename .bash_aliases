@@ -35,6 +35,7 @@ alias sudo='sudo '
 # Application aliases.
 alias apropos='pless apropos'
 alias aspell='aspell -x'
+alias cgrep='grep -r --include \*.h --include \*.c'
 alias glint='lint msys2.lnt'
 alias ipython='winpty ipython'
 alias klint='lint armcc5.lnt'

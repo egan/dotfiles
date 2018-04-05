@@ -43,7 +43,6 @@ Plugin 'bling/vim-airline'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'chaoren/vim-wordmotion'
 Plugin 'chrisbra/csv.vim'
-Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'easymotion/vim-easymotion'               " \\MOTION
 Plugin 'godlygeek/tabular'                       " :Tab REGEX # \zs
 Plugin 'goldfeld/vim-seek'                       " sSEQ; OPERATORx
@@ -62,7 +61,6 @@ Plugin 'tpope/vim-fugitive'                      " :Gstatus; :Gdiff; :Gedit; :Gg
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'                      " csXY; ysMOTIONX; dsX
 Plugin 'tpope/vim-unimpaired'                    " [b; [n; [<Space>
-Plugin 'tpope/vim-vividchalk'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-scripts/VisIncr'                     " :I
 Plugin 'vim-scripts/ZoomWin'                     " ^wo

@@ -40,7 +40,7 @@ alias ipython='winpty ipython'
 alias klint='lint armcc5.lnt'
 alias plint='lint p2.lnt'
 alias python='winpty python'
-alias tline='lint tiarm.lnt'
+alias tlint='lint tiarm.lnt'
 alias vu='/usr/share/vim/vim74/macros/less.sh'
 
 # Specialized aliases.

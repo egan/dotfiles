@@ -33,6 +33,7 @@ MSYS2: Add some windows paths to $PATH and some msys paths to %PATH% for interop
 	binutils
 	cscope
 	ctags
+	diffutils
 	dos2unix
 	doxygen
 	gcc

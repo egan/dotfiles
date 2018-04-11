@@ -42,8 +42,6 @@ alias python='winpty python'
 alias vu='/usr/share/vim/vim74/macros/less.sh'
 
 # Specialized aliases.
-alias p2deploy='cp /c/Users/eganmccomb/Drive/firmware/P2-LB-V4/P2-LB/Phase2/binary/armv7a/cgt_ccs/am335x/MVU/application/Release/application_ti.bin /g/APP'
-alias msdeploy='cp /c/Users/eganmccomb/Drive/firmware/MotorScope/Debug/MotorScope.exe //nx-server/Usershares/eganmccomb/builds/'
 alias cclean='rm -rf ~/.adobe/* ~/.macromedia/* ~/.icedtea/* ~/.config/matplotlib/tex.cache/*'
 alias cls='tput reset'
 alias extip='curl -s ifconfig.me'
@@ -52,14 +50,16 @@ alias lclean='rm -f *.aux *.auxlock *.bbl *.bcf *.blg *.dvi *.fff *.idx *.ilg *.
 alias mclean='find . -type d -exec chmod 744 {} \; && find . -type f -exec chmod 644 {} \;'
 alias myip='ip addr show | grep -w inet | grep -v 127.0.0.1 | awk "{ print \$2 }" | cut -d / -f 1'
 alias nettest='echo "Testing Connectivity:";ping -c 4 93.184.216.119;echo;echo "Testing Name Resolution:";ping -c 4 www.example.org'
-alias putbin='rsync -avL --files-from=$HOME/.rsync/putbin ~/bin $HOME/w/src/egan/scripts'
-alias putcfg='rsync -avL --files-from=$HOME/.rsync/putcfg ~ $HOME/w/src/egan/dotfiles/'
 alias repitch='mplayer -af scaletempo=scale=1.0:speed=pitch -speed'
 alias rscp='rsync -avz -e ssh'
 alias sprunge='curl -sF "sprunge=<-" http://sprunge.us | tclip'
 alias wotd='curl -s http://feeds.reference.com/DictionarycomWordOfTheDay | sed "/description.*:.*</!d; s/.*>\(.*\)<.*/\1/" | recode html..utf-8 | recode html..utf-8'
 
-# Media aliases.
+# Personal aliases.
+alias msdeploy='cp /home/eganmccomb/firmware/MotorScope/Debug/MotorScope.exe //nx-server/Usershares/eganmccomb/builds/'
+alias p2deploy='cp /home/eganmccomb/firmware/P2-LB-V4/P2-LB/Phase2/binary/armv7a/cgt_ccs/am335x/MVU/application/Release/application_ti.bin /g/APP'
+alias putbin='rsync -avL --files-from=$HOME/.rsync/putbin ~/bin $HOME/w/src/egan/scripts'
+alias putcfg='rsync -avL --files-from=$HOME/.rsync/putcfg ~ $HOME/w/src/egan/dotfiles/'
 
 # Function aliases.
 function up() { d=$(upstr.sh "$1") && cd "$d"; }

@@ -52,10 +52,7 @@ alias sprunge='curl -sF "sprunge=<-" http://sprunge.us | tclip'
 alias wotd='curl -s http://feeds.reference.com/DictionarycomWordOfTheDay | sed "/description.*:.*</!d; s/.*>\(.*\)<.*/\1/" | recode html..utf-8 | recode html..utf-8'
 
 # Personal aliases.
-alias msdeploy='cp /home/eganmccomb/firmware/MotorScope/Debug/MotorScope.exe //nx-server/Usershares/eganmccomb/builds/'
-alias p2deploy='cp /home/eganmccomb/firmware/P2-LB-V4/P2-LB/Phase2/binary/armv7a/cgt_ccs/am335x/MVU/application/Release/application_ti.bin /g/APP'
-alias putbin='rsync -avL --files-from=$HOME/.rsync/putbin ~/bin $HOME/w/src/egan/scripts'
-alias putcfg='rsync -avL --files-from=$HOME/.rsync/putcfg ~ $HOME/w/src/egan/dotfiles/'
+[ -f $HOME/.bash_aliases_personal ] && . $HOME/.bash_aliases_personal
 
 # Function aliases.
 function up() { d=$(upstr.sh "$1") && cd "$d"; }

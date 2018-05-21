@@ -21,6 +21,7 @@ PATH=/c/Anaconda3:/c/Anaconda3/Scripts:/c/Anaconda3/Library/bin:$PATH
 PATH=/c/Program\ Files\ \(x86\)/PC-lint\ 9.0/:$PATH
 PATH=/c/Program\ Files\ \(x86\)/MikTex\ 2.9/miktex/bin:$PATH
 PATH=/c/Keil_v5/UV4:$PATH
+PATH=/c/ti/ccs700/ccsv7/eclipse:$PATH
 PATH=/mingw64/bin:$PATH
 PATH=/mingw32/bin:$PATH
 PATH=/c/Users/$USER/.lint:$PATH

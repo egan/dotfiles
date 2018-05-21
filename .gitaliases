@@ -2,6 +2,7 @@
 	amend  = commit --amend
 	co     = checkout
 	cob    = checkout -b
+	ctags  = !.git/hooks/ctags
 	dlc    = diff --cached HEAD^
 	graph  = log --graph --decorate --pretty=oneline --abbrev-commit --all
 	ll     = log --pretty=oneline --abbrev-commit --numstat

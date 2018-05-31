@@ -82,6 +82,8 @@ let g:netrw_alto=1                               " Split netrw to the bottom.
 au BufNewFile,BufRead *.md set filetype=markdown " Assume *.md are markdown, not simula.
 
 "" Mappings
+nnoremap gr :Ack! <cword><CR>
+nnoremap gR :Ack! '\b<cword>\b'<CR>
 cnoremap <expr> %%getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 nnoremap <silent><C-l> :<C-u>nohl<C-r>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-l>
 nnoremap Y y$

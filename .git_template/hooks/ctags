@@ -1,8 +1,7 @@
 #!/bin/sh
 set -e
-dir="`git rev-parse --git-dir`"
+dir="$(git_root)"
 trap 'rm -f "$dir/$$.tags"' EXIT
-git ls-files | \
-	ctags --tag-relative -L - -f"$dir/$$.tags"
+ctags --tag-relative -R -f"$dir/$$.tags"
 mv "$dir/$$.tags" "$dir/tags"
 

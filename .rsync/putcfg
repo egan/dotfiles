@@ -4,6 +4,7 @@
 .bashrc
 .dircolors
 .gitaliases
+.git_template/hooks/
 .inputrc
 .ipython/profile_default/startup/mechpy.py
 .rsync/putcfg

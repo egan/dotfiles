@@ -43,7 +43,7 @@ alias vu='/usr/share/vim/vim74/macros/less.sh'
 # Specialized aliases.
 alias cls='tput reset'
 alias extip='curl -s ifconfig.me'
-alias groot='cd $(git rev-parse --show-cdup)'
+alias groot='cd $(git_root)'
 alias lclean='rm -f *.aux *.auxlock *.bbl *.bcf *.blg *.dvi *.fff *.idx *.ilg *.ind *.lof *.log *.lot *.nav *.out *.run.xml *.snm *.toc *.ttt'
 alias myip='ip addr show | grep -w inet | grep -v 127.0.0.1 | awk "{ print \$2 }" | cut -d / -f 1'
 alias nettest='echo "Testing Connectivity:";ping -c 4 93.184.216.119;echo;echo "Testing Name Resolution:";ping -c 4 www.example.org'

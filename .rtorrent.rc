@@ -15,7 +15,7 @@ dht = auto
 dht_port = 6881
 
 # Enable peer exchange.
-peer_exchange = yes
+#peer_exchange = yes
 
 # Directory to save downloading torrents.
 directory = ./

@@ -1,17 +1,16 @@
 ## INSTALL
-Administration  : at abs bwm-ng htop iftop iotop nethogs pkgbuild-introspection pkgstats powertop procinfo-ng
+Administration  : asp at bwm-ng htop iftop iotop nethogs pacman-contrib pkgstats powertop procinfo-ng
 Benchmark       : mesa-demos
 Boot            : base dosfstools efibootmgr grub
 Codecs          : gst-libav gst-plugins-bad gst-plugins-base gst-plugins-good gst-plugins-ugly
 Development     : base-devel bochs capstone cmake cscope ctags cython gcc-fortran ipython nasm python-capstone python-pip scons sdcc yasm
 Debugging       : gdb strace valgrind
-Display         : xorg-server xorg-server-utils xorg-server-xnest xorg-server-xvfb xorg-twm xorg-xinit xorg-utils xorg-xfontsel
-Document        : antiword catdvi dos2unix html2text odt2txt pdfgrep unrtf zathura zathura-djvu zathura-pdf-mupdf zathura-ps
+Display         : xorg-server xorg-server-xnest xorg-server-xvfb xorg-twm xorg-xinit xorg-xfontsel
+Document        : antiword catdvi dos2unix html2text odt2txt pdfgrep pdfjs uni2acii unrtf zathura zathura-djvu zathura-pdf-mupdf zathura-ps
 Drivers         : mesa-libgl xf86-video-ati
-Editor          : astyle ed gvim hexedit
+Editor          : astyle ed gvim hexedit sc
 Email           : neomutt
-Engineering     : freecad
-Fonts           : bdf-unifont ttf-freebanglafont ttf-indic-otf ttf-iosevka ttf-khmer ttf-liberation ttf-mph-2b-damase ttf-tibetan-machine
+Fonts           : bdf-unifont ttf-indic-otf ttf-khmer ttf-liberation ttf-mph-2b-damase ttf-tibetan-machine
 Games           : espeak xmahjongg
 Graphics        : asymptote blender gimp imagemagick inkscape mypaint qiv scrot sxiv
 Hardware        : i7z lm_sensors lshw intel-ucode mesa-vdpau opencl-headers qemu
@@ -31,34 +30,29 @@ Shell           : bash-completion tmux vifm
 Sound           : alsa-plugins alsa-tools alsa-utils
 Storage         : dosfstools cdrkit exfat-utils fuse-exfat fuseiso libdvdread libdvdcss libdvdnav ntfs-3g sdparm smartmontools
 Terminal        : profont rlwrap rxvt-unicode urxvt-perls xterm
-Utilities       : ack acpi cpio inotify-tools jshon lsof mlocate moreutils notify-send p7zip pv rsync sharutils srm unison unrar unzip zip
-Versioning      : addinclude diffstat git subversion
+Utilities       : ack acpi cpio inotify-tools jshon lsof mlocate moreutils notify-send p7zip pv rsync sharutils unison unrar unzip zip
+Versioning      : diffstat git subversion
 Web             : cclive curl elinks firefox qutebrowser wget wput
 Web Design      : nodejs
 Widget          : gtk-chtheme gtk-engine-murrine
 Windowing       : dunst openbox slock spectrwm xclip xdotool xmobar unclutter
 
 ## DEPENDENCIES
-Buildtime       : boost cython2 icoutils qt5-webkit slang tk
-General         : gtkdatabox qtwebkit x264 yajl
-Python3         : python-imaging python-jinja python-nose python-pygments python-yaml
+Buildtime       : boost cython2 icoutils qt5-webkit tk
+General         : x264 yajl
+Python3         : python-imaging python-jinja python-nose python-pygments python-pypeg2 python-yaml
 Python2         : python2-configobj python2-jinja python2-nose python2-pyserial python2-six
 
 ## AUR
-Dependencies    : python-pypeg2 python-slycot-git
-Document        : pdfjs uni2ascii
-Editor          : sc
-Fonts           : ttf-lklug
-Games           : myman tint-tetris
+Fonts           : ttf-freebanglafont ttf-iosevka ttf-lklug
+Games           : myman
 Graphics        : tiv
-Internet        : grive
 Linguistics     : python-nltk-git
 Media           : popcorntime-bin vkeybd
 Microcontroller : arduino10 ino
 Publishing      : diction
 Scanning        : brscan4-network
-Science         : xoscope
 Server          : python3-threaded_servers quickserve
-Utilities       : cv-git detox miller-git weatherman
+Utilities       : cv-git detox miller-git
 Widget          : gtk-theme-murrine-collection
 Windowing       : dmenu2

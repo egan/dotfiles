@@ -38,12 +38,10 @@ Config	{ font             = "-*-profont-*-*-*-*-11-*-*-*-*-*-iso8859-*"
                            , Run Network "wlp7s0u2"
                            ["-t","Dn: <rx>kb/s <fc=#990000>|</fc> Up: <tx>kb/s","-L","0","-H","1024000","-n","#00d900","-h","#e50000","-m","6","-c"," "] 10
                            , Run CommandReader "$HOME/bin/volumed.sh" "volume"
-                           , Run Weather "KSTS"
-                           ["-t","Santa Rosa: <tempC>°C - <rh>%","-L","15","-H","25","-n","#00d900","-h","#e50000","-l","#00a6b2"] 9000
                            , Run Date "%a, %D %T" "date" 10
                            ]
        , sepChar           = "%"
        , alignSep          = "}{"
-       , template          = "%multicpu% <fc=#990000>|</fc> %thermal0% <fc=#990000>|</fc> %coretemp% <fc=#990000>|</fc> %memory% <fc=#990000>|</fc> %wlp7s0u2% <fc=#990000>|</fc> }{ <fc=#990000>|</fc> %volume% <fc=#990000>|</fc> %KSTS% <fc=#990000>|</fc> <fc=#e5e500>%date%</fc>"
+       , template          = "%multicpu% <fc=#990000>|</fc> %thermal0% <fc=#990000>|</fc> %coretemp% <fc=#990000>|</fc> %memory% <fc=#990000>|</fc> %wlp7s0u2% <fc=#990000>|</fc> }{ <fc=#990000>|</fc> %volume% <fc=#990000>|</fc> <fc=#e5e500>%date%</fc>"
 	}
 

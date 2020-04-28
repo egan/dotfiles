@@ -38,7 +38,7 @@ alias aspell='aspell -x'
 alias glint='lint msys2.lnt'
 alias ipython='winpty ipython'
 alias python='winpty python'
-alias slintlib='slint -e716 -e759 -e765 -e769 -e9058'
+alias slintlib='slint -e714 -e759 -e765 -e769 -e830 -e9058'
 alias vu='/usr/share/vim/vim74/macros/less.sh'
 
 # Specialized aliases.

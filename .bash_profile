@@ -27,4 +27,4 @@ PATH=/mingw32/bin:$PATH
 PATH=/c/Users/$USER/.lint:$PATH
 export PATH=$HOME/bin:$PATH
 export VISUAL=$EDITOR
-export VIMRUNTIME=/usr/share/vim/vim81
+export VIMRUNTIME=/usr/share/vim/vim82

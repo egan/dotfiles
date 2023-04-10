@@ -25,4 +25,4 @@ PATH=/c/ti/ccsv7/eclipse:$PATH
 PATH=/c/Users/$USER/.lint:$PATH
 export PATH=$HOME/bin:$PATH
 export VISUAL=$EDITOR
-export VIMRUNTIME=/usr/share/vim/vim82
+export VIMRUNTIME=/usr/share/vim/vim90
